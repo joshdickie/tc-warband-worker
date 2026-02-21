@@ -1,6 +1,6 @@
 export default {
   async fetch(request, env, ctx) {
-    return new Response("warband worker alive, v2 test deploy", {
+    return new Response("hello emma world can i haz cheezburger", {
       headers: { "content-type": "text/plain" }
     });
   }
