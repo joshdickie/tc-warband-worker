@@ -5,7 +5,7 @@ export default {
     const API_VERSION = 1;
 
     const m = url.pathname.match(/^\/api\/warband\/(\d+)$/);
-    if (!m) return json({ error: "not_found" }, 404);
+    if (!m) return json(errorEnvelope("not_found", "Path does not exist.", rid), 404);
 
     const id = m[1];
     const ip = getClientIp(request);
@@ -17,7 +17,7 @@ export default {
       : { limit: 30, windowSec: 60 };
     
     const rl = await checkRateLimit(env, `ip:${ip}:warband:${refresh ? "refresh" : "normal"}`, rateLimitRule);
-    if (!rl.allowed) return tooManyRequests(rl);
+    if (!rl.allowed) return tooManyRequests(rl, rid);
 
     const cache = caches.default;
 
@@ -32,13 +32,13 @@ export default {
       if (cached) {
         console.log(JSON.stringify({ rid, event: "cache_hit", id }));
         // revalidate in background and serve stale
-        ctx.waitUntil(revalidateAndUpdate(cacheKey, id));
+        ctx.waitUntil(revalidateAndUpdate(cacheKey, id, rid));
         return withHeader(cached, "x-tc-cache", "HIT");
       }
     }
     console.log(JSON.stringify({ rid, event: refresh ? "cache_refresh" : "cache_miss", id }));
 
-    const freshResp = await fetchFromSynodAsResponse(id);
+    const freshResp = await fetchFromSynodAsResponse(id, rid);
     if (freshResp.status !== 200) return freshResp;
 
     ctx.waitUntil(cache.put(cacheKey, freshResp.clone()));
@@ -67,8 +67,13 @@ async function checkRateLimit(env, key, { limit, windowSec }) {
   return resp.json();
 }
 
-function tooManyRequests({ resetIn }) {
-  return new Response(JSON.stringify({ error: "rate_limited", retryAfterSec: resetIn }), {
+function tooManyRequests({ resetIn }, rid) {
+  return new Response(JSON.stringify(errorEnvelope(
+    "rate_limited",
+    "rate limited, retry after retryAfterSec seconds.",
+    rid,
+    { retryAfterSec: resetIn }
+  )), {
     status: 429,
     headers: {
       "content-type": "application/json; charset=utf-8",
@@ -78,15 +83,15 @@ function tooManyRequests({ resetIn }) {
   });
 }
 
-async function revalidateAndUpdate(cacheKey, id) {
+async function revalidateAndUpdate(cacheKey, id, rid) {
   const cache = caches.default;
-  const resp = await fetchFromSynodAsResponse(id);
+  const resp = await fetchFromSynodAsResponse(id, rid);
   if (resp.status === 200) {
     await cache.put(cacheKey, resp.clone());
   }
 }
 
-async function fetchFromSynodAsResponse(id) {
+async function fetchFromSynodAsResponse(id, rid) {
   const synodUrl = `https://synod.trench-companion.com/wp-json/synod/v1/warband/${id}`;
 
   const upstream = await fetch(synodUrl, {
@@ -97,10 +102,13 @@ async function fetchFromSynodAsResponse(id) {
   });
 
   if (!upstream.ok) {
-    return json(
-      { error: "upstream_failed", upstream_status: upstream.status },
-      502
-    );
+    return json(errorEnvelope(
+      "upstream_failed",
+      "Call to synod.trench-companion.com failed.",
+      rid,
+      { upstream_status: upstream.status }
+    ),
+    502);
   }
 
   const data = await upstream.json();
@@ -135,6 +143,15 @@ function withHeader(response, key, value) {
     statusText: response.statusText,
     headers,
   });
+}
+
+function errorEnvelope(error, message, rid, extraFields = {}) {
+  return {
+    error,
+    message,
+    rid,
+    ...extraFields,
+  }
 }
 
 export { RateLimiter } from "./rateLimiter"
