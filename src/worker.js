@@ -2,16 +2,37 @@ export default {
   async fetch(request, env, ctx) {
     const url = new URL(request.url);
 
+    const match = url.pathname.match(/^\/api\/warband\/(\d+)$/);
+    if (match) {
+      const id = match[1];
+
+      const synodUrl = `https://synod.trench-companion.com/wp-json/synod/v1/warband/${id}`;
+
+      const upstream = await fetch(synodUrl, {
+        headers: {
+          "user-agent": "tc-warband-worker/0.1",
+          "accept": "application/json"
+        }
+      });
+
+      if (!upstream.ok) {
+        return json({ error: "upstream_failed", status: upstream.status }, 502);
+      }
+
+      const data = await upstream.json();
+
+      return json({
+        source: "synod",
+        id,
+        data
+      });
+    }
+
     if (url.pathname === "/health") {
       return json({ ok: true });
     }
 
-    if (url.pathname.startsWith("/api/warband/")) {
-      const id = url.pathname.split("/").pop();
-      return json({ id, message: "stub response" });
-    }
-
-    return json({ error: "not found" }, 404);
+    return json({ error: "not_found" }, 404);
   }
 };
 
