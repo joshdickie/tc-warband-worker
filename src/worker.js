@@ -6,7 +6,16 @@ export default {
     if (!m) return json({ error: "not_found" }, 404);
 
     const id = m[1];
+    const ip = getClientIp(request);
     const refresh = url.searchParams.get("refresh") === "1";
+
+    // tighter rate limit for refreshes
+    const rateLimitRule = refresh
+      ? { limit: 5, windowSec: 60 }
+      : { limit: 30, windowSec: 60 };
+    
+    const rl = await checkRateLimit(env, `ip:${ip}:warband:${refresh ? "refresh" : "normal"}`, rateLimitRule);
+    if (!rl.allowed) return tooManyRequests(rl);
 
     const cache = caches.default;
 
@@ -31,6 +40,34 @@ export default {
     return withHeader(freshResp, "x-tc-cache", refresh ? "REFRESH" : "MISS");
   }
 };
+
+function getClientIp(request) {
+  return request.headers.get("cf-connecting-ip") || "0.0.0.0";
+}
+
+async function checkRateLimit(env, key, { limit, windowSec }) {
+  const id = env.RL.idFromName("global-rate-limiter");
+  const stub = env.RL.get(id);
+
+  const resp = await stub.fetch("https://rl/check", {
+    method: "POST",
+    headers: { "content-type": "application/json" },
+    body: JSON.stringify({ key, limit, windowSec })
+  });
+
+  return resp.json();
+}
+
+function tooManyRequests({ resetIn }) {
+  return new Response(JSON.stringify({ error: "rate_limited", retryAfterSec: resetIn }), {
+    status: 429,
+    headers: {
+      "content-type": "application/json; charset=utf-8",
+      "retry-after": String(Math.max(1, resetIn)),
+      "access-control-allow-origin": "*"
+    }
+  });
+}
 
 async function revalidateAndUpdate(cacheKey, id) {
   const cache = caches.default;
@@ -90,3 +127,5 @@ function withHeader(response, key, value) {
     headers,
   });
 }
+
+export { RateLimiter } from "./rateLimiter"
