@@ -1,6 +1,8 @@
 export default {
   async fetch(request, env, ctx) {
     const url = new URL(request.url);
+    const rid = reqId()
+    const API_VERSION = 1;
 
     const m = url.pathname.match(/^\/api\/warband\/(\d+)$/);
     if (!m) return json({ error: "not_found" }, 404);
@@ -22,16 +24,19 @@ export default {
     // Have to remove refresh flag so cache doesn't vary
     const cacheKeyUrl = new URL(url.toString());
     cacheKeyUrl.searchParams.delete("refresh");
+    cacheKeyUrl.searchParams.set("v", String(API_VERSION));
     const cacheKey = new Request(cacheKeyUrl.toString(), { method: "GET" });
 
     if (!refresh) {
       const cached = await cache.match(cacheKey);
       if (cached) {
+        console.log(JSON.stringify({ rid, event: "cache_hit", id }));
         // revalidate in background and serve stale
         ctx.waitUntil(revalidateAndUpdate(cacheKey, id));
         return withHeader(cached, "x-tc-cache", "HIT");
       }
     }
+    console.log(JSON.stringify({ rid, event: refresh ? "cache_refresh" : "cache_miss", id }));
 
     const freshResp = await fetchFromSynodAsResponse(id);
     if (freshResp.status !== 200) return freshResp;
@@ -40,6 +45,10 @@ export default {
     return withHeader(freshResp, "x-tc-cache", refresh ? "REFRESH" : "MISS");
   }
 };
+
+function reqId() {
+  return crypto.randomUUID();
+}
 
 function getClientIp(request) {
   return request.headers.get("cf-connecting-ip") || "0.0.0.0";
