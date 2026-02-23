@@ -1,3 +1,5 @@
-export default function parseWarband(data) {
-  return JSON.parse(data.data.warband_data)
+export default {
+  parseWarband(data) {
+    return JSON.parse(data.data.warband_data)
+  }
 }
