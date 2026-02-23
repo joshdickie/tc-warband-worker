@@ -60,14 +60,14 @@
  */
 
 export function parseWarband(data) {
-  const warbandName = data.warband_data.warband.name;
-  const factionId = data.warband_data.warband.faction.faction_property.object_id;
-  const models = data.warband_data.warband.models.map(m => m.model);
+  // const warbandName = data.warband_data.warband.name;
+  // const factionId = data.warband_data.warband.faction.faction_property.object_id;
+  // const models = data.warband_data.warband.models.map(m => m.model);
 
-  const devResp = {
-    warbandName,
-    factionId,
-    models
-  }
-  return JSON.parse(devResp);
+  // const devResp = {
+  //   warbandName,
+  //   factionId,
+  //   models
+  // }
+  return JSON.parse(data.warband_data.warband);
 }
