@@ -59,6 +59,9 @@
  * and then go through that array grabbing whatever bits and bobs we find and applying keywords.
  */
 
+import { createDb } from "./data";
+const db = createDb();
+
 export function parseWarband(data) {
   const warbandData = JSON.parse(data.warband_data);
   const warbandName = warbandData.name;
@@ -68,7 +71,7 @@ export function parseWarband(data) {
   const devResp = {
     warbandName,
     factionId,
-    models
+    model: models[0]
   }
   return devResp;
 }
