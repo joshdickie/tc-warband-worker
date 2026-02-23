@@ -144,7 +144,7 @@ async function revalidateAndUpdate(cacheKey, id, raw, rid) {
 
   const synodResp = await fetchFromSynodAsJson(id, rid);
   if (!synodResp.ok) {
-    console.log(JSON.stringify({ rid, event: "revalidate_failed", id, raw, status: synod.status, error: synod.error }));
+    console.log(JSON.stringify({ rid, event: "revalidate_failed", id, raw, status: synodResp.status, error: synodResp.error }));
     return;
   }
 
