@@ -69,5 +69,5 @@ export function parseWarband(data) {
   //   factionId,
   //   models
   // }
-  return JSON.parse(data.warband_data.warband);
+  return JSON.parse(data.warband_data);
 }
