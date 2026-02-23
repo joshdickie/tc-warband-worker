@@ -189,13 +189,7 @@ async function revalidateAndUpdate(cacheKey, id, raw, rid) {
   console.log(JSON.stringify({ rid, event: "revalidate_ok", id, raw }));
 }
 
-
-
-
-
-
-
-async function fetchFromSynodAsResponse(id, rid) {
+async function fetchFromSynodAsJson(id, rid) {
   const synodUrl = `https://synod.trench-companion.com/wp-json/synod/v1/warband/${id}`;
   const abortController = new AbortController();
   const t = setTimeout(() => abortController.abort(), 8000);
