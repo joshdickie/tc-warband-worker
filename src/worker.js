@@ -221,7 +221,7 @@ async function fetchFromSynodAsJson(id, rid) {
     try {
       body = await upstream.json();
     } catch {
-      body =null;
+      body = null;
     }
 
     // synod returns 400 "invalid_post" when warband doesn't exist
