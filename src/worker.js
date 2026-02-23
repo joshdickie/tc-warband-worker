@@ -1,15 +1,24 @@
+import { parseWarband } from "./warbandParser.js";
+
+const API_VERSION = 1;
+
 export default {
   async fetch(request, env, ctx) {
     const url = new URL(request.url);
     const rid = reqId()
-    const API_VERSION = 1;
 
     const m = url.pathname.match(/^\/api\/warband\/(\d+)$/);
-    if (!m) return json(errorEnvelope("not_found", "Path does not exist.", rid), 404);
+    if (!m) {
+      return json(errorEnvelope("not_found", "Path does not exist.", rid), 404, {
+        "x-request-id": rid,
+        "x-tc-cache": "MISS",
+      });
+    }
 
     const id = m[1];
     const ip = getClientIp(request);
     const refresh = url.searchParams.get("refresh") === "1";
+    const raw = url.searchParams.get("raw") === "1";
 
     // tighter rate limit for refreshes
     const rateLimitRule = refresh
@@ -21,7 +30,7 @@ export default {
 
     const cache = caches.default;
 
-    // Have to remove refresh flag so cache doesn't vary
+    // Have to remove refresh flag so cache doesn't vary, and set version so it does
     const cacheKeyUrl = new URL(url.toString());
     cacheKeyUrl.searchParams.delete("refresh");
     cacheKeyUrl.searchParams.set("v", String(API_VERSION));
@@ -32,19 +41,68 @@ export default {
       if (cached) {
         console.log(JSON.stringify({ rid, event: "cache_hit", id }));
         // revalidate in background and serve stale
-        ctx.waitUntil(revalidateAndUpdate(cacheKey, id, rid));
-        return withHeader(cached, "x-tc-cache", "HIT");
+        ctx.waitUntil(revalidateAndUpdate(cacheKey, id, raw, rid));
+        return withHeaders(cached, {
+          "x-request-id": rid,
+          "x-tc-cache": "HIT",
+        });
       }
     }
-    console.log(JSON.stringify({ rid, event: refresh ? "cache_refresh" : "cache_miss", id }));
+    console.log(JSON.stringify({ rid, event: refresh ? "cache_refresh" : "cache_miss", id, raw }));
 
-    const freshResp = await fetchFromSynodAsResponse(id, rid);
-    if (freshResp.status !== 200) return freshResp;
+    const synodResp = await fetchFromSynodAsJson(id, rid);
+    if (!synodResp.ok) {
+      return json(errorEnvelope(synodResp.error, synodResp.message, rid, synodResp.extra), synodResp.status, {
+        "x-request-id": rid,
+        "x-tc-cache": "MISS",
+      });
+    }
 
-    ctx.waitUntil(cache.put(cacheKey, freshResp.clone()));
-    return withHeader(freshResp, "x-tc-cache", refresh ? "REFRESH" : "MISS");
+    let resp;
+    if (raw) {
+      resp = json(
+        {
+          ok: true,
+          source: "synod",
+          id,
+          fetchedAt: synodResp.fetchedAt,
+          data: synodResp.data,
+        },
+        200,
+        {
+          "x-request-id": rid,
+          "x-tc-cache": refresh ? "REFRESH" : "MISS",
+        }
+      );
+    } else {
+      try {
+        const parsed = parseWarband(synodResp.data);
+        resp = json(
+          {
+            ok: true,
+            id,
+            warband: parsed,
+          },
+          200,
+          {
+            "x-request-id": rid,
+            "x-tc-cache": refresh ? "REFRESH" : "MISS",
+          }
+        );
+      } catch (e) {
+        console.log(JSON.stringify({ rid, event: "parse_error", id, err: String(e), stack: e?.stack }));
+        resp = json(errorEnvelope("parse_error", "There was an error processing your request.", rid), 500, {
+          "x-request-id": rid,
+          "x-tc-cache": "MISS",
+        });
+      }
+    }
+
+    ctx.waitUntil(cache.put(cacheKey, resp.clone()));
+    return resp;
   }
 };
+
 
 function reqId() {
   return crypto.randomUUID();
@@ -61,67 +119,125 @@ async function checkRateLimit(env, key, { limit, windowSec }) {
   const resp = await stub.fetch("https://rl/check", {
     method: "POST",
     headers: { "content-type": "application/json" },
-    body: JSON.stringify({ key, limit, windowSec })
+    body: JSON.stringify({ key, limit, windowSec }),
   });
 
   return resp.json();
 }
 
 function tooManyRequests({ resetIn }, rid) {
-  return new Response(JSON.stringify(errorEnvelope(
-    "rate_limited",
-    "rate limited, retry after retryAfterSec seconds.",
-    rid,
-    { retryAfterSec: resetIn }
-  )), {
-    status: 429,
-    headers: {
-      "content-type": "application/json; charset=utf-8",
+  return json(
+    errorEnvelope("rate_limited", "Rate limited. Please retry after retryAfterSec seconds.", rid, {
+      retryAfterSec: resetIn
+    }),
+    429,
+    {
+      "x-request-id": rid,
       "retry-after": String(Math.max(1, resetIn)),
-      "access-control-allow-origin": "*"
+      "x-tc-cache": "MISS",
     }
-  });
+  );
 }
 
-async function revalidateAndUpdate(cacheKey, id, rid) {
+async function revalidateAndUpdate(cacheKey, id, raw, rid) {
   const cache = caches.default;
-  const resp = await fetchFromSynodAsResponse(id, rid);
-  if (resp.status === 200) {
-    await cache.put(cacheKey, resp.clone());
+
+  const synodResp = await fetchFromSynodAsJson(id, rid);
+  if (!synodResp.ok) {
+    console.log(JSON.stringify({ rid, event: "revalidate_failed", id, raw, status: synod.status, error: synod.error }));
+    return;
   }
+
+  let resp;
+  if (raw) {
+    resp = json(
+      {
+        ok: true,
+          source: "synod",
+          id,
+          fetchedAt: synodResp.fetchedAt,
+          data: synodResp.data,
+      },
+      200,
+      {
+        "x-request-id": rid,
+        "x-tc-cache": "REVALIDATE",
+      }
+    );
+  } else {
+    try {
+      const parsed = parseWarband(synod.data);
+      resp = json(
+        {
+          ok: true,
+          id,
+          warband: parsed,
+        },
+        200,
+        {
+          "x-request-id": rid,
+          "x-tc-cache": "REVALIDATE",
+        }
+      );
+    } catch (e) {
+      console.log(JSON.stringify({ rid, event: "revalidate_parse_error", id, err: String(e), stack: e?.stack }));
+      return;
+    }
+  }
+
+  await cache.put(cacheKey, resp.clone());
+  console.log(JSON.stringify({ rid, event: "revalidate_ok", id, raw }));
 }
+
+
+
+
+
+
 
 async function fetchFromSynodAsResponse(id, rid) {
   const synodUrl = `https://synod.trench-companion.com/wp-json/synod/v1/warband/${id}`;
+  const abortController = new AbortController();
+  const t = setTimeout(() => abortController.abort(), 8000);
 
-  const upstream = await fetch(synodUrl, {
-    headers: {
-      "user-agent": "tc-warband-worker/0.1",
-      accept: "application/json",
-    },
-  });
+  let upstream;
+  try {
+    upstream = await fetch(synodUrl, {
+      signal: abortController.signal,
+      headers: {
+        "user-agent": "tc-warband-worker/0.1",
+        accept: "application/json",
+      },
+    });
+  } catch (e) {
+    console.log(JSON.stringify({ rid, event: "upstream_error", id, err: String(e) }));
+    return {
+      ok: false,
+      status: 502,
+      error: "upstream_failed",
+      message: "Call to synod.trench-companion.com failed.",
+      extra: { detail: String(e) },
+    };
+  }finally {
+    clearTimeout(t);
+  }
 
   if (!upstream.ok) {
-    return json(errorEnvelope(
-      "upstream_failed",
-      "Call to synod.trench-companion.com failed.",
-      rid,
-      { upstream_status: upstream.status }
-    ),
-    502);
+    return {
+      ok: false,
+      status: 502,
+      error: "upstream_failed",
+      message: "Call to synod.trench-companion.com failed.",
+      extra: { upstream_status: upstream.status },
+    };
   }
 
   const data = await upstream.json();
-
-  return json(
-    {
-      source: "synod",
-      id,
-      fetchedAt: new Date().toISOString(),
-      data,
-    },
-    200
-  );
+  return {
+    ok: true,
+    fetchedAt: new Date().toISOString(),
+    data
+  };
 }
 
 function json(data, status = 200, extraHeaders = {}) {
@@ -135,9 +251,12 @@ function json(data, status = 200, extraHeaders = {}) {
   });
 }
 
-function withHeader(response, key, value) {
+function withHeaders(response, newHeaders = {}) {
   const headers = new Headers(response.headers);
-  headers.set(key, value);
+  for (const [k, v] of Object.entries(newHeaders)) {
+    if (v !== undefined && v !== null) headers.set(k, String(v));
+  }
+
   return new Response(response.body, {
     status: response.status,
     statusText: response.statusText,
@@ -154,4 +273,4 @@ function errorEnvelope(error, message, rid, extraFields = {}) {
   }
 }
 
-export { RateLimiter } from "./rateLimiter"
+export { RateLimiter } from "./rateLimiter.js"
