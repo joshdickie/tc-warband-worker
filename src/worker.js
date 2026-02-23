@@ -217,12 +217,46 @@ async function fetchFromSynodAsJson(id, rid) {
   }
 
   if (!upstream.ok) {
+    let body;
+    try {
+      body = await upstream.json();
+    } catch {
+      body =null;
+    }
+
+    // synod returns 400 "invalid_post" when warband doesn't exist
+    if (upstream.status === 400 && body?.code === "invalid_post") {
+      console.log(JSON.stringify({
+        rid,
+        event: "warband_not_found",
+        id,
+      }));
+
+      return {
+        ok: false,
+        status: 404,
+        error: "not_found",
+        message: "Warband does not exist.",
+        extra: {},
+      };
+    }
+    // other upstream failure
+    console.log(JSON.stringify({
+      rid,
+      event: "upstream_http_error",
+      id,
+      status: upstream.status,
+      body,
+    }));
     return {
       ok: false,
       status: 502,
       error: "upstream_failed",
       message: "Call to synod.trench-companion.com failed.",
-      extra: { upstream_status: upstream.status },
+      extra: {
+        upstream_status: upstream.status,
+        upstream_code: body?.code,
+      },
     };
   }
 
