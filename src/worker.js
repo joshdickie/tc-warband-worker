@@ -166,7 +166,7 @@ async function revalidateAndUpdate(cacheKey, id, raw, rid) {
     );
   } else {
     try {
-      const parsed = parseWarband(synod.data);
+      const parsed = parseWarband(synodResp.data);
       resp = json(
         {
           ok: true,
