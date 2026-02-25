@@ -1,0 +1,2668 @@
+{
+  "modifiers": {
+    "abilities": {
+      "ab_countercharge": {},
+      "ab_whirlingdervishes": {},
+      "ab_minesetting": {},
+      "ab_demine": {},
+      "ab_detonatingmines": {},
+      "ab_forwardpositions": {},
+      "ab_fortify": {},
+      "ab_artificialbody": {},
+      "ab_trample": {},
+      "ab_pin": {},
+      "ab_agilelion": {},
+      "ab_masteryoftheelements": {},
+      "ab_elementalchange": {},
+      "ab_mubarizun": {},
+      "ab_timeslip": {},
+      "ab_temporalassassin": {},
+      "ab_swornbretheren": {},
+      "ab_martialprowess": {},
+      "ab_automatondestrier": {},
+      "ab_recreation": {},
+      "ab_slow": {},
+      "ab_vengefulscripture": {},
+      "ab_fourpaws": {},
+      "ab_guarddog": {},
+      "ab_strengththroughpain": {},
+      "ab_mercydog": {},
+      "ab_mercydogbrigade": {},
+      "ab_brigadedog": {},
+      "ab_martyrdomdog": {},
+      "ab_hellhound": {},
+      "ab_puppetmaster": {},
+      "ab_thepriceofgreed": {},
+      "ab_hide": {},
+      "ab_stealthgenerator": {},
+      "ab_unholyhymns": {},
+      "ab_hereticlegionnaire": {},
+      "ab_lopingdash": {},
+      "ab_assaultbeast": {},
+      "ab_unrelenting": {},
+      "ab_resilient": {},
+      "ab_undying": {},
+      "ab_defiant": {},
+      "ab_resistant": {},
+      "ab_siegeweapon": {},
+      "ab_dragoncrush": {},
+      "ab_levitate": {},
+      "ab_abioticlife": {},
+      "ab_artillerywitchbattery": {},
+      "ab_lawofhell": {},
+      "ab_darkblessing": {},
+      "ab_chattel": {},
+      "ab_devourtheguilty": {},
+      "ab_goeticportal": {},
+      "ab_barbedembrace": {},
+      "ab_ironclawedhands": {},
+      "ab_goeticgaze": {},
+      "ab_deathwail": {},
+      "ab_loudspeakers": {},
+      "ab_layingonhands": {},
+      "ab_mementomori": {},
+      "ab_enforcedorthodoxy": {},
+      "ab_whipofgod": {},
+      "ab_miracleofregeneration": {},
+      "ab_bodyguard_pilgrim": {},
+      "ab_awaited": {},
+      "ab_maddash": {},
+      "ab_feebleflailing": {},
+      "ab_agile": {},
+      "ab_blessedstigmata": {},
+      "ab_symphonyofslaughter": {},
+      "ab_brokenonthewheel": {},
+      "ab_finishthefallen": {},
+      "ab_expertmedic": {},
+      "ab_conventconditioning": {},
+      "ab_divinejudgement": {},
+      "ab_dignifiedconduct": {},
+      "ab_faithfulfollowers": {},
+      "ab_theammunitionsacrement": {},
+      "ab_lightningspeed": {},
+      "ab_temporalfuge": {},
+      "ab_eyeofgod": {},
+      "ab_voiceofgod": {},
+      "ab_dayofhiswrath": {},
+      "ab_holdyourfire": {},
+      "ab_godiswithus": {},
+      "ab_blessedpalm": {},
+      "ab_godsmercy": {},
+      "ab_awayserpents": {},
+      "ab_onwardschristiansoldiers": {},
+      "ab_ariseandbehealed": {},
+      "ab_aim": {},
+      "ab_absolutefaith": {},
+      "ab_shockcharge": {},
+      "ab_assaultdrill": {},
+      "ab_battlefielddemolition": {},
+      "ab_fortifyeng": {},
+      "ab_demineengineer": {},
+      "ab_setmineengineer": {},
+      "ab_undeadfortitude": {},
+      "ab_beelzebubstouch": {},
+      "ab_crushingblows": {},
+      "ab_plagueknightranks": {},
+      "ab_parasitictick": {},
+      "ab_bodyguard_blackgrail": {},
+      "ab_frighteningspeed": {},
+      "ab_diseasecarrier": {},
+      "ab_infestedcarcasses": {},
+      "ab_overwhelminghorde": {},
+      "ab_infectedproboscis": {},
+      "ab_maddeningbuzzing": {},
+      "ab_corpulent": {},
+      "ab_sixarmedmonstrosity": {},
+      "ab_trample_amalgam": {},
+      "ab_unstoppable": {},
+      "ab_goetics_praetor": {},
+      "ab_goetics_praetor_wrath": {},
+      "ab_goetics_sorcerer": {},
+      "ab_blessingsoftheserpentmoon": {},
+      "ab_shadowwalker": {},
+      "ab_lefthandpath": {},
+      "ab_oraclebeastcloak": {},
+      "ab_goetics_knight": {},
+      "ab_bloodmagic": {},
+      "ab_hateful": {},
+      "ab_torturer": {},
+      "ab_annihilator": {},
+      "ab_poisonstingers": {},
+      "ab_demonicaura": {},
+      "ab_demonicaura_sloth": {},
+      "ab_demonicaura_envy": {},
+      "ab_demonicaura_pride": {},
+      "ab_demonicaura_greed": {},
+      "ab_demonicaura_wrath": {},
+      "ab_demonicaura_lust": {},
+      "ab_demonicaura_gluttony": {},
+      "ab_holydna": {},
+      "ab_fruitofgoodandevil": {},
+      "ab_prizespecimens": {},
+      "ab_battlefieldvivisection": {},
+      "ab_ravenousinfection": {},
+      "ab_pestilent": {},
+      "ab_frenziedfollowers": {},
+      "ab_cadreofflesh": {},
+      "ab_arcanaputrescere": {},
+      "ab_arcanaputrescere_one": {},
+      "ab_plagueriddenflesh": {},
+      "ab_gnashingandwailing": {},
+      "ab_dormanthunger": {},
+      "ab_specialdeployment_cradle": {},
+      "ab_golgothatektites": {},
+      "ab_painamplifier": {},
+      "ab_inflictpain": {},
+      "ab_focusedfire": {},
+      "ab_tungstenorichalcumalloyshot": {},
+      "ab_gunsilent": {},
+      "ab_bullseye": {},
+      "ab_quickbursts": {},
+      "ab_liquidfire": {},
+      "ab_dangerous": {},
+      "ab_despatch": {},
+      "ab_unwieldy": {},
+      "ab_armourpiercing": {},
+      "ab_binoculars": {},
+      "ab_talisman": {},
+      "ab_dumdums": {},
+      "ab_shrine": {},
+      "ab_tearitdown": {},
+      "ab_contract": {},
+      "ab_incendiary": {},
+      "ab_inuredtopain": {},
+      "ab_treat": {},
+      "ab_mountaineer": {},
+      "ab_fanfare": {},
+      "ab_angelicfanfare": {},
+      "ab_shovel": {},
+      "ab_tracers": {},
+      "ab_feeble": {},
+      "ab_livingbattlefield": {},
+      "ab_mandibles": {},
+      "ab_poisoned": {},
+      "ab_leadtodeath": {},
+      "ab_weightofsins": {},
+      "ab_insectwings": {},
+      "ab_suckeddry": {},
+      "ab_privilegedaccess": {},
+      "ab_manyleggedform": {},
+      "ab_spiritofthebeast": {},
+      "ab_continuouslitanyofprayers": {},
+      "ab_speakablessing": {},
+      "ab_gruesomeweight": {},
+      "ab_drinkfromthecup": {},
+      "ab_inspiringgift": {},
+      "ab_deadlylight": {},
+      "ab_myrmidonwings": {},
+      "ab_steadfast": {},
+      "ab_twinblows": {},
+      "ab_fieldhospital": {},
+      "ab_rallytotheflag": {},
+      "ab_sandstorm": {},
+      "ab_spiritofvengance": {},
+      "ab_blowthyhorn": {},
+      "ab_famousdeed": {},
+      "ab_goeticpower": {},
+      "ab_devouringswarm": {},
+      "ab_markofthepit": {},
+      "ab_enhancedbullets": {},
+      "ab_luckofthedevil": {},
+      "ab_restrained": {},
+      "ab_holymachine": {},
+      "ab_disposablerocket": {},
+      "ab_helpfulservitor": {},
+      "ab_swathedinsmoke": {},
+      "ab_enhancedaccuracy": {},
+      "ab_brazenbullgrandcannon": {},
+      "ab_mobilegrandcannon": {},
+      "ab_unstoppableobject": {},
+      "ab_retribution": {},
+      "ab_draggedforwards": {},
+      "ab_deadlyembrace": {},
+      "ab_thedogsofwar": {},
+      "ab_packloyalty": {},
+      "ab_teethandclaws": {},
+      "ab_ironfists": {},
+      "ab_ballisticboxarmour": {},
+      "ab_bulky": {},
+      "ab_bulkytank": {},
+      "ab_deathfromonhigh": {},
+      "ab_celticbulk": {},
+      "ab_trenchmole": {},
+      "ab_inspiringrelic": {},
+      "ab_heavyexplosive": {},
+      "ab_bagpipes": {},
+      "ab_tanksplitter": {},
+      "ab_holysmoke": {},
+      "ab_bypassshield": {},
+      "ab_healingwaters": {},
+      "ab_tokenofhonour": {},
+      "ab_virtuousrewards": {},
+      "ab_overcharge": {},
+      "ab_martyrdom": {},
+      "ab_mightyblows": {},
+      "ab_fullauto": {},
+      "ab_cloudofgas": {},
+      "ab_impossibletostop": {},
+      "ab_manifoldblessings": {},
+      "ab_advanceddesign": {},
+      "ab_grindtodust": {},
+      "ab_divineaccuracy": {},
+      "ab_hightrajectory": {},
+      "ab_cowerbeforethelord": {},
+      "ab_anointed": {},
+      "ab_onlytherighteous": {},
+      "ab_castigatortough": {},
+      "ab_causeconfusion": {},
+      "ab_guidingpath": {},
+      "ab_protectionfromharm": {},
+      "ab_slashingattack": {},
+      "ab_blendin": {},
+      "ab_greekfire": {},
+      "ab_echoingblast": {},
+      "ab_gustsofwind": {},
+      "ab_temporalslipstream": {},
+      "ab_attacktwice": {},
+      "ab_enhancedstrength": {},
+      "ab_pummellingblows": {},
+      "ab_chosenhomunculus": {},
+      "ab_fountainoflife": {},
+      "ab_fireshield": {},
+      "ab_prebattledeployment": {},
+      "ab_combatdeployment": {},
+      "ab_mobilecover": {},
+      "ab_hiddenexplosives": {},
+      "ab_detonatingtheexplosives": {},
+      "ab_othismos": {},
+      "ab_deployingthegunbattery": {},
+      "ab_firingagunbattery": {},
+      "ab_evilpower": {},
+      "ab_pairedweapon": {},
+      "ab_duck": {},
+      "ab_infernalstrike": {},
+      "ab_mightyexplosion": {},
+      "ab_walkingbomb": {},
+      "ab_triggersarcophagus": {},
+      "ab_detonationsarcophagus": {},
+      "ab_runeofmammon": {},
+      "ab_illusions": {},
+      "ab_placealtar": {},
+      "ab_chokinggas": {},
+      "ab_kneelbeforeme": {},
+      "ab_target_of_wrath": {},
+      "ab_powerofthecultoftheblackgrail": {},
+      "ab_enhancedvision": {},
+      "ab_graildevotees": {},
+      "ab_jealousobsession": {},
+      "ab_terrifyinghallucinations": {},
+      "ab_selfsacrifice": {},
+      "ab_locusofdespair": {},
+      "ab_sinisterwhispers": {},
+      "ab_batter": {},
+      "ab_searingflames": {},
+      "ab_ambushweapon": {},
+      "ab_abyssalblade": {},
+      "ab_unnaturalinversion": {},
+      "ab_agonisinginjuries": {},
+      "ab_specialammunition": {},
+      "ab_swingingblow": {},
+      "ab_wrathofgod": {},
+      "ab_bloodofmartyrs": {},
+      "ab_channelledsorrow": {},
+      "ab_freshmeat": {},
+      "ab_hackandhew": {},
+      "ab_masticate": {},
+      "ab_mutation": {},
+      "ab_grasp": {},
+      "ab_gnashingblow": {},
+      "ab_rottensplinters": {},
+      "ab_limitedupgrades": {},
+      "ab_albabagpipes": {},
+      "up_skirmisher": {},
+      "up_infiltrator": {},
+      "up_meleemight": {},
+      "up_fierceandbrave": {},
+      "up_swissguard": {},
+      "up_hallucinogendisguise": {},
+      "up_thunderboltofalamut": {},
+      "up_mirageoftime": {},
+      "up_secretpaths": {},
+      "up_alchemicalformulae_wings": {},
+      "up_alchemicalformulae_elementalresistance": {},
+      "up_alchemicalformulae_massive_size": {},
+      "up_alchemicalformulae_enslavedmind": {},
+      "up_alchemicalformulae_humanhands": {},
+      "up_alchemicalformulae_inhumanstrength": {},
+      "up_alchemicalformulae_terrifyingappearance": {},
+      "up_alchemicalformulae_additionalarm": {},
+      "up_alchemicalformulae_twoheads": {},
+      "up_alchemicalformulae_hypnoticeyes": {},
+      "up_alchemicalformulae_hawkeyes": {},
+      "up_alchemicalformulae_startlingspeed": {},
+      "up_alchemicalformulae_sealofsolomon": {},
+      "up_alchemicalformulae_gargantuansize": {},
+      "up_alchemicalformulae_regenerativetissue": {},
+      "up_secrets_medicine": {},
+      "up_secrets_cartographyandgeography": {},
+      "up_secrets_secretsoftakwin": {},
+      "up_secrets_chemistryandalchemy": {},
+      "up_secrets_philosophypoetrytheology": {},
+      "up_trenchdog_fireteam": {},
+      "up_heretictrooper_hereticlegionnaire": {},
+      "up_heretictrooper_hereticlegionnaire_ranged": {},
+      "up_heretictrooper_hereticlegionnaire_Melee": {},
+      "up_trenchghost_sarcophagusmine": {},
+      "up_zealotstrength": {},
+      "up_resurrection": {},
+      "up_wrathofgod": {},
+      "up_machinearmour": {},
+      "up_highlandmachinearmour": {},
+      "up_fianna": {},
+      "up_berserker": {},
+      "up_rapidassault": {},
+      "up_chewa": {},
+      "up_vanguard": {},
+      "up_plagueknightcompanionofthefly_base": {},
+      "up_plagueknightcompanionofthefly_ranged": {},
+      "up_plagueknightcompanionofthefly_melee": {},
+      "up_plagueknightalmoner": {},
+      "up_plagueknightrottencross": {},
+      "up_plagueknightrankofbutcher": {},
+      "up_plagueknightrankbutcherking": {},
+      "up_plagueknightrankofthefeast": {},
+      "up_plagueknightrankofferocity": {},
+      "up_infectioushound": {},
+      "up_maddeningbuzz": {},
+      "up_goetic_burninginferno": {},
+      "up_goetic_slavemaster": {},
+      "up_goetic_wrath_chargeofhatred": {},
+      "up_goetic_wrath_lessermarkofcain": {},
+      "up_goetic_wrath_blindrage": {},
+      "up_goetic_envy_enviouseyes": {},
+      "up_goetic_envy_covetedposition": {},
+      "up_goetic_envy_whatisyoursismine": {},
+      "up_goetic_lust_forbiddenpleasures": {},
+      "up_goetic_lust_exquisitepain": {},
+      "up_goetic_lust_callofflesh": {},
+      "up_goetic_pride_prouddefiance": {},
+      "up_goetic_pride_tooproudtofall": {},
+      "up_goetic_pride_lightofsamael": {},
+      "up_goetic_sloth_morpheanmind": {},
+      "up_goetic_sloth_charmofacedia": {},
+      "up_goetic_sloth_daemoniummeridianum": {},
+      "up_goetic_gluttony_bellyofthebeast": {},
+      "up_goetic_gluttony_uncaringgluttony": {},
+      "up_goetic_gluttony_eateroftheflesh": {},
+      "up_goetic_greed_bodyofgold": {},
+      "up_goetic_greed_blackheart": {},
+      "up_goetic_greed_universalgreed": {},
+      "up_fruit": {},
+      "up_gunsblazing": {},
+      "up_putrescere_hunger": {},
+      "up_putrescere_miasmaofpestilence": {},
+      "up_putrescere_motherscall": {},
+      "up_putrescere_rapturousfeast": {},
+      "up_putrescere_vilechurning": {},
+      "up_putrescere_virulentclot": {},
+      "up_putrescere_vomitus": {},
+      "up_unendingstarvation": {},
+      "up_jannisaryveteran": {}
+    },
+    "injuries": {
+      "in_dead": {
+        "name": "Dead",
+        "text": "",
+        "modifiers": {
+          "operations": [],
+          "choices": []
+        }
+      },
+      "in_captured": {
+        "name": "Captured",
+        "text": "",
+        "modifiers": {
+          "operations": [],
+          "choices": []
+        }
+      },
+      "in_severenervedamage": {
+        "name": "Severe Nerve Damage",
+        "text": "All Success Rolls are treated as being Risky Success Rolls.",
+        "modifiers": {
+          "operations": [],
+          "choices": []
+        }
+      },
+      "in_handwound": {
+        "name": "Hand Wound",
+        "text": "-1 DICE to attacks made with Melee Weapons held (or joinly held) by the injured hand.",
+        "modifiers": {
+          "operations": [],
+          "choices": []
+        }
+      },
+      "in_lostaneye": {
+        "name": "Lost an Eye",
+        "text": "",
+        "modifiers": {
+          "operations": [
+            {
+              "operation": "modifyRangedConditional",
+              "value": -1,
+              "condition": { "field": "id", "op": "notEqual", "value": "md_sniperpriest" }
+            }
+          ],
+          "choices": []
+        }
+      },
+      "in_chestwound": {
+        "name": "Chest Wound",
+        "text": "+1 INJURY DICE to attacks targetting this model.",
+        "modifiers": {
+          "operations": [],
+          "choices": []
+        }
+      },
+      "in_insomniac": {
+        "name": "Insomniac",
+        "text": "Must always be first model deployed.",
+        "modifiers": {
+          "operations": [
+            {
+              "operation": "removeKeyword",
+              "value": "INFILTRATOR"
+            }
+          ],
+          "choices": []
+        }
+      },
+      "in_headwound": {
+        "name": "Head Wound",
+        "text": "",
+        "modifiers": {
+          "operations": [],
+          "choices": []
+        }
+      },
+      "in_shellshocked": {
+        "name": "Shell Shocked",
+        "text": "Roll a D6 when deployed. On a 1-2, -1 DICE to rolls for this model.",
+        "modifiers": {
+          "operations": [],
+          "choices": []
+        }
+      },
+      "in_darkmemory": {
+        "comment": "//TODO: need to figure out how we're extracting the dark memory faction",
+        "name": "Dark Memory",
+        "text": "-1 DICE to Melee Attacks against {{DARK_MEMORY_FACTION}}",
+        "modifiers": {
+          "operations": [],
+          "choices": []
+        }
+      },
+      "in_paranoid": {
+        "name": "Paranoid",
+        "text": "Cannot be deployed within 8\" of a friendly model. Friendly models can be deployed within 8\" of this model.",
+        "modifiers": {
+          "operations": [],
+          "choices": []
+        }
+      },
+      "in_lostarm": {
+        "name": "Lost Arm",
+        "text": "",
+        "modifiers": {
+          "operations": [],
+          "choices": []
+        }
+      },
+      "in_legwound": {
+        "name": "Leg Wound",
+        "text": "-1 DICE to Risky Success for Dash Actions",
+        "modifiers": {
+          "operations": [
+            {
+              "operation": "modifyMovement",
+              "value": -2
+            }
+          ],
+          "choices": []
+        }
+      },
+      "in_expensivetreatment": {
+        "name": "Expensive Treatment",
+        "text": "",
+        "modifiers": {
+          "operations": [],
+          "choices": []
+        }
+      },
+      "in_possessed": {
+        "name": "Posessed",
+        "text": "When this model is Activated, if it is more than 1\" from any enemy models the first Action that it takes must take a Dash Action, even if another rule states that it cannot take a Dash Action. In addition, the first 3\" of this move must be in a straight line directly away from its starting position, if it is possible for it to do so. If the model is Down at the start of the Activation, it will stand up if it can do so and must then attempt to move 3\" in a straight line away from its starting position.",
+        "modifiers": {
+          "operations": [],
+          "choices": []
+        }
+      },
+      "in_muscledamage": {
+        "name": "Muscle Damage",
+        "text": "",
+        "modifiers": {
+          "operations": [],
+          "choices": []
+        }
+      },
+      "in_minorwound": {
+        "name": "Minor Wound",
+        "text": "",
+        "modifiers": {
+          "operations": [],
+          "choices": []
+        }
+      },
+      "in_robbed": {
+        "name": "Robbed",
+        "text": "",
+        "modifiers": {
+          "operations": [],
+          "choices": []
+        }
+      },
+      "in_fullrecovery": {
+        "name": "Full Recovery",
+        "text": "",
+        "modifiers": {
+          "operations": [],
+          "choices": []
+        }
+      },
+      "in_hardened": {
+        "name": "Hardened",
+        "text": "",
+        "modifiers": {
+          "operations": [
+            {
+              "operation": "addKeyword",
+              "value": "NEGATE FEAR"
+            }
+          ],
+          "choices": []
+        }
+      },
+      "in_bitterlessons": {
+        "name": "Bitter Lessons",
+        "text": "",
+        "modifiers": {
+          "operations": [],
+          "choices": []
+        }
+      },
+      "in_facialscar": {
+        "comment": "//TODO: need to figure out how we're extracting the prominent scar faction",
+        "name": "Prominent Scar",
+        "text": "+1 DICE to Melee Attacks against {{PROMINENT_SCAR_FACTION}}",
+        "modifiers": {
+          "operations": [],
+          "choices": []
+        }
+      }
+    },
+    "skills": {
+      "es_reroll": {
+        "name": "Reroll",
+        "text": "",
+        "modifiers": {
+          "operations": [],
+          "choices": []
+        }
+      },
+      "es_extradice": {
+        "name": "Extra Dice",
+        "text": "",
+        "modifiers": {
+          "operations": [],
+          "choices": []
+        }
+      },
+      "es_duplicate": {
+        "name": "Duplicate",
+        "text": "",
+        "modifiers": {
+          "operations": [],
+          "choices": []
+        }
+      },
+      "es_setdice": {
+        "name": "Set Dice",
+        "text": "",
+        "modifiers": {
+          "operations": [],
+          "choices": []
+        }
+      },
+      "es_seek": {
+        "name": "Seek",
+        "text": "",
+        "modifiers": {
+          "operations": [],
+          "choices": []
+        }
+      },
+      "es_circleback": {
+        "name": "Circle Back",
+        "text": "",
+        "modifiers": {
+          "operations": [],
+          "choices": []
+        }
+      },
+      "es_lucky": {
+        "name": "Lucky",
+        "text": "",
+        "modifiers": {
+          "operations": [],
+          "choices": []
+        }
+      },
+      "sk_patronskill": {
+        "name": "",
+        "text": "",
+        "modifiers": {
+          "operations": [],
+          "choices": []
+        }
+      },
+      "sk_patronskill_end": {
+        "name": "",
+        "text": "",
+        "modifiers": {
+          "operations": [],
+          "choices": []
+        }
+      },
+      "sk_standfirm": {
+        "comment": "//TODO: maybe generate Stand Firm tokens like how we generate Tough tokens?",
+        "name": "Stand Firm",
+        "text": "First Down is treated as a Minor Hit instead.",
+        "modifiers": {
+          "operations": [],
+          "choices": []
+        }
+      },
+      "sk_parry": {
+        "name": "Parry",
+        "text": "-1 DICE to Melee Attacks against this model.",
+        "modifiers": {
+          "operations": [],
+          "choices": []
+        }
+      },
+      "sk_closequartercombat": {
+        "name": "Close Quarter Combat",
+        "text": "+1 DICE and +1 INJURY DICE to Melee Attacks if in contact with terrain.",
+        "modifiers": {
+          "operations": [],
+          "choices": []
+        }
+      },
+      "sk_relentlesscharge": {
+        "name": "Relentless Charge",
+        "text": "+1 DICE to Melee Attacks if successfully charged earlier this Activation.",
+        "modifiers": {
+          "operations": [],
+          "choices": []
+        }
+      },
+      "sk_meleeproficiency": {
+        "name": "Melee Proficiency",
+        "text": "",
+        "modifiers": {
+          "operations": [
+            {
+              "operation": "modifyMelee",
+              "value": 1
+            }
+          ],
+          "choices": []
+        }
+      },
+      "sk_strengthofsamson": {
+        "name": "Strength of Samson",
+        "text": "+1 INJURY DICE to Melee Attacks",
+        "modifiers": {
+          "operations": [
+            {
+              "operation": "addKeyword",
+              "value": "STRONG"
+            }
+          ],
+          "choices": []
+        }
+      },
+      "sk_hardasnails": {
+        "comment": "//TODO: maybe generate Hard as Nails tokens like how we generate Tough tokens?",
+        "name": "Hard as Nails",
+        "text": "First Down is treated as a No Effect instead.",
+        "modifiers": {
+          "operations": [],
+          "choices": []
+        }
+      },
+      "sk_champion": {
+        "name": "Champion",
+        "text": "Melee Weapons that do not have CLEAVE gain CLEAVE 2, and add -1 DICE to second Melee Attack made with weapon that gains CLEAVE",
+        "modifiers": {
+          "operations": [],
+          "choices": []
+        }
+      },
+      "sk_surgicalstrike": {
+        "name": "Surgical Strike",
+        "text": "Once per Activation, before an Injury Roll, gain IGNORE ARMOUR.",
+        "modifiers": {
+          "operations": [],
+          "choices": []
+        }
+      },
+      "sk_swordofallah": {
+        "name": "",
+        "text": "",
+        "modifiers": {
+          "operations": [],
+          "choices": []
+        }
+      },
+      "sk_exoticwares": {
+        "name": "",
+        "text": "",
+        "modifiers": {
+          "operations": [],
+          "choices": []
+        }
+      },
+      "sk_janissarytraining": {
+        "name": "",
+        "text": "",
+        "modifiers": {
+          "operations": [],
+          "choices": []
+        }
+      },
+      "sk_gures": {
+        "name": "",
+        "text": "",
+        "modifiers": {
+          "operations": [],
+          "choices": []
+        }
+      },
+      "sk_rightfullyguided": {
+        "name": "",
+        "text": "",
+        "modifiers": {
+          "operations": [],
+          "choices": []
+        }
+      },
+      "sk_sultanfavour": {
+        "name": "",
+        "text": "",
+        "modifiers": {
+          "operations": [],
+          "choices": []
+        }
+      },
+      "sk_sixthsense": {
+        "comment": "//TODO: maybe generate Sixth Sense tokens like how we generate Tough tokens?",
+        "name": "Sixth Sense",
+        "text": "First Down is treated as a Minor Hit instead, if model has no Blood Markers.",
+        "modifiers": {
+          "operations": [],
+          "choices": []
+        }
+      },
+      "sk_assassinate": {
+        "name": "Assassinate",
+        "text": "+1 DICE to attacks against models that have not yet Activated.",
+        "modifiers": {
+          "operations": [],
+          "choices": []
+        }
+      },
+      "sk_shadowwalker": {
+        "name": "Shadow Walker",
+        "text": "-2 DICE to Ranged Attacks against this model at Long Range, instead of -1 DICE.",
+        "modifiers": {
+          "operations": [],
+          "choices": []
+        }
+      },
+      "sk_athletic": {
+        "name": "Athletic",
+        "text": "+1 DICE to Risky Success for Climb, Jump, or Diving Charge Actions; and -1 INJURY DICE to Injury if failed.",
+        "modifiers": {
+          "operations": [],
+          "choices": []
+        }
+      },
+      "sk_sprinter": {
+        "name": "+1 DICE to Risky Success for Dash Actions.",
+        "text": "",
+        "modifiers": {
+          "operations": [],
+          "choices": []
+        }
+      },
+      "sk_disengage": {
+        "name": "Disengage",
+        "text": "Enemy Models cannot make Melee Attack on this model when it Retreats.",
+        "modifiers": {
+          "operations": [],
+          "choices": []
+        }
+      },
+      "sk_incoming": {
+        "name": "Incoming",
+        "text": "Charge Bonus gains an additional D6 (choose single highest).",
+        "modifiers": {
+          "operations": [],
+          "choices": []
+        }
+      },
+      "sk_nimble": {
+        "name": "Nimble",
+        "text": "Do not halve Movement when this model stands up.",
+        "modifiers": {
+          "operations": [],
+          "choices": []
+        }
+      },
+      "sk_dodge": {
+        "name": "Dodge",
+        "text": "-1 DICE to Ranged Attacks targeting this model.",
+        "modifiers": {
+          "operations": [],
+          "choices": []
+        }
+      },
+      "sk_hunter": {
+        "name": "Hunter",
+        "text": "Ranged Attacks gain IGNORE COVER",
+        "modifiers": {
+          "operations": [],
+          "choices": []
+        }
+      },
+      "sk_gunslinger": {
+        "name": "Gunslinger",
+        "text": "If equipped with 2 Weapons with PISTOL, can take Shoot Action with one, then immediately take Shoot Action with the other.",
+        "modifiers": {
+          "operations": [
+            {
+              "operation": "addKeywordToRangedWeapon",
+              "maxSelections": 99,
+              "target": {
+                "filters": [
+                  { "field": "keywords", "op": "contains", "value": "PISTOL" }
+                ]
+              },
+              "value": "ASSAULT"
+            },
+            {
+              "operation": "addKeywordToRangedWeapon",
+              "maxSelections": 99,
+              "target": {
+                "filters": [
+                  { "field": "keywords", "op": "contains", "value": "PISTOL" }
+                ]
+              },
+              "value": "IGNORE OFF-HAND WEAPON"
+            }
+          ],
+          "choices": []
+        }
+      },
+      "sk_farshot": {
+        "name": "Farshot",
+        "text": "",
+        "modifiers": {
+          "operations": [
+            {
+              "operation": "modifyRangeOfRangedWeapon",
+              "maxSelections": 99,
+              "target": {
+                "filters": [
+                  { "field": "keywords", "op": "contains", "value": "PISTOL" }
+                ]
+              },
+              "value": 6
+            },
+            {
+              "operation": "modifyRangeOfRangedWeapon",
+              "maxSelections": 99,
+              "target": {
+                "filters": [
+                  { "field": "name", "op": "contains", "value": "Rifle" },
+                  { "field": "keywords", "op": "notContains", "value": "PISTOL" }
+                ]
+              },
+              "value": 6
+            },
+            {
+              "operation": "modifyRangeOfRangedWeapon",
+              "maxSelections": 99,
+              "target": {
+                "filters": [
+                  { "field": "name", "op": "contains", "value": "Jezzail" },
+                  { "field": "name", "op": "notContains", "value": "Rifle" },
+                  { "field": "keywords", "op": "notContains", "value": "PISTOL" }
+                ]
+              },
+              "value": 6
+            },
+            {
+              "operation": "modifyRangeOfRangedWeapon",
+              "maxSelections": 99,
+              "target": {
+                "filters": [
+                  { "field": "name", "op": "contains", "value": "Arquebus" },
+                  { "field": "name", "op": "notContains", "value": "Jezzail" },
+                  { "field": "name", "op": "notContains", "value": "Rifle" },
+                  { "field": "keywords", "op": "notContains", "value": "PISTOL" }
+                ]
+              },
+              "value": 6
+            }
+          ],
+          "choices": []
+        }
+      },
+      "sk_sharpeyes": {
+        "name": "Sharp Eyes",
+        "text": "",
+        "modifiers": {
+          "operations": [
+            {
+              "operation": "addKeywordToRangedWeapon",
+              "maxSelections": 99,
+              "value": "IGNORE LONG RANGE"
+            }
+          ],
+          "choices": []
+        }
+      },
+      "sk_rangedproficiency": {
+        "name": "Ranged Proficiency",
+        "text": "",
+        "modifiers": {
+          "operations": [
+            {
+              "operation": "modifyRanged",
+              "value": 1
+            }
+          ],
+          "choices": []
+        }
+      },
+      "sk_snipersnest": {
+        "name": "Sniper's Nest",
+        "text": "+2 DICE from Elevated Position, instead of +1 DICE.",
+        "modifiers": {
+          "operations": [],
+          "choices": []
+        }
+      },
+      "sk_pointblank": {
+        "name": "Point Blank",
+        "text": "Can use Ranged Weapon and Ranged Attack Characteristic for Melee Attacks.",
+        "modifiers": {
+          "operations": [],
+          "choices": []
+        }
+      },
+      "sk_hipshot": {
+        "name": "Hip Shot",
+        "text": "",
+        "modifiers": {
+          "operations": [
+            {
+              "operation": "addKeywordToRangedWeapon",
+              "maxSelections": 99,
+              "value": "ASSAULT"
+            }
+          ],
+          "choices": []
+        }
+      },
+      "sk_headshot": {
+        "name": "Head shot",
+        "text": "Ranged Attacks have IGNORE ARMOUR on Critical Success.",
+        "modifiers": {
+          "operations": [],
+          "choices": []
+        }
+      },
+      "sk_warluck": {
+        "name": "War Luck",
+        "text": "",
+        "modifiers": {
+          "operations": [],
+          "choices": []
+        }
+      },
+      "sk_tisbutascratch": {
+        "name": "'Tis but a Scratch",
+        "text": "",
+        "modifiers": {
+          "operations": [],
+          "choices": []
+        }
+      },
+      "sk_badcompany": {
+        "name": "Bad Company",
+        "text": "",
+        "modifiers": {
+          "operations": [],
+          "choices": []
+        }
+      },
+      "sk_scavenger": {
+        "name": "Scavenger",
+        "text": "",
+        "modifiers": {
+          "operations": [],
+          "choices": []
+        }
+      },
+      "sk_skillandexpertise": {
+        "comment": "//TODO: need to figure out how we're extracting the skills & expertise action",
+        "name": "Skill & Expertise",
+        "text": "+1 DICE to {{SKILL_AND_EXPERTISE_ACTION}}",
+        "modifiers": {
+          "operations": [],
+          "choices": []
+        }
+      },
+      "sk_showoff": {
+        "name": "Show Off",
+        "text": "",
+        "modifiers": {
+          "operations": [],
+          "choices": []
+        }
+      },
+      "sk_friendsinhighplaces": {
+        "name": "Friends in High Places",
+        "text": "",
+        "modifiers": {
+          "operations": [],
+          "choices": []
+        }
+      },
+      "sk_gloryhound": {
+        "name": "Glory Hound",
+        "text": "",
+        "modifiers": {
+          "operations": [],
+          "choices": []
+        }
+      },
+      "sk_warstories": {
+        "name": "War Stories",
+        "text": "",
+        "modifiers": {
+          "operations": [],
+          "choices": []
+        }
+      },
+      "sk_firearmprocurement": {
+        "name": "",
+        "text": "",
+        "modifiers": {
+          "operations": [],
+          "choices": []
+        }
+      },
+      "sk_mendelistchemicals": {
+        "name": "",
+        "text": "",
+        "modifiers": {
+          "operations": [],
+          "choices": []
+        }
+      },
+      "sk_armourandequipmentprocurement": {
+        "name": "",
+        "text": "",
+        "modifiers": {
+          "operations": [],
+          "choices": []
+        }
+      },
+      "sk_meleeweaponprocurement": {
+        "name": "",
+        "text": "",
+        "modifiers": {
+          "operations": [],
+          "choices": []
+        }
+      },
+      "sk_sniperschool": {
+        "name": "",
+        "text": "",
+        "modifiers": {
+          "operations": [],
+          "choices": []
+        }
+      },
+      "sk_specialassaulttraining": {
+        "name": "",
+        "text": "",
+        "modifiers": {
+          "operations": [],
+          "choices": []
+        }
+      },
+      "sk_blessingsofawarriorsaint": {
+        "name": "",
+        "text": "",
+        "modifiers": {
+          "operations": [],
+          "choices": []
+        }
+      },
+      "sk_endurethesuffering": {
+        "name": "",
+        "text": "",
+        "modifiers": {
+          "operations": [],
+          "choices": []
+        }
+      },
+      "sk_dragonslayer": {
+        "name": "",
+        "text": "",
+        "modifiers": {
+          "operations": [],
+          "choices": []
+        }
+      },
+      "sk_davidandgoliath": {
+        "name": "",
+        "text": "",
+        "modifiers": {
+          "operations": [],
+          "choices": []
+        }
+      },
+      "sk_onyourknees": {
+        "name": "",
+        "text": "",
+        "modifiers": {
+          "operations": [],
+          "choices": []
+        }
+      },
+      "sk_warriorsprayer": {
+        "name": "",
+        "text": "",
+        "modifiers": {
+          "operations": [],
+          "choices": []
+        }
+      },
+      "sk_knowledgeofscience": {
+        "name": "",
+        "text": "",
+        "modifiers": {
+          "operations": [],
+          "choices": []
+        }
+      },
+      "sk_favouredbygod": {
+        "name": "",
+        "text": "",
+        "modifiers": {
+          "operations": [],
+          "choices": []
+        }
+      },
+      "sk_penniesfromheaven": {
+        "name": "",
+        "text": "",
+        "modifiers": {
+          "operations": [],
+          "choices": []
+        }
+      },
+      "sk_organisationalskills": {
+        "name": "",
+        "text": "",
+        "modifiers": {
+          "operations": [],
+          "choices": []
+        }
+      },
+      "sk_healingarts": {
+        "name": "",
+        "text": "",
+        "modifiers": {
+          "operations": [],
+          "choices": []
+        }
+      },
+      "sk_walkwithgod": {
+        "name": "",
+        "text": "",
+        "modifiers": {
+          "operations": [],
+          "choices": []
+        }
+      },
+      "sk_blessedmurder": {
+        "name": "Blessed Murder",
+        "text": "Gain 1 Blessing Marker on Melee kill.",
+        "modifiers": {
+          "operations": [],
+          "choices": []
+        }
+      },
+      "sk_sadistic": {
+        "name": "Sadistic",
+        "text": "+1 DICE and +1 INJURY DICE to Melee Attacks if target is Down.",
+        "modifiers": {
+          "operations": [],
+          "choices": []
+        }
+      },
+      "sk_hellfire": {
+        "name": "Hellfire",
+        "text": "Risky Success: Draw line to friendly model within 18\" and within line of sight, and make Injury Roll with FIRE for each model touched by the line (including the model drawn to, but not this model).",
+        "modifiers": {
+          "operations": [],
+          "choices": []
+        }
+      },
+      "sk_30piecesofsilver": {
+        "name": "30 Pieces of Silver",
+        "text": "",
+        "modifiers": {
+          "operations": [],
+          "choices": []
+        }
+      },
+      "sk_bloodsacrifice": {
+        "name": "Blood Sacrifice",
+        "text": "Success: Remove 1 Blood Marker from model and place it next to another model within 6\", within line of sight, and not ARTIFICIAL, BLACK GRAIL, or DEMONIC.",
+        "modifiers": {
+          "operations": [],
+          "choices": []
+        }
+      },
+      "sk_lashofacheron": {
+        "name": "Lash of Acheron",
+        "text": "Risky Success: make Injury Roll with IGNORE ARMOUR against enemy model within 6\" and within line of sight.",
+        "modifiers": {
+          "operations": [],
+          "choices": []
+        }
+      },
+      "sk_cockroachvitality": {
+        "name": "",
+        "text": "",
+        "modifiers": {
+          "operations": [],
+          "choices": []
+        }
+      },
+      "sk_eyesofthefly": {
+        "name": "",
+        "text": "",
+        "modifiers": {
+          "operations": [],
+          "choices": []
+        }
+      },
+      "sk_wingsofthefly": {
+        "name": "",
+        "text": "",
+        "modifiers": {
+          "operations": [],
+          "choices": []
+        }
+      },
+      "sk_grailplague": {
+        "name": "",
+        "text": "",
+        "modifiers": {
+          "operations": [],
+          "choices": []
+        }
+      },
+      "sk_deceitofbeelzebub": {
+        "name": "",
+        "text": "",
+        "modifiers": {
+          "operations": [],
+          "choices": []
+        }
+      },
+      "sk_knightofthefly": {
+        "name": "",
+        "text": "",
+        "modifiers": {
+          "operations": [],
+          "choices": []
+        }
+      },
+      "sk_moneycanbuyanything": {
+        "name": "",
+        "text": "",
+        "modifiers": {
+          "operations": [],
+          "choices": []
+        }
+      },
+      "sk_unsecuredloan": {
+        "name": "",
+        "text": "",
+        "modifiers": {
+          "operations": [],
+          "choices": []
+        }
+      },
+      "sk_crookeddice": {
+        "name": "",
+        "text": "",
+        "modifiers": {
+          "operations": [],
+          "choices": []
+        }
+      },
+      "sk_plutocracy": {
+        "name": "",
+        "text": "",
+        "modifiers": {
+          "operations": [],
+          "choices": []
+        }
+      },
+      "sk_eternaldebt": {
+        "name": "",
+        "text": "",
+        "modifiers": {
+          "operations": [],
+          "choices": []
+        }
+      },
+      "sk_aureateskin": {
+        "name": "",
+        "text": "",
+        "modifiers": {
+          "operations": [],
+          "choices": []
+        }
+      },
+      "sk_infectthemind": {
+        "name": "",
+        "text": "",
+        "modifiers": {
+          "operations": [],
+          "choices": []
+        }
+      },
+      "sk_eyeofbeelzebub": {
+        "name": "",
+        "text": "",
+        "modifiers": {
+          "operations": [],
+          "choices": []
+        }
+      },
+      "sk_silveredtongue": {
+        "name": "",
+        "text": "",
+        "modifiers": {
+          "operations": [],
+          "choices": []
+        }
+      },
+      "sk_swinehybrid": {
+        "name": "",
+        "text": "",
+        "modifiers": {
+          "operations": [],
+          "choices": []
+        }
+      },
+      "sk_beelzebubswisdom": {
+        "name": "",
+        "text": "",
+        "modifiers": {
+          "operations": [],
+          "choices": []
+        }
+      },
+      "sk_feastondisease": {
+        "name": "",
+        "text": "",
+        "modifiers": {
+          "operations": [],
+          "choices": []
+        }
+      },
+      "sk_fruitfromthetreeofgoodandevil": {
+        "name": "",
+        "text": "",
+        "modifiers": {
+          "operations": [],
+          "choices": []
+        }
+      },
+      "sk_admonishmentofarius": {
+        "name": "",
+        "text": "",
+        "modifiers": {
+          "operations": [],
+          "choices": []
+        }
+      },
+      "sk_calmthestorm": {
+        "name": "",
+        "text": "",
+        "modifiers": {
+          "operations": [],
+          "choices": []
+        }
+      },
+      "sk_charitabledonation": {
+        "name": "",
+        "text": "",
+        "modifiers": {
+          "operations": [],
+          "choices": []
+        }
+      },
+      "sk_feastday": {
+        "name": "",
+        "text": "",
+        "modifiers": {
+          "operations": [],
+          "choices": []
+        }
+      },
+      "sk_generousoffer": {
+        "name": "",
+        "text": "",
+        "modifiers": {
+          "operations": [],
+          "choices": []
+        }
+      },
+      "sk_saintlyprotection": {
+        "name": "",
+        "text": "",
+        "modifiers": {
+          "operations": [],
+          "choices": []
+        }
+      }
+    }
+  },
+  "factions": {
+    "fc_ironsultanate": {
+      "name": "Iron Sultanate",
+      "models": {},
+      "battlekit": {
+        "armour": {
+          "eq_alchemistarmour": {},
+          "eq_standardarmour": {},
+          "eq_reinforcedarmour": {},
+          "eq_trenchshield": {}
+        },
+        "equipment": {},
+        "weapons_melee": {},
+        "weapons_ranged": {}
+      }
+    },
+    "fc_newantioch": {
+      "name": "The Principality of New Antioch",
+      "models": {},
+      "battlekit": {
+        "armour": {
+          "eq_standardarmour": {},
+          "eq_reinforcedarmour": {},
+          "eq_trenchshield": {}
+        },
+        "equipment": {},
+        "weapons_melee": {},
+        "weapons_ranged": {}
+      }
+    },
+    "fc_trenchpilgrim": {
+      "name": "Trench Pilgrims",
+      "models": {},
+      "battlekit": {
+        "armour": {
+          "eq_standardarmour": {},
+          "eq_reinforcedarmour": {},
+          "eq_trenchshield": {}
+        },
+        "equipment": {},
+        "weapons_melee": {},
+        "weapons_ranged": {}
+      }
+    },
+    "fc_hereticlegion": {
+      "name": "Heretic Legion",
+      "models": {},
+      "battlekit": {
+        "armour": {
+          "eq_standardarmour": {},
+          "eq_reinforcedarmour": {},
+          "eq_trenchshield": {}
+        },
+        "equipment": {},
+        "weapons_melee": {},
+        "weapons_ranged": {}
+      }
+    },
+    "fc_cultoftheblackgrail": {
+      "name": "Cult of the Black Grail",
+      "models": {},
+      "battlekit": {
+        "armour": {
+          "eq_standardarmour": {},
+          "eq_reinforcedarmour": {},
+          "eq_trenchshield": {}
+        },
+        "equipment": {},
+        "weapons_melee": {},
+        "weapons_ranged": {}
+      }
+    },
+    "fc_courtofthesevenheadedserpent": {
+      "name": "Court of the Seven-Headed Serpent",
+      "models": {
+        "md_praetor": {
+          "name": "Praetor",
+          "movement": 8,
+          "melee": 3,
+          "ranged": 3,
+          "armour": 0,
+          "keywords": [
+            "NEGATE FIRE",
+            "FEAR",
+            "STRONG",
+            "NEGATE HEAVY",
+            "TOUGH",
+            "FLYING",
+            "ELITE",
+            "DEMONIC",
+            "THE COURT"
+          ]
+        },
+        "md_sorcerer": {
+          "name": "Sorcerer",
+          "movement": 6,
+          "melee": 1,
+          "ranged": 1,
+          "armour": 0,
+          "keywords": [
+            "NEGATE FIRE",
+            "FEAR",
+            "FLYING",
+            "ELITE",
+            "DEMONIC",
+            "THE COURT"
+          ]
+        },
+        "md_hunterofthelefthandpath": {
+          "name": "Hunter of the Left-Hand Path",
+          "movement": 6,
+          "melee": 1,
+          "ranged": 2,
+          "armour": 0,
+          "keywords": [
+            "NEGATE FIRE",
+            "INFILTRATOR",
+            "ELITE",
+            "DEMONIC",
+            "THE COURT"
+          ]
+        },
+        "md_hellknight": {
+          "name": "Hell Knight",
+          "movement": 6,
+          "melee": 2,
+          "ranged": 0,
+          "armour": 0,
+          "keywords": [
+            "NEGATE FIRE",
+            "STRONG",
+            "NEGATE HEAVY",
+            "ELITE",
+            "DEMONIC",
+            "THE COURT"
+          ]
+        },
+        "md_desecratedsaint": {
+          "name": "Desecrated Saint",
+          "movement": 6,
+          "melee": 3,
+          "ranged": 0,
+          "armour": -3,
+          "keywords": [
+            "NEGATE FIRE",
+            "FEAR",
+            "STRONG",
+            "NEGATE HEAVY",
+            "TOUGH",
+            "DEMONIC",
+            "THE COURT",
+            "IGNORE OFF-HAND WEAPON"
+          ]
+        },
+        "md_yokefiend": {
+          "name": "Yoke Fiend",
+          "movement": 6,
+          "melee": 1,
+          "ranged": 0,
+          "armour": 0,
+          "keywords": [
+            "NEGATE FIRE",
+            "DEMONIC",
+            "THE COURT"
+          ]
+        },
+        "md_pitlocust": {
+          "name": "Pit Locust",
+          "movement": 8,
+          "melee": 2,
+          "ranged": 0,
+          "armour": 0,
+          "keywords": [
+            "NEGATE FIRE",
+            "FEAR",
+            "FLYING",
+            "ELITE",
+            "DEMONIC",
+            "THE COURT"
+          ]
+        },
+        "md_wretched_court": {
+          "name": "Wretched",
+          "movement": 6,
+          "melee": -1,
+          "ranged": -1,
+          "armour": 0,
+          "keywords": [
+            "THE COURT"
+          ]
+        },
+        "md_goeticwarlock": {
+          "name": "Goetic Warlock",
+          "movement": 6,
+          "melee": 1,
+          "ranged": 2,
+          "armour": 0,
+          "keywords": [
+            "NEGATE FIRE",
+            "FEAR",
+            "DEMONIC"
+          ]
+        },
+        "md_scriptureguardian": {
+          "name": "Scripture Guardian",
+          "movement": 6,
+          "melee": 1,
+          "ranged": 0,
+          "armour": 0,
+          "keywords": [
+            "NEGATE GAS",
+            "NEGATE FEAR",
+            "GOLEM"
+          ]
+        },
+        "md_sineater": {
+          "name": "Sin Eater",
+          "movement": 6,
+          "melee": 2,
+          "ranged": 0,
+          "armour": 0,
+          "keywords": [
+            "NEGATE FIRE",
+            "FEAR",
+            "STRONG",
+            "NEGATE HEAVY",
+            "TOUGH",
+            "DEMONIC"
+          ]
+        },
+        "md_trenchdog": {
+          "name": "Trench Dog",
+          "movement": 8,
+          "melee": 0,
+          "ranged": 0,
+          "armour": 0,
+          "keywords": [
+            "THE COURT"
+          ]
+        },
+        "md_trenchdog_hellhound": {
+          "name": "Hellhound",
+          "movement": 8,
+          "melee": 1,
+          "ranged": 0,
+          "armour": 0,
+          "keywords": [
+            "THE COURT"
+          ]
+        }
+      },
+      "battlekit": {
+        "armour": {
+          "eq_infernalironarmour": {
+            "name": "Infernal Iron Armour",
+            "keywords": [
+              "-2 INJURY MODIFIER",
+              "IMPERVIOUS"
+            ],
+            "abilities": [],
+            "modifiers": {
+              "operations": [
+                {
+                  "operation": "modifyArmour",
+                  "value": -2
+                }
+              ],
+              "choices": []
+            }
+          },
+          "eq_standardarmour": {
+            "name": "Standard Armour",
+            "keywords": [ "-1 INJURY MODIFIER" ],
+            "abilities": [],
+            "modifiers": {
+              "operations": [
+                {
+                  "operation": "modifyArmour",
+                  "value": -1
+                }
+              ],
+              "choices": []
+            }
+          },
+          "eq_reinforcedarmour": {
+            "name": "Reinforced Armour",
+            "keywords": [ "-2 INJURY MODIFIER" ],
+            "abilities": [],
+            "modifiers": {
+              "operations": [
+                {
+                  "operation": "modifyArmour",
+                  "value": -2
+                }
+              ],
+              "choices": []
+            }
+          },
+          "eq_trenchshield": {
+            "name": "Trench Shield",
+            "keywords": [ "-1 INJURY MODIFIER" ],
+            "abilities": [],
+            "modifiers": {
+              "operations": [
+                {
+                  "operation": "modifyArmour",
+                  "value": -1
+                }
+              ],
+              "choices": []
+            }
+          }
+        },
+        "equipment": {
+          "eq_combathelmet": {
+            "name": "Combat Helmet",
+            "keywords": [],
+            "abilities": [],
+            "modifiers": {
+              "operations": [
+                {
+                  "operation": "addKeyword",
+                  "value": "NEGATE SHRAPNEL"
+                }
+              ],
+              "choices": []
+            }
+          },
+          "eq_crownofhellfire": {
+            "name": "Crown of Hellfire",
+            "keywords": [],
+            "abilities": [],
+            "modifiers": {
+              "operations": [
+                {
+                  "operation": "addAbility",
+                  "value": "ab_searingflames"
+                }
+              ],
+              "choices": []
+            }
+          },
+          "eq_gasmask": {
+            "name": "Gas Mask",
+            "keywords": [],
+            "abilities": [],
+            "modifiers": {
+              "operations": [
+                {
+                  "operation": "addKeyword",
+                  "value": "NEGATE GAS"
+                }
+              ],
+              "choices": []
+            }
+          },
+          "eq_incendiaryammunition": {
+            "name": "Incendiary Ammunition",
+            "keywords": [
+              "CONSUMABLE",
+              "AMMUNITION FIRE"
+            ],
+            "abilities": [],
+            "modifiers": {
+              "operations": [],
+              "choices": [
+                {
+                  "id": "eq_incendiaryammunition:pickWeapon",
+                  "when": "deployment",
+                  "prompt": "Select Ranged Weapon for Incendiary Ammunition",
+                  "maxSelections": 1,
+                  "target": {
+                    "scope": "weapons_ranged",
+                    "filters": [
+                      { "field": "keywords", "op": "notContains", "value": "BLAST" },
+                      { "field": "keywords", "op": "notContains", "value": "FIRE" },
+                      { "field": "keywords", "op": "notContains", "value": "GAS" },
+                      { "field": "keywords", "op": "notContains", "value": "SHRAPNEL" }
+                    ]
+                  },
+                  "options": [
+                    {
+                      "label": "Apply",
+                      "operations": [
+                        {
+                          "operation": "addKeyword",
+                          "value": "FIRE"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          },
+          "eq_musicalinstrument": {
+            "name": "Musical Instrument",
+            "keywords": [],
+            "abilities": [],
+            "modifiers": {
+              "operations": [
+                {
+                  "operation": "addAbility",
+                  "value": "ab_fanfare"
+                }
+              ],
+              "choices": []
+            }
+          },
+          "eq_restrainingmuzzle": {
+            "name": "Restraining Muzzle",
+            "keywords": [],
+            "abilities": [],
+            "modifiers": {
+              "operations": [
+                {
+                  "operation": "addAbility",
+                  "value": "ab_restrained"
+                }
+              ],
+              "choices": []
+            }
+          },
+          "eq_shovel": {
+            "name": "Shovel",
+            "keywords": [],
+            "abilities": [],
+            "modifiers": {
+              "operations": [
+                {
+                  "operation": "addAbility",
+                  "value": "ab_shovel"
+                }
+              ],
+              "choices": []
+            }
+          },
+          "eq_troopflag": {
+            "name": "Troop Flag",
+            "keywords": [],
+            "abilities": [],
+            "modifiers": {
+              "operations": [
+                {
+                  "operation": "addKeyword",
+                  "value": "LEADER"
+                }
+              ],
+              "choices": []
+            }
+          },
+          "eq_unholyrelic": {
+            "name": "Unholy Relic",
+            "keywords": [],
+            "abilities": [],
+            "modifiers": {
+              "operations": [
+                {
+                  "operation": "addKeyword",
+                  "value": "FEAR"
+                }
+              ],
+              "choices": []
+            }
+          },
+          "eq_unholytrinket": {
+            "name": "Unholy Trinket",
+            "keywords": [ "CONSUMABLE" ],
+            "abilities": [],
+            "modifiers": {
+              "operations": [
+                {
+                  "operation": "addAbility",
+                  "value": "ab_talisman"
+                }
+              ],
+              "choices": []
+            }
+          },
+          "eq_battlefieldtitle": {
+            "name": "Battlefield Title",
+            "keywords": [],
+            "abilities": [],
+            "modifiers": {
+              "operations": [],
+              "choices": []
+            }
+          },
+          "eq_bestialskincloak": {
+            "name": "Bestial Skin Cloak",
+            "keywords": [],
+            "abilities": [],
+            "modifiers": {
+              "operations": [
+                {
+                  "operation": "addAbility",
+                  "value": "ab_spiritofthebeast"
+                }
+              ],
+              "choices": []
+            }
+          },
+          "eq_cruelhelmet": {
+            "name": "Cruel Helmet",
+            "keywords": [ "HEAVY" ],
+            "abilities": [],
+            "modifiers": {
+              "operations": [
+                {
+                  "operation": "addAbility",
+                  "value": "ab_gruesomeweight"
+                }
+              ],
+              "choices": []
+            }
+          },
+          "eq_rocketpropelledgrenade": {
+            "name": "Rocket-Propelled Grenade",
+            "keywords": [],
+            "abilities": [],
+            "modifiers": {
+              "operations": [
+                {
+                  "operation": "addRangedWeapon",
+                  "value": "eq_rocketpropelledgrenade"
+                }
+              ],
+              "choices": []
+            }
+          },
+          "eq_knighthood": {
+            "name": "Knighthood",
+            "keywords": [],
+            "abilities": [],
+            "modifiers": {
+              "operations": [],
+              "choices": []
+            }
+          },
+          "eq_koraktorthegreattomeofhell": {
+            "name": "Koraktor, the Great Tome of Hell",
+            "keywords": [],
+            "abilities": [],
+            "modifiers": {
+              "operations": [],
+              "choices": []
+            }
+          },
+          "eq_lordshipofthisworld": {
+            "name": "Lordship of this World",
+            "keywords": [],
+            "abilities": [],
+            "modifiers": {
+              "operations": [
+                {
+                  "operation": "addAbility",
+                  "value": "ab_markofthepit"
+                }
+              ],
+              "choices": []
+            }
+          },
+          "eq_pieceofsilver": {
+            "name": "Piece of Silver",
+            "keywords": [],
+            "abilities": [],
+            "modifiers": {
+              "operations": [
+                {
+                  "operation": "addAbility",
+                  "value": "ab_luckofthedevil"
+                }
+              ],
+              "choices": []
+            }
+          },
+          "eq_trenchdog": {
+            "name": "Trench Dog Ownership",
+            "keywords": [ "DEPLOYABLE" ],
+            "abilities": [],
+            "modifiers": {
+              "operations": [],
+              "choices": []
+            }
+          },
+          "eq_trenchdog_hellhound": {
+            "name": "Trench Down (Helhound) Ownership",
+            "keywords": [ "DEPLOYABLE" ],
+            "abilities": [],
+            "modifiers": {
+              "operations": [],
+              "choices": []
+            }
+          }
+        },
+        "weapons_melee": {
+          "eq_shovel": {
+            "name": "",
+            "range": "Melee",
+            "keywords": [],
+            "abilities": [],
+            "modifiers": {
+              "operations": [],
+              "choices": []
+            }
+          },
+          "eq_arquebus": {
+            "name": "",
+            "range": "Melee",
+            "keywords": [],
+            "abilities": [],
+            "modifiers": {
+              "operations": [],
+              "choices": []
+            }
+          },
+          "eq_doublehandedbluntweapon": {
+            "name": "Great Hammer/Maul",
+            "range": "Melee",
+            "keywords": [
+              "+1 INJURY MODIFIER",
+              "HEAVY"
+            ],
+            "abilities": [],
+            "modifiers": {
+              "operations": [],
+              "choices": []
+            }
+          },
+          "eq_greatswordaxe": {
+            "name": "Greatsword/Greataxe",
+            "range": "Melee",
+            "keywords": [
+              "+1 INJURY DICE",
+              "CRITICAL",
+              "HEAVY"
+            ],
+            "abilities": [],
+            "modifiers": {
+              "operations": [],
+              "choices": []
+            }
+          },
+          "eq_headtaker": {
+            "name": "Head Taker",
+            "range": "Melee",
+            "keywords": [],
+            "abilities": [ "ab_ambushweapon" ],
+            "modifiers": {
+              "operations": [],
+              "choices": []
+            }
+          },
+          "eq_hellblade": {
+            "name": "Hellblade",
+            "range": "Melee",
+            "keywords": [
+              "+1 INJURY DICE",
+              "FIRE"
+            ],
+            "abilities": [],
+            "modifiers": {
+              "operations": [],
+              "choices": []
+            }
+          },
+          "eq_knifedagger": {
+            "name": "Trench Knife",
+            "range": "Melee",
+            "keywords": [ "-1 DICE" ],
+            "abilities": [],
+            "modifiers": {
+              "operations": [],
+              "choices": []
+            }
+          },
+          "eq_malebranchesword": {
+            "name": "Malebranche Sword",
+            "range": "Melee",
+            "keywords": [
+              "DEADLY",
+              "HEAVY"
+            ],
+            "abilities": [],
+            "modifiers": {
+              "operations": [],
+              "choices": []
+            }
+          },
+          "eq_trenchpolearm": {
+            "name": "Trench Polearm",
+            "range": "Melee",
+            "keywords": [
+              "BLOCK"
+            ],
+            "abilities": [],
+            "modifiers": {
+              "operations": [],
+              "choices": []
+            }
+          },
+          "eq_swordaxe": {
+            "name": "Sword/Axe",
+            "range": "Melee",
+            "keywords": [ "CRITICAL" ],
+            "abilities": [],
+            "modifiers": {
+              "operations": [],
+              "choices": []
+            }
+          },
+          "eq_tortureinstrument": {
+            "name": "Torture Instrument",
+            "range": "Melee",
+            "keywords": [],
+            "abilities": [ "ab_agonisinginjuries" ],
+            "modifiers": {
+              "operations": [],
+              "choices": []
+            }
+          },
+          "eq_trenchclub": {
+            "name": "Trench Club",
+            "range": "Melee",
+            "keywords": [],
+            "abilities": [],
+            "modifiers": {
+              "operations": [],
+              "choices": []
+            }
+          },
+          "eq_sineatertenderizermaul": {
+            "name": "Tenderizer Maul",
+            "range": "Melee",
+            "keywords": [
+              "+1 INJURY MODIFIER",
+              "HEAVY"
+            ],
+            "abilities": [ "ab_swingingblow" ],
+            "modifiers": {
+              "operations": [],
+              "choices": []
+            }
+          }
+        },
+        "weapons_ranged": {
+          "eq_rocketpropelledgrenade": {
+            "name": "Rocket-Propelled Grenade",
+            "range": "36\"",
+            "keywords": [
+              "+1 INJURY DICE",
+              "IGNORE ARMOUR",
+              "CONSUMABLE",
+              "RELOAD"
+            ],
+            "abilities": [ "ab_disposablerocket" ],
+            "modifiers": {
+              "operations": [],
+              "choices": []
+            }
+          },
+          "eq_arquebus": {
+            "name": "Arquebus",
+            "range": "18\"",
+            "keywords": [],
+            "abilities": [],
+            "modifiers": {
+              "operations": [
+                {
+                  "operation": "addAbility",
+                  "value": "ab_batter"
+                }
+              ],
+              "choices": []
+            }
+          },
+          "eq_blunderbuss": {
+            "name": "Blunderbuss",
+            "range": "10\"",
+            "keywords": [ "SHRAPNEL" ],
+            "abilities": [],
+            "modifiers": {
+              "operations": [],
+              "choices": []
+            }
+          },
+          "eq_flamethrower": {
+            "name": "Flamethrower",
+            "range": "8\"",
+            "keywords": [
+              "-1 INJURY DICE",
+              "FLAMETHROWER",
+              "IGNORE ARMOUR",
+              "FIRE"
+            ],
+            "abilities": [],
+            "modifiers": {
+              "operations": [],
+              "choices": []
+            }
+          },
+          "eq_heavyflamethrower": {
+            "name": "Heavy Flamethrower",
+            "range": "10\"",
+            "keywords": [
+              "-1 INJURY DICE",
+              "AUTOMATIC 2",
+              "FLAMETHROWER",
+              "IGNORE ARMOUR",
+              "FIRE",
+              "HEAVY"
+            ],
+            "abilities": [],
+            "modifiers": {
+              "operations": [],
+              "choices": []
+            }
+          },
+          "eq_ophidianrifle": {
+            "name": "Ophidian Rifle",
+            "range": "30\"",
+            "keywords": [ "HEAVY" ],
+            "abilities": [ "ab_unnaturalinversion" ],
+            "modifiers": {
+              "operations": [],
+              "choices": []
+            }
+          },
+          "eq_pistolrevolver": {
+            "name": "Pistol/Revolver",
+            "range": "12\"/Melee",
+            "keywords": [ "PISTOL" ],
+            "abilities": [],
+            "modifiers": {
+              "operations": [],
+              "choices": []
+            }
+          },
+          "eq_serpentassaultgun": {
+            "name": "Serpent Assault Gun",
+            "range": "36\"",
+            "keywords": [
+              "ASSAULT",
+              "AUTOMATIC 2",
+              "GAS",
+              "HEAVY"
+            ],
+            "abilities": [],
+            "modifiers": {
+              "operations": [],
+              "choices": []
+            }
+          },
+          "eq_shotgun": {
+            "name": "Shotgun",
+            "range": "12\"",
+            "keywords": [
+              "+1 DICE",
+              "SHOTGUN"
+            ],
+            "abilities": [],
+            "modifiers": {
+              "operations": [],
+              "choices": []
+            }
+          },
+          "eq_bowoflethe": {
+            "name": "Bow of Lethe",
+            "range": "24\"",
+            "keywords": [ "ASSAULT" ],
+            "abilities": [ "ab_specialammunition" ],
+            "modifiers": {
+              "operations": [],
+              "choices": []
+            }
+          },
+          "eq_gasgrenades": {
+            "name": "Gas Grenades",
+            "range": "8\"",
+            "keywords": [
+              "-1 INJURY DICE",
+              "IGNORE COVER",
+              "IGNORE LONG RANGE",
+              "ASSAULT",
+              "BLAST 3\"",
+              "IGNORE ARMOUR",
+              "GAS",
+              "GRENADE"
+            ],
+            "abilities": [],
+            "modifiers": {
+              "operations": [],
+              "choices": []
+            }
+          },
+          "eq_incendiarygrenades": {
+            "name": "Incendiary Grenades",
+            "range": "8\"",
+            "keywords": [
+              "IGNORE COVER",
+              "IGNORE LONG RANGE",
+              "ASSAULT",
+              "FIRE",
+              "GRENADE"
+            ],
+            "abilities": [ "ab_liquidfire" ],
+            "modifiers": {
+              "operations": [],
+              "choices": []
+            }
+          }
+        }
+      }
+    },
+    "fc_ironsultanate_fv_fidaiofalamut": {
+      "name": "Fidai of Alamut - The Cabal of Assassins",
+      "models": {},
+      "battlekit": {
+        "armour": {
+          "eq_standardarmour": {},
+          "eq_reinforcedarmour": {},
+          "eq_trenchshield": {}
+        },
+        "equipment": {},
+        "weapons_melee": {},
+        "weapons_ranged": {}
+      }
+    },
+    "fc_ironsultanate_fv_houseofwisdom": {
+      "name": "House of Wisdom",
+      "models": {},
+      "battlekit": {
+        "armour": {
+          "eq_standardarmour": {},
+          "eq_reinforcedarmour": {},
+          "eq_trenchshield": {}
+        },
+        "equipment": {},
+        "weapons_melee": {},
+        "weapons_ranged": {}
+      }
+    },
+    "fc_ironsultanate_fv_defendersoftheironwall": {
+      "name": "Defenders of the Iron Wall",
+      "models": {},
+      "battlekit": {
+        "armour": {
+          "eq_standardarmour": {},
+          "eq_reinforcedarmour": {},
+          "eq_trenchshield": {}
+        },
+        "equipment": {},
+        "weapons_melee": {},
+        "weapons_ranged": {}
+      }
+    },
+    "fc_hereticlegion_fv_hereticnavalraidingparty": {
+      "name": "Heretic Naval Raiders",
+      "models": {},
+      "battlekit": {
+        "armour": {
+          "eq_standardarmour": {},
+          "eq_reinforcedarmour": {},
+          "eq_trenchshield": {}
+        },
+        "equipment": {},
+        "weapons_melee": {},
+        "weapons_ranged": {}
+      }
+    },
+    "fc_hereticlegion_fv_trenchghosts": {
+      "name": "Trench Ghosts",
+      "models": {},
+      "battlekit": {
+        "armour": {
+          "eq_standardarmour": {},
+          "eq_reinforcedarmour": {},
+          "eq_trenchshield": {}
+        },
+        "equipment": {},
+        "weapons_melee": {},
+        "weapons_ranged": {}
+      }
+    },
+    "fc_hereticlegion_fv_knightsofavarice": {
+      "name": "Knights of Avarice",
+      "models": {},
+      "battlekit": {
+        "armour": {
+          "eq_standardarmour": {},
+          "eq_reinforcedarmour": {},
+          "eq_trenchshield": {}
+        },
+        "equipment": {},
+        "weapons_melee": {},
+        "weapons_ranged": {}
+      }
+    },
+    "fc_trenchpilgrim_fv_processionofthesacredaffliction": {
+      "name": "Procession of the Sacred Affliction",
+      "models": {},
+      "battlekit": {
+        "armour": {
+          "eq_standardarmour": {},
+          "eq_reinforcedarmour": {},
+          "eq_trenchshield": {}
+        },
+        "equipment": {},
+        "weapons_melee": {},
+        "weapons_ranged": {}
+      }
+    },
+    "fc_trenchpilgrim_fv_cavalcadeofthetenthplague": {
+      "name": "Cavalcade of the Tenth Plague",
+      "models": {},
+      "battlekit": {
+        "armour": {
+          "eq_standardarmour": {},
+          "eq_reinforcedarmour": {},
+          "eq_trenchshield": {}
+        },
+        "equipment": {},
+        "weapons_melee": {},
+        "weapons_ranged": {}
+      }
+    },
+    "fc_trenchpilgrim_fv_warpilgimageofsaintmethodius": {
+      "name": "War Pilgrimage of Saint Methodius",
+      "models": {},
+      "battlekit": {
+        "armour": {
+          "eq_standardarmour": {},
+          "eq_reinforcedarmour": {},
+          "eq_trenchshield": {}
+        },
+        "equipment": {},
+        "weapons_melee": {},
+        "weapons_ranged": {}
+      }
+    },
+    "fc_newantioch_fv_papalstatesinterventionforce": {
+      "name": "Papal States Intervention Force",
+      "models": {},
+      "battlekit": {
+        "armour": {
+          "eq_standardarmour": {},
+          "eq_reinforcedarmour": {},
+          "eq_trenchshield": {}
+        },
+        "equipment": {},
+        "weapons_melee": {},
+        "weapons_ranged": {}
+      }
+    },
+    "fc_newantioch_fc_eirerangers": {
+      "name": "Eire Rangers",
+      "models": {},
+      "battlekit": {
+        "armour": {
+          "eq_standardarmour": {},
+          "eq_reinforcedarmour": {},
+          "eq_trenchshield": {}
+        },
+        "equipment": {},
+        "weapons_melee": {},
+        "weapons_ranged": {}
+      }
+    },
+    "fc_newantioch_fc_stortruppenofthefreestateofprussia": {
+      "name": "Stoßtruppen of the Free State of Prussia",
+      "models": {},
+      "battlekit": {
+        "armour": {
+          "eq_standardarmour": {},
+          "eq_reinforcedarmour": {},
+          "eq_trenchshield": {}
+        },
+        "equipment": {},
+        "weapons_melee": {},
+        "weapons_ranged": {}
+      }
+    },
+    "fc_newantioch_fv_kingdomofalbaassaultdetatchment": {
+      "name": "Kingdom of Alba Assault Detatchment",
+      "models": {},
+      "battlekit": {
+        "armour": {
+          "eq_standardarmour": {},
+          "eq_reinforcedarmour": {},
+          "eq_trenchshield": {}
+        },
+        "equipment": {},
+        "weapons_melee": {},
+        "weapons_ranged": {}
+      }
+    },
+    "fc_newantioch_fv_expeditionaryforcedofabyssinia": {
+      "name": "Expeditionary Forces of Abyssinia",
+      "models": {},
+      "battlekit": {
+        "armour": {
+          "eq_standardarmour": {},
+          "eq_reinforcedarmour": {},
+          "eq_trenchshield": {}
+        },
+        "equipment": {},
+        "weapons_melee": {},
+        "weapons_ranged": {}
+      }
+    },
+    "fc_cultoftheblackgrail_fv_dirgeofthegreathegemon": {
+      "name": "Dirge of the Great Hegemon",
+      "models": {},
+      "battlekit": {
+        "armour": {
+          "eq_standardarmour": {},
+          "eq_reinforcedarmour": {},
+          "eq_trenchshield": {}
+        },
+        "equipment": {},
+        "weapons_melee": {},
+        "weapons_ranged": {}
+      }
+    },
+    "fc_newantioch_fv_redbrigade": {
+      "name": "The Red Brigade",
+      "models": {},
+      "battlekit": {
+        "armour": {
+          "eq_standardarmour": {},
+          "eq_reinforcedarmour": {},
+          "eq_trenchshield": {}
+        },
+        "equipment": {},
+        "weapons_melee": {},
+        "weapons_ranged": {}
+      }
+    },
+    "fc_cultoftheblackgrail_fv_thegreathunger": {
+      "name": "The Great Hunger",
+      "models": {},
+      "battlekit": {
+        "armour": {
+          "eq_standardarmour": {},
+          "eq_reinforcedarmour": {},
+          "eq_trenchshield": {}
+        },
+        "equipment": {},
+        "weapons_melee": {},
+        "weapons_ranged": {}
+      }
+    }
+  }
+}
