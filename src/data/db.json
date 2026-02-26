@@ -1,413 +1,3301 @@
 {
+  "//TODO": "Grail; Heretics; Sultanate; New Antioch; Pilgrims", 
   "modifiers": {
     "abilities": {
-      "ab_countercharge": {},
-      "ab_whirlingdervishes": {},
-      "ab_minesetting": {},
-      "ab_demine": {},
-      "ab_detonatingmines": {},
-      "ab_forwardpositions": {},
-      "ab_fortify": {},
-      "ab_artificialbody": {},
-      "ab_trample": {},
-      "ab_pin": {},
-      "ab_agilelion": {},
-      "ab_masteryoftheelements": {},
-      "ab_elementalchange": {},
-      "ab_mubarizun": {},
-      "ab_timeslip": {},
-      "ab_temporalassassin": {},
-      "ab_swornbretheren": {},
-      "ab_martialprowess": {},
-      "ab_automatondestrier": {},
-      "ab_recreation": {},
-      "ab_slow": {},
-      "ab_vengefulscripture": {},
-      "ab_fourpaws": {},
-      "ab_guarddog": {},
-      "ab_strengththroughpain": {},
-      "ab_mercydog": {},
-      "ab_mercydogbrigade": {},
-      "ab_brigadedog": {},
-      "ab_martyrdomdog": {},
-      "ab_hellhound": {},
-      "ab_puppetmaster": {},
-      "ab_thepriceofgreed": {},
-      "ab_hide": {},
-      "ab_stealthgenerator": {},
-      "ab_unholyhymns": {},
-      "ab_hereticlegionnaire": {},
-      "ab_lopingdash": {},
-      "ab_assaultbeast": {},
-      "ab_unrelenting": {},
-      "ab_resilient": {},
-      "ab_undying": {},
-      "ab_defiant": {},
-      "ab_resistant": {},
-      "ab_siegeweapon": {},
-      "ab_dragoncrush": {},
-      "ab_levitate": {},
-      "ab_abioticlife": {},
-      "ab_artillerywitchbattery": {},
-      "ab_lawofhell": {},
-      "ab_darkblessing": {},
-      "ab_chattel": {},
-      "ab_devourtheguilty": {},
-      "ab_goeticportal": {},
-      "ab_barbedembrace": {},
-      "ab_ironclawedhands": {},
-      "ab_goeticgaze": {},
-      "ab_deathwail": {},
-      "ab_loudspeakers": {},
-      "ab_layingonhands": {},
-      "ab_mementomori": {},
-      "ab_enforcedorthodoxy": {},
-      "ab_whipofgod": {},
-      "ab_miracleofregeneration": {},
-      "ab_bodyguard_pilgrim": {},
-      "ab_awaited": {},
-      "ab_maddash": {},
-      "ab_feebleflailing": {},
-      "ab_agile": {},
-      "ab_blessedstigmata": {},
-      "ab_symphonyofslaughter": {},
-      "ab_brokenonthewheel": {},
-      "ab_finishthefallen": {},
-      "ab_expertmedic": {},
-      "ab_conventconditioning": {},
-      "ab_divinejudgement": {},
-      "ab_dignifiedconduct": {},
-      "ab_faithfulfollowers": {},
-      "ab_theammunitionsacrement": {},
-      "ab_lightningspeed": {},
-      "ab_temporalfuge": {},
-      "ab_eyeofgod": {},
-      "ab_voiceofgod": {},
-      "ab_dayofhiswrath": {},
-      "ab_holdyourfire": {},
-      "ab_godiswithus": {},
-      "ab_blessedpalm": {},
-      "ab_godsmercy": {},
-      "ab_awayserpents": {},
-      "ab_onwardschristiansoldiers": {},
-      "ab_ariseandbehealed": {},
-      "ab_aim": {},
-      "ab_absolutefaith": {},
-      "ab_shockcharge": {},
-      "ab_assaultdrill": {},
-      "ab_battlefielddemolition": {},
-      "ab_fortifyeng": {},
-      "ab_demineengineer": {},
-      "ab_setmineengineer": {},
-      "ab_undeadfortitude": {},
-      "ab_beelzebubstouch": {},
-      "ab_crushingblows": {},
-      "ab_plagueknightranks": {},
-      "ab_parasitictick": {},
-      "ab_bodyguard_blackgrail": {},
-      "ab_frighteningspeed": {},
-      "ab_diseasecarrier": {},
-      "ab_infestedcarcasses": {},
-      "ab_overwhelminghorde": {},
-      "ab_infectedproboscis": {},
-      "ab_maddeningbuzzing": {},
-      "ab_corpulent": {},
-      "ab_sixarmedmonstrosity": {},
-      "ab_trample_amalgam": {},
-      "ab_unstoppable": {},
-      "ab_goetics_praetor": {},
-      "ab_goetics_praetor_wrath": {},
-      "ab_goetics_sorcerer": {},
-      "ab_blessingsoftheserpentmoon": {},
-      "ab_shadowwalker": {},
-      "ab_lefthandpath": {},
-      "ab_oraclebeastcloak": {},
-      "ab_goetics_knight": {},
-      "ab_bloodmagic": {},
-      "ab_hateful": {},
-      "ab_torturer": {},
-      "ab_annihilator": {},
-      "ab_poisonstingers": {},
-      "ab_demonicaura": {},
-      "ab_demonicaura_sloth": {},
-      "ab_demonicaura_envy": {},
-      "ab_demonicaura_pride": {},
-      "ab_demonicaura_greed": {},
-      "ab_demonicaura_wrath": {},
-      "ab_demonicaura_lust": {},
-      "ab_demonicaura_gluttony": {},
-      "ab_holydna": {},
-      "ab_fruitofgoodandevil": {},
-      "ab_prizespecimens": {},
-      "ab_battlefieldvivisection": {},
-      "ab_ravenousinfection": {},
-      "ab_pestilent": {},
-      "ab_frenziedfollowers": {},
-      "ab_cadreofflesh": {},
-      "ab_arcanaputrescere": {},
-      "ab_arcanaputrescere_one": {},
-      "ab_plagueriddenflesh": {},
-      "ab_gnashingandwailing": {},
-      "ab_dormanthunger": {},
-      "ab_specialdeployment_cradle": {},
-      "ab_golgothatektites": {},
-      "ab_painamplifier": {},
-      "ab_inflictpain": {},
-      "ab_focusedfire": {},
-      "ab_tungstenorichalcumalloyshot": {},
-      "ab_gunsilent": {},
-      "ab_bullseye": {},
-      "ab_quickbursts": {},
-      "ab_liquidfire": {},
-      "ab_dangerous": {},
-      "ab_despatch": {},
-      "ab_unwieldy": {},
-      "ab_armourpiercing": {},
-      "ab_binoculars": {},
-      "ab_talisman": {},
-      "ab_dumdums": {},
-      "ab_shrine": {},
-      "ab_tearitdown": {},
-      "ab_contract": {},
-      "ab_incendiary": {},
-      "ab_inuredtopain": {},
-      "ab_treat": {},
-      "ab_mountaineer": {},
-      "ab_fanfare": {},
-      "ab_angelicfanfare": {},
-      "ab_shovel": {},
-      "ab_tracers": {},
-      "ab_feeble": {},
-      "ab_livingbattlefield": {},
-      "ab_mandibles": {},
-      "ab_poisoned": {},
-      "ab_leadtodeath": {},
-      "ab_weightofsins": {},
-      "ab_insectwings": {},
-      "ab_suckeddry": {},
-      "ab_privilegedaccess": {},
-      "ab_manyleggedform": {},
-      "ab_spiritofthebeast": {},
-      "ab_continuouslitanyofprayers": {},
-      "ab_speakablessing": {},
-      "ab_gruesomeweight": {},
-      "ab_drinkfromthecup": {},
-      "ab_inspiringgift": {},
-      "ab_deadlylight": {},
-      "ab_myrmidonwings": {},
-      "ab_steadfast": {},
-      "ab_twinblows": {},
-      "ab_fieldhospital": {},
-      "ab_rallytotheflag": {},
-      "ab_sandstorm": {},
-      "ab_spiritofvengance": {},
-      "ab_blowthyhorn": {},
-      "ab_famousdeed": {},
-      "ab_goeticpower": {},
-      "ab_devouringswarm": {},
-      "ab_markofthepit": {},
-      "ab_enhancedbullets": {},
-      "ab_luckofthedevil": {},
-      "ab_restrained": {},
-      "ab_holymachine": {},
-      "ab_disposablerocket": {},
-      "ab_helpfulservitor": {},
-      "ab_swathedinsmoke": {},
-      "ab_enhancedaccuracy": {},
-      "ab_brazenbullgrandcannon": {},
-      "ab_mobilegrandcannon": {},
-      "ab_unstoppableobject": {},
-      "ab_retribution": {},
-      "ab_draggedforwards": {},
-      "ab_deadlyembrace": {},
-      "ab_thedogsofwar": {},
-      "ab_packloyalty": {},
-      "ab_teethandclaws": {},
-      "ab_ironfists": {},
-      "ab_ballisticboxarmour": {},
-      "ab_bulky": {},
-      "ab_bulkytank": {},
-      "ab_deathfromonhigh": {},
-      "ab_celticbulk": {},
-      "ab_trenchmole": {},
-      "ab_inspiringrelic": {},
-      "ab_heavyexplosive": {},
-      "ab_bagpipes": {},
-      "ab_tanksplitter": {},
-      "ab_holysmoke": {},
-      "ab_bypassshield": {},
-      "ab_healingwaters": {},
-      "ab_tokenofhonour": {},
-      "ab_virtuousrewards": {},
-      "ab_overcharge": {},
-      "ab_martyrdom": {},
-      "ab_mightyblows": {},
-      "ab_fullauto": {},
-      "ab_cloudofgas": {},
-      "ab_impossibletostop": {},
-      "ab_manifoldblessings": {},
-      "ab_advanceddesign": {},
-      "ab_grindtodust": {},
-      "ab_divineaccuracy": {},
-      "ab_hightrajectory": {},
-      "ab_cowerbeforethelord": {},
-      "ab_anointed": {},
-      "ab_onlytherighteous": {},
-      "ab_castigatortough": {},
-      "ab_causeconfusion": {},
-      "ab_guidingpath": {},
-      "ab_protectionfromharm": {},
-      "ab_slashingattack": {},
-      "ab_blendin": {},
-      "ab_greekfire": {},
-      "ab_echoingblast": {},
-      "ab_gustsofwind": {},
-      "ab_temporalslipstream": {},
-      "ab_attacktwice": {},
-      "ab_enhancedstrength": {},
-      "ab_pummellingblows": {},
-      "ab_chosenhomunculus": {},
-      "ab_fountainoflife": {},
-      "ab_fireshield": {},
-      "ab_prebattledeployment": {},
-      "ab_combatdeployment": {},
-      "ab_mobilecover": {},
-      "ab_hiddenexplosives": {},
-      "ab_detonatingtheexplosives": {},
-      "ab_othismos": {},
-      "ab_deployingthegunbattery": {},
-      "ab_firingagunbattery": {},
-      "ab_evilpower": {},
-      "ab_pairedweapon": {},
-      "ab_duck": {},
-      "ab_infernalstrike": {},
-      "ab_mightyexplosion": {},
-      "ab_walkingbomb": {},
-      "ab_triggersarcophagus": {},
-      "ab_detonationsarcophagus": {},
-      "ab_runeofmammon": {},
-      "ab_illusions": {},
-      "ab_placealtar": {},
-      "ab_chokinggas": {},
-      "ab_kneelbeforeme": {},
-      "ab_target_of_wrath": {},
-      "ab_powerofthecultoftheblackgrail": {},
-      "ab_enhancedvision": {},
-      "ab_graildevotees": {},
-      "ab_jealousobsession": {},
-      "ab_terrifyinghallucinations": {},
-      "ab_selfsacrifice": {},
-      "ab_locusofdespair": {},
-      "ab_sinisterwhispers": {},
-      "ab_batter": {},
-      "ab_searingflames": {},
-      "ab_ambushweapon": {},
-      "ab_abyssalblade": {},
-      "ab_unnaturalinversion": {},
-      "ab_agonisinginjuries": {},
-      "ab_specialammunition": {},
-      "ab_swingingblow": {},
-      "ab_wrathofgod": {},
-      "ab_bloodofmartyrs": {},
-      "ab_channelledsorrow": {},
-      "ab_freshmeat": {},
-      "ab_hackandhew": {},
-      "ab_masticate": {},
-      "ab_mutation": {},
-      "ab_grasp": {},
-      "ab_gnashingblow": {},
-      "ab_rottensplinters": {},
-      "ab_limitedupgrades": {},
-      "ab_albabagpipes": {},
-      "up_skirmisher": {},
-      "up_infiltrator": {},
-      "up_meleemight": {},
-      "up_fierceandbrave": {},
-      "up_swissguard": {},
-      "up_hallucinogendisguise": {},
-      "up_thunderboltofalamut": {},
-      "up_mirageoftime": {},
-      "up_secretpaths": {},
-      "up_alchemicalformulae_wings": {},
-      "up_alchemicalformulae_elementalresistance": {},
-      "up_alchemicalformulae_massive_size": {},
-      "up_alchemicalformulae_enslavedmind": {},
-      "up_alchemicalformulae_humanhands": {},
-      "up_alchemicalformulae_inhumanstrength": {},
-      "up_alchemicalformulae_terrifyingappearance": {},
-      "up_alchemicalformulae_additionalarm": {},
-      "up_alchemicalformulae_twoheads": {},
-      "up_alchemicalformulae_hypnoticeyes": {},
-      "up_alchemicalformulae_hawkeyes": {},
-      "up_alchemicalformulae_startlingspeed": {},
-      "up_alchemicalformulae_sealofsolomon": {},
-      "up_alchemicalformulae_gargantuansize": {},
-      "up_alchemicalformulae_regenerativetissue": {},
-      "up_secrets_medicine": {},
-      "up_secrets_cartographyandgeography": {},
-      "up_secrets_secretsoftakwin": {},
-      "up_secrets_chemistryandalchemy": {},
-      "up_secrets_philosophypoetrytheology": {},
-      "up_trenchdog_fireteam": {},
-      "up_heretictrooper_hereticlegionnaire": {},
-      "up_heretictrooper_hereticlegionnaire_ranged": {},
-      "up_heretictrooper_hereticlegionnaire_Melee": {},
-      "up_trenchghost_sarcophagusmine": {},
-      "up_zealotstrength": {},
-      "up_resurrection": {},
-      "up_wrathofgod": {},
-      "up_machinearmour": {},
-      "up_highlandmachinearmour": {},
-      "up_fianna": {},
-      "up_berserker": {},
-      "up_rapidassault": {},
-      "up_chewa": {},
-      "up_vanguard": {},
-      "up_plagueknightcompanionofthefly_base": {},
-      "up_plagueknightcompanionofthefly_ranged": {},
-      "up_plagueknightcompanionofthefly_melee": {},
-      "up_plagueknightalmoner": {},
-      "up_plagueknightrottencross": {},
-      "up_plagueknightrankofbutcher": {},
-      "up_plagueknightrankbutcherking": {},
-      "up_plagueknightrankofthefeast": {},
-      "up_plagueknightrankofferocity": {},
-      "up_infectioushound": {},
-      "up_maddeningbuzz": {},
-      "up_goetic_burninginferno": {},
-      "up_goetic_slavemaster": {},
-      "up_goetic_wrath_chargeofhatred": {},
-      "up_goetic_wrath_lessermarkofcain": {},
-      "up_goetic_wrath_blindrage": {},
-      "up_goetic_envy_enviouseyes": {},
-      "up_goetic_envy_covetedposition": {},
-      "up_goetic_envy_whatisyoursismine": {},
-      "up_goetic_lust_forbiddenpleasures": {},
-      "up_goetic_lust_exquisitepain": {},
-      "up_goetic_lust_callofflesh": {},
-      "up_goetic_pride_prouddefiance": {},
-      "up_goetic_pride_tooproudtofall": {},
-      "up_goetic_pride_lightofsamael": {},
-      "up_goetic_sloth_morpheanmind": {},
-      "up_goetic_sloth_charmofacedia": {},
-      "up_goetic_sloth_daemoniummeridianum": {},
-      "up_goetic_gluttony_bellyofthebeast": {},
-      "up_goetic_gluttony_uncaringgluttony": {},
-      "up_goetic_gluttony_eateroftheflesh": {},
-      "up_goetic_greed_bodyofgold": {},
-      "up_goetic_greed_blackheart": {},
-      "up_goetic_greed_universalgreed": {},
-      "up_fruit": {},
-      "up_gunsblazing": {},
-      "up_putrescere_hunger": {},
-      "up_putrescere_miasmaofpestilence": {},
-      "up_putrescere_motherscall": {},
-      "up_putrescere_rapturousfeast": {},
-      "up_putrescere_vilechurning": {},
-      "up_putrescere_virulentclot": {},
-      "up_putrescere_vomitus": {},
-      "up_unendingstarvation": {},
-      "up_jannisaryveteran": {}
+      "ab_countercharge": {
+        "name": "",
+        "text": "",
+        "modifiers": {
+          "operations": [],
+          "choices": []
+        }
+      },
+      "ab_whirlingdervishes": {
+        "name": "",
+        "text": "",
+        "modifiers": {
+          "operations": [],
+          "choices": []
+        }
+      },
+      "ab_minesetting": {
+        "name": "",
+        "text": "",
+        "modifiers": {
+          "operations": [],
+          "choices": []
+        }
+      },
+      "ab_demine": {
+        "name": "",
+        "text": "",
+        "modifiers": {
+          "operations": [],
+          "choices": []
+        }
+      },
+      "ab_detonatingmines": {
+        "name": "",
+        "text": "",
+        "modifiers": {
+          "operations": [],
+          "choices": []
+        }
+      },
+      "ab_forwardpositions": {
+        "name": "",
+        "text": "",
+        "modifiers": {
+          "operations": [],
+          "choices": []
+        }
+      },
+      "ab_fortify": {
+        "name": "",
+        "text": "",
+        "modifiers": {
+          "operations": [],
+          "choices": []
+        }
+      },
+      "ab_artificialbody": {
+        "name": "",
+        "text": "",
+        "modifiers": {
+          "operations": [],
+          "choices": []
+        }
+      },
+      "ab_trample": {
+        "name": "",
+        "text": "",
+        "modifiers": {
+          "operations": [],
+          "choices": []
+        }
+      },
+      "ab_pin": {
+        "name": "",
+        "text": "",
+        "modifiers": {
+          "operations": [],
+          "choices": []
+        }
+      },
+      "ab_agilelion": {
+        "name": "",
+        "text": "",
+        "modifiers": {
+          "operations": [],
+          "choices": []
+        }
+      },
+      "ab_masteryoftheelements": {
+        "name": "",
+        "text": "",
+        "modifiers": {
+          "operations": [],
+          "choices": []
+        }
+      },
+      "ab_elementalchange": {
+        "name": "",
+        "text": "",
+        "modifiers": {
+          "operations": [],
+          "choices": []
+        }
+      },
+      "ab_mubarizun": {
+        "name": "",
+        "text": "",
+        "modifiers": {
+          "operations": [],
+          "choices": []
+        }
+      },
+      "ab_timeslip": {
+        "name": "",
+        "text": "",
+        "modifiers": {
+          "operations": [],
+          "choices": []
+        }
+      },
+      "ab_temporalassassin": {
+        "name": "",
+        "text": "",
+        "modifiers": {
+          "operations": [],
+          "choices": []
+        }
+      },
+      "ab_swornbretheren": {
+        "name": "",
+        "text": "",
+        "modifiers": {
+          "operations": [],
+          "choices": []
+        }
+      },
+      "ab_martialprowess": {
+        "name": "",
+        "text": "",
+        "modifiers": {
+          "operations": [],
+          "choices": []
+        }
+      },
+      "ab_automatondestrier": {
+        "name": "",
+        "text": "",
+        "modifiers": {
+          "operations": [],
+          "choices": []
+        }
+      },
+      "ab_recreation": {
+        "name": "",
+        "text": "",
+        "modifiers": {
+          "operations": [],
+          "choices": []
+        }
+      },
+      "ab_slow": {
+        "name": "Slow",
+        "text": "Dash with Movement Characteristic of 3\".",
+        "modifiers": {
+          "operations": [],
+          "choices": []
+        }
+      },
+      "ab_vengefulscripture": {
+        "name": "Vengeful Scripture",
+        "text": "Success, +1/2 DICE: pick enemy model within 18\"; Success Roll is at +2 DICE if within 9\". Make Injury Roll with +1 INJURY MODIFIER for each Blood Marker the model has. On Critical, Injury Roll also has IGNORE ARMOUR and +1 INJURY DICE for each Blood Marker the model has.",
+        "modifiers": {
+          "operations": [],
+          "choices": []
+        }
+      },
+      "ab_fourpaws": {
+        "name": "Four Paws",
+        "text": "+1 DICE to Climb, Jump, or Dash Actions.",
+        "modifiers": {
+          "operations": [],
+          "choices": []
+        }
+      },
+      "ab_guarddog": {
+        "name": "",
+        "text": "",
+        "modifiers": {
+          "operations": [],
+          "choices": []
+        }
+      },
+      "ab_strengththroughpain": {
+        "name": "",
+        "text": "",
+        "modifiers": {
+          "operations": [],
+          "choices": []
+        }
+      },
+      "ab_mercydog": {
+        "name": "",
+        "text": "",
+        "modifiers": {
+          "operations": [],
+          "choices": []
+        }
+      },
+      "ab_mercydogbrigade": {
+        "name": "",
+        "text": "",
+        "modifiers": {
+          "operations": [],
+          "choices": []
+        }
+      },
+      "ab_brigadedog": {
+        "name": "",
+        "text": "",
+        "modifiers": {
+          "operations": [],
+          "choices": []
+        }
+      },
+      "ab_martyrdomdog": {
+        "name": "",
+        "text": "",
+        "modifiers": {
+          "operations": [],
+          "choices": []
+        }
+      },
+      "ab_hellhound": {
+        "name": "Hellhound",
+        "text": "Attacks have +1 DICE and FIRE. If Warband is Knights of Avarice or BLACK GRAIL, Attacks have GAS instead of FIRE.",
+        "modifiers": {
+          "operations": [
+            {
+              "operation": "addKeyword",
+              "value": "NEGATE FIRE"
+            }
+          ],
+          "choices": []
+        }
+      },
+      "ab_puppetmaster": {
+        "name": "",
+        "text": "",
+        "modifiers": {
+          "operations": [],
+          "choices": []
+        }
+      },
+      "ab_thepriceofgreed": {
+        "name": "",
+        "text": "",
+        "modifiers": {
+          "operations": [],
+          "choices": []
+        }
+      },
+      "ab_hide": {
+        "name": "",
+        "text": "",
+        "modifiers": {
+          "operations": [],
+          "choices": []
+        }
+      },
+      "ab_stealthgenerator": {
+        "name": "",
+        "text": "",
+        "modifiers": {
+          "operations": [],
+          "choices": []
+        }
+      },
+      "ab_unholyhymns": {
+        "name": "",
+        "text": "",
+        "modifiers": {
+          "operations": [],
+          "choices": []
+        }
+      },
+      "ab_hereticlegionnaire": {
+        "name": "",
+        "text": "",
+        "modifiers": {
+          "operations": [],
+          "choices": []
+        }
+      },
+      "ab_lopingdash": {
+        "name": "",
+        "text": "",
+        "modifiers": {
+          "operations": [],
+          "choices": []
+        }
+      },
+      "ab_assaultbeast": {
+        "name": "",
+        "text": "",
+        "modifiers": {
+          "operations": [],
+          "choices": []
+        }
+      },
+      "ab_unrelenting": {
+        "name": "",
+        "text": "",
+        "modifiers": {
+          "operations": [],
+          "choices": []
+        }
+      },
+      "ab_resilient": {
+        "name": "",
+        "text": "",
+        "modifiers": {
+          "operations": [],
+          "choices": []
+        }
+      },
+      "ab_undying": {
+        "name": "",
+        "text": "",
+        "modifiers": {
+          "operations": [],
+          "choices": []
+        }
+      },
+      "ab_defiant": {
+        "name": "",
+        "text": "",
+        "modifiers": {
+          "operations": [],
+          "choices": []
+        }
+      },
+      "ab_resistant": {
+        "name": "",
+        "text": "",
+        "modifiers": {
+          "operations": [],
+          "choices": []
+        }
+      },
+      "ab_siegeweapon": {
+        "name": "",
+        "text": "",
+        "modifiers": {
+          "operations": [],
+          "choices": []
+        }
+      },
+      "ab_dragoncrush": {
+        "name": "",
+        "text": "",
+        "modifiers": {
+          "operations": [],
+          "choices": []
+        }
+      },
+      "ab_levitate": {
+        "name": "",
+        "text": "",
+        "modifiers": {
+          "operations": [],
+          "choices": []
+        }
+      },
+      "ab_abioticlife": {
+        "name": "",
+        "text": "",
+        "modifiers": {
+          "operations": [],
+          "choices": []
+        }
+      },
+      "ab_artillerywitchbattery": {
+        "name": "",
+        "text": "",
+        "modifiers": {
+          "operations": [],
+          "choices": []
+        }
+      },
+      "ab_lawofhell": {
+        "name": "Law of Hell",
+        "text": "Earns freedom by killing an enemy ELITE.",
+        "modifiers": {
+          "operations": [],
+          "choices": []
+        }
+      },
+      "ab_darkblessing": {
+        "name": "",
+        "text": "",
+        "modifiers": {
+          "operations": [],
+          "choices": []
+        }
+      },
+      "ab_chattel": {
+        "name": "",
+        "text": "",
+        "modifiers": {
+          "operations": [],
+          "choices": []
+        }
+      },
+      "ab_devourtheguilty": {
+        "name": "Devour the Guilty",
+        "text": "Look this one up in the book big dawg, it's a long ass rule.",
+        "modifiers": {
+          "operations": [],
+          "choices": []
+        }
+      },
+      "ab_goeticportal": {
+        "name": "Goetic Portal",
+        "text": "Risky Success, +1 DICE: Teleport this model 6\". 1 enemy model on a 32mm base or smaller within 1\" can be taken with this model.",
+        "modifiers": {
+          "operations": [],
+          "choices": []
+        }
+      },
+      "ab_barbedembrace": {
+        "name": "Barbed Embrace",
+        "text": "Enemy models within 1\" of this model cannot Retreat.",
+        "modifiers": {
+          "operations": [],
+          "choices": []
+        }
+      },
+      "ab_ironclawedhands": {
+        "name": "Iron Clawed Hands",
+        "text": "Can make a Melee Attack with CLEAVE 2 and CRITICAL. Off-Hand Weapon modifier applies to the second attack.",
+        "modifiers": {
+          "operations": [],
+          "choices": []
+        }
+      },
+      "ab_goeticgaze": {
+        "name": "Goetic Gaze",
+        "text": "Success: Place 1 Blood Marker next to enemy model within 24\" and within line of sight. On Critical, instead place 2 Blood Markers.",
+        "modifiers": {
+          "operations": [],
+          "choices": []
+        }
+      },
+      "ab_deathwail": {
+        "name": "",
+        "text": "",
+        "modifiers": {
+          "operations": [],
+          "choices": []
+        }
+      },
+      "ab_loudspeakers": {
+        "name": "",
+        "text": "",
+        "modifiers": {
+          "operations": [],
+          "choices": []
+        }
+      },
+      "ab_layingonhands": {
+        "name": "",
+        "text": "",
+        "modifiers": {
+          "operations": [],
+          "choices": []
+        }
+      },
+      "ab_mementomori": {
+        "name": "",
+        "text": "",
+        "modifiers": {
+          "operations": [],
+          "choices": []
+        }
+      },
+      "ab_enforcedorthodoxy": {
+        "name": "",
+        "text": "",
+        "modifiers": {
+          "operations": [],
+          "choices": []
+        }
+      },
+      "ab_whipofgod": {
+        "name": "",
+        "text": "",
+        "modifiers": {
+          "operations": [],
+          "choices": []
+        }
+      },
+      "ab_miracleofregeneration": {
+        "name": "",
+        "text": "",
+        "modifiers": {
+          "operations": [],
+          "choices": []
+        }
+      },
+      "ab_bodyguard_pilgrim": {
+        "name": "",
+        "text": "",
+        "modifiers": {
+          "operations": [],
+          "choices": []
+        }
+      },
+      "ab_awaited": {
+        "name": "",
+        "text": "",
+        "modifiers": {
+          "operations": [],
+          "choices": []
+        }
+      },
+      "ab_maddash": {
+        "name": "",
+        "text": "",
+        "modifiers": {
+          "operations": [],
+          "choices": []
+        }
+      },
+      "ab_feebleflailing": {
+        "name": "",
+        "text": "",
+        "modifiers": {
+          "operations": [],
+          "choices": []
+        }
+      },
+      "ab_agile": {
+        "name": "",
+        "text": "",
+        "modifiers": {
+          "operations": [],
+          "choices": []
+        }
+      },
+      "ab_blessedstigmata": {
+        "name": "",
+        "text": "",
+        "modifiers": {
+          "operations": [],
+          "choices": []
+        }
+      },
+      "ab_symphonyofslaughter": {
+        "name": "",
+        "text": "",
+        "modifiers": {
+          "operations": [],
+          "choices": []
+        }
+      },
+      "ab_brokenonthewheel": {
+        "name": "",
+        "text": "",
+        "modifiers": {
+          "operations": [],
+          "choices": []
+        }
+      },
+      "ab_finishthefallen": {
+        "name": "",
+        "text": "",
+        "modifiers": {
+          "operations": [],
+          "choices": []
+        }
+      },
+      "ab_expertmedic": {
+        "name": "",
+        "text": "",
+        "modifiers": {
+          "operations": [],
+          "choices": []
+        }
+      },
+      "ab_conventconditioning": {
+        "name": "",
+        "text": "",
+        "modifiers": {
+          "operations": [],
+          "choices": []
+        }
+      },
+      "ab_divinejudgement": {
+        "name": "",
+        "text": "",
+        "modifiers": {
+          "operations": [],
+          "choices": []
+        }
+      },
+      "ab_dignifiedconduct": {
+        "name": "",
+        "text": "",
+        "modifiers": {
+          "operations": [],
+          "choices": []
+        }
+      },
+      "ab_faithfulfollowers": {
+        "name": "",
+        "text": "",
+        "modifiers": {
+          "operations": [],
+          "choices": []
+        }
+      },
+      "ab_theammunitionsacrement": {
+        "name": "",
+        "text": "",
+        "modifiers": {
+          "operations": [],
+          "choices": []
+        }
+      },
+      "ab_lightningspeed": {
+        "name": "",
+        "text": "",
+        "modifiers": {
+          "operations": [],
+          "choices": []
+        }
+      },
+      "ab_temporalfuge": {
+        "name": "",
+        "text": "",
+        "modifiers": {
+          "operations": [],
+          "choices": []
+        }
+      },
+      "ab_eyeofgod": {
+        "name": "",
+        "text": "",
+        "modifiers": {
+          "operations": [],
+          "choices": []
+        }
+      },
+      "ab_voiceofgod": {
+        "name": "",
+        "text": "",
+        "modifiers": {
+          "operations": [],
+          "choices": []
+        }
+      },
+      "ab_dayofhiswrath": {
+        "name": "",
+        "text": "",
+        "modifiers": {
+          "operations": [],
+          "choices": []
+        }
+      },
+      "ab_holdyourfire": {
+        "name": "",
+        "text": "",
+        "modifiers": {
+          "operations": [],
+          "choices": []
+        }
+      },
+      "ab_godiswithus": {
+        "name": "",
+        "text": "",
+        "modifiers": {
+          "operations": [],
+          "choices": []
+        }
+      },
+      "ab_blessedpalm": {
+        "name": "",
+        "text": "",
+        "modifiers": {
+          "operations": [],
+          "choices": []
+        }
+      },
+      "ab_godsmercy": {
+        "name": "",
+        "text": "",
+        "modifiers": {
+          "operations": [],
+          "choices": []
+        }
+      },
+      "ab_awayserpents": {
+        "name": "",
+        "text": "",
+        "modifiers": {
+          "operations": [],
+          "choices": []
+        }
+      },
+      "ab_onwardschristiansoldiers": {
+        "name": "",
+        "text": "",
+        "modifiers": {
+          "operations": [],
+          "choices": []
+        }
+      },
+      "ab_ariseandbehealed": {
+        "name": "",
+        "text": "",
+        "modifiers": {
+          "operations": [],
+          "choices": []
+        }
+      },
+      "ab_aim": {
+        "name": "",
+        "text": "",
+        "modifiers": {
+          "operations": [],
+          "choices": []
+        }
+      },
+      "ab_absolutefaith": {
+        "name": "",
+        "text": "",
+        "modifiers": {
+          "operations": [],
+          "choices": []
+        }
+      },
+      "ab_shockcharge": {
+        "name": "",
+        "text": "",
+        "modifiers": {
+          "operations": [],
+          "choices": []
+        }
+      },
+      "ab_assaultdrill": {
+        "name": "",
+        "text": "",
+        "modifiers": {
+          "operations": [],
+          "choices": []
+        }
+      },
+      "ab_battlefielddemolition": {
+        "name": "",
+        "text": "",
+        "modifiers": {
+          "operations": [],
+          "choices": []
+        }
+      },
+      "ab_fortifyeng": {
+        "name": "",
+        "text": "",
+        "modifiers": {
+          "operations": [],
+          "choices": []
+        }
+      },
+      "ab_demineengineer": {
+        "name": "",
+        "text": "",
+        "modifiers": {
+          "operations": [],
+          "choices": []
+        }
+      },
+      "ab_setmineengineer": {
+        "name": "",
+        "text": "",
+        "modifiers": {
+          "operations": [],
+          "choices": []
+        }
+      },
+      "ab_undeadfortitude": {
+        "name": "",
+        "text": "",
+        "modifiers": {
+          "operations": [],
+          "choices": []
+        }
+      },
+      "ab_beelzebubstouch": {
+        "name": "",
+        "text": "",
+        "modifiers": {
+          "operations": [],
+          "choices": []
+        }
+      },
+      "ab_crushingblows": {
+        "name": "",
+        "text": "",
+        "modifiers": {
+          "operations": [],
+          "choices": []
+        }
+      },
+      "ab_plagueknightranks": {
+        "name": "",
+        "text": "",
+        "modifiers": {
+          "operations": [],
+          "choices": []
+        }
+      },
+      "ab_parasitictick": {
+        "name": "",
+        "text": "",
+        "modifiers": {
+          "operations": [],
+          "choices": []
+        }
+      },
+      "ab_bodyguard_blackgrail": {
+        "name": "",
+        "text": "",
+        "modifiers": {
+          "operations": [],
+          "choices": []
+        }
+      },
+      "ab_frighteningspeed": {
+        "name": "",
+        "text": "",
+        "modifiers": {
+          "operations": [],
+          "choices": []
+        }
+      },
+      "ab_diseasecarrier": {
+        "name": "",
+        "text": "",
+        "modifiers": {
+          "operations": [],
+          "choices": []
+        }
+      },
+      "ab_infestedcarcasses": {
+        "name": "",
+        "text": "",
+        "modifiers": {
+          "operations": [],
+          "choices": []
+        }
+      },
+      "ab_overwhelminghorde": {
+        "name": "",
+        "text": "",
+        "modifiers": {
+          "operations": [],
+          "choices": []
+        }
+      },
+      "ab_infectedproboscis": {
+        "name": "",
+        "text": "",
+        "modifiers": {
+          "operations": [],
+          "choices": []
+        }
+      },
+      "ab_maddeningbuzzing": {
+        "name": "",
+        "text": "",
+        "modifiers": {
+          "operations": [],
+          "choices": []
+        }
+      },
+      "ab_corpulent": {
+        "name": "",
+        "text": "",
+        "modifiers": {
+          "operations": [],
+          "choices": []
+        }
+      },
+      "ab_sixarmedmonstrosity": {
+        "name": "",
+        "text": "",
+        "modifiers": {
+          "operations": [],
+          "choices": []
+        }
+      },
+      "ab_trample_amalgam": {
+        "name": "",
+        "text": "",
+        "modifiers": {
+          "operations": [],
+          "choices": []
+        }
+      },
+      "ab_unstoppable": {
+        "name": "",
+        "text": "",
+        "modifiers": {
+          "operations": [],
+          "choices": []
+        }
+      },
+      "ab_goetics_praetor": {
+        "name": "",
+        "text": "",
+        "modifiers": {
+          "operations": [],
+          "choices": []
+        }
+      },
+      "ab_goetics_praetor_wrath": {
+        "name": "",
+        "text": "",
+        "modifiers": {
+          "operations": [],
+          "choices": []
+        }
+      },
+      "ab_goetics_sorcerer": {
+        "name": "",
+        "text": "",
+        "modifiers": {
+          "operations": [],
+          "choices": []
+        }
+      },
+      "ab_blessingsoftheserpentmoon": {
+        "name": "Blessing of the Serpent Moon",
+        "text": "Goetic (2/4/6) | Cast before an Injury Roll against this model. -1 INJURY MODIFIER for every 2 Blood Markers paid.",
+        "modifiers": {
+          "operations": [],
+          "choices": []
+        }
+      },
+      "ab_shadowwalker": {
+        "name": "Shadow Walker",
+        "text": "Goetic (2) | Enemy Models cannot make Melee Attack on this model when it Retreats.",
+        "modifiers": {
+          "operations": [],
+          "choices": []
+        }
+      },
+      "ab_lefthandpath": {
+        "name": "Left-Hand Path",
+        "text": "Goetic (2) | Model can teleport between terrain while Moving, Charging, Retreating, or Dashing.",
+        "modifiers": {
+          "operations": [],
+          "choices": []
+        }
+      },
+      "ab_oraclebeastcloak": {
+        "name": "Oracle Beast Cloak",
+        "text": "Goetic (3) | Once per Turn, change the result of an Injury Roll to No Effect.",
+        "modifiers": {
+          "operations": [],
+          "choices": []
+        }
+      },
+      "ab_goetics_knight": {
+        "name": "",
+        "text": "",
+        "modifiers": {
+          "operations": [],
+          "choices": []
+        }
+      },
+      "ab_bloodmagic": {
+        "name": "Blood Magic",
+          "text": "Goetic (1) | Cast before any Injury Rolls for an attack made by this model. +1 INJURY DICE to all Injury Rolls for the attack.",
+        "modifiers": {
+          "operations": [],
+          "choices": []
+        }
+      },
+      "ab_hateful": {
+        "name": "Hateful",
+        "text": "If Activated with within 12\" and line of sight, of enemy model that is not BLACK GRAIL, or DEMONIC, this model must take a Charge Action against closest enemy model.",
+        "modifiers": {
+          "operations": [],
+          "choices": []
+        }
+      },
+      "ab_torturer": {
+        "name": "Torturer",
+        "text": "Can target friendly models that are not DEMONIC with Melee Attacks. If it does, it cannot attack again during the same Activation.",
+        "modifiers": {
+          "operations": [],
+          "choices": []
+        }
+      },
+      "ab_annihilator": {
+        "name": "Annihilator",
+        "text": "Can take 1 Fight Action per activation with each equipped Melee Weapon.",
+        "modifiers": {
+          "operations": [],
+          "choices": []
+        }
+      },
+      "ab_poisonstingers": {
+        "name": "Poison Stingers",
+        "text": "Can make a Melee Attack with CLEAVE 2 and SHRAPNEL.",
+        "modifiers": {
+          "operations": [],
+          "choices": []
+        }
+      },
+      "ab_demonicaura": {
+        "name": "",
+        "text": "",
+        "modifiers": {
+          "operations": [],
+          "choices": []
+        }
+      },
+      "ab_demonicaura_sloth": {
+        "name": "Aura of Sloth",
+        "text": "Enemy models within 8\" treat Minor Hits as Downs, including models that normally treat Downs and Minor Hits.",
+        "modifiers": {
+          "operations": [],
+          "choices": []
+        }
+      },
+      "ab_demonicaura_envy": {
+        "name": "Aura of Envy",
+        "text": "Enemy models within 12\" cannot charge models that are already in melee.",
+        "modifiers": {
+          "operations": [],
+          "choices": []
+        }
+      },
+      "ab_demonicaura_pride": {
+        "name": "Aura of Pride",
+        "text": "At end of Activation, place 1 Blood Marker next to each enemy model within 8\".",
+        "modifiers": {
+          "operations": [],
+          "choices": []
+        }
+      },
+      "ab_demonicaura_greed": {
+        "name": "Aura of Greed",
+        "text": "Enemy models within 12\" that Charge must Charge this model if it's within line of sight and can be reached.",
+        "modifiers": {
+          "operations": [],
+          "choices": []
+        }
+      },
+      "ab_demonicaura_wrath": {
+        "name": "Aura of Wrath",
+        "text": "+1 DICE to Melee Attack and Dash Actions for friendly models within 8\".",
+        "modifiers": {
+          "operations": [],
+          "choices": []
+        }
+      },
+      "ab_demonicaura_lust": {
+        "name": "Aura of Lust",
+        "text": "Negate any of the Keywords or Special Rules of non-IMPERVIOUS Armour worn by enemy models within 4\".",
+        "modifiers": {
+          "operations": [],
+          "choices": []
+        }
+      },
+      "ab_demonicaura_gluttony": {
+        "name": "Aura of Gluttony",
+        "text": "-1 DICE to rolls for enemy models within 8\", unless they are BLACK GRAIL or ARTIFICIAL.",
+        "modifiers": {
+          "operations": [],
+          "choices": []
+        }
+      },
+      "ab_holydna": {
+        "name": "",
+        "text": "",
+        "modifiers": {
+          "operations": [],
+          "choices": []
+        }
+      },
+      "ab_fruitofgoodandevil": {
+        "name": "",
+        "text": "",
+        "modifiers": {
+          "operations": [],
+          "choices": []
+        }
+      },
+      "ab_prizespecimens": {
+        "name": "",
+        "text": "",
+        "modifiers": {
+          "operations": [],
+          "choices": []
+        }
+      },
+      "ab_battlefieldvivisection": {
+        "name": "",
+        "text": "",
+        "modifiers": {
+          "operations": [],
+          "choices": []
+        }
+      },
+      "ab_ravenousinfection": {
+        "name": "",
+        "text": "",
+        "modifiers": {
+          "operations": [],
+          "choices": []
+        }
+      },
+      "ab_pestilent": {
+        "name": "",
+        "text": "",
+        "modifiers": {
+          "operations": [],
+          "choices": []
+        }
+      },
+      "ab_frenziedfollowers": {
+        "name": "",
+        "text": "",
+        "modifiers": {
+          "operations": [],
+          "choices": []
+        }
+      },
+      "ab_cadreofflesh": {
+        "name": "",
+        "text": "",
+        "modifiers": {
+          "operations": [],
+          "choices": []
+        }
+      },
+      "ab_arcanaputrescere": {
+        "name": "",
+        "text": "",
+        "modifiers": {
+          "operations": [],
+          "choices": []
+        }
+      },
+      "ab_arcanaputrescere_one": {
+        "name": "",
+        "text": "",
+        "modifiers": {
+          "operations": [],
+          "choices": []
+        }
+      },
+      "ab_plagueriddenflesh": {
+        "name": "",
+        "text": "",
+        "modifiers": {
+          "operations": [],
+          "choices": []
+        }
+      },
+      "ab_gnashingandwailing": {
+        "name": "",
+        "text": "",
+        "modifiers": {
+          "operations": [],
+          "choices": []
+        }
+      },
+      "ab_dormanthunger": {
+        "name": "",
+        "text": "",
+        "modifiers": {
+          "operations": [],
+          "choices": []
+        }
+      },
+      "ab_specialdeployment_cradle": {
+        "name": "",
+        "text": "",
+        "modifiers": {
+          "operations": [],
+          "choices": []
+        }
+      },
+      "ab_golgothatektites": {
+        "name": "",
+        "text": "",
+        "modifiers": {
+          "operations": [],
+          "choices": []
+        }
+      },
+      "ab_painamplifier": {
+        "name": "",
+        "text": "",
+        "modifiers": {
+          "operations": [],
+          "choices": []
+        }
+      },
+      "ab_inflictpain": {
+        "name": "",
+        "text": "",
+        "modifiers": {
+          "operations": [],
+          "choices": []
+        }
+      },
+      "ab_focusedfire": {
+        "name": "",
+        "text": "",
+        "modifiers": {
+          "operations": [],
+          "choices": []
+        }
+      },
+      "ab_tungstenorichalcumalloyshot": {
+        "name": "",
+        "text": "",
+        "modifiers": {
+          "operations": [],
+          "choices": []
+        }
+      },
+      "ab_gunsilent": {
+        "name": "",
+        "text": "",
+        "modifiers": {
+          "operations": [],
+          "choices": []
+        }
+      },
+      "ab_bullseye": {
+        "name": "",
+        "text": "",
+        "modifiers": {
+          "operations": [],
+          "choices": []
+        }
+      },
+      "ab_quickbursts": {
+        "name": "",
+        "text": "",
+        "modifiers": {
+          "operations": [],
+          "choices": []
+        }
+      },
+      "ab_liquidfire": {
+        "name": "Liquid Fire",
+        "text": "on Critical, IGNORE ARMOUR.",
+        "modifiers": {
+          "operations": [],
+          "choices": []
+        }
+      },
+      "ab_dangerous": {
+        "name": "",
+        "text": "",
+        "modifiers": {
+          "operations": [],
+          "choices": []
+        }
+      },
+      "ab_despatch": {
+        "name": "",
+        "text": "",
+        "modifiers": {
+          "operations": [],
+          "choices": []
+        }
+      },
+      "ab_unwieldy": {
+        "name": "",
+        "text": "",
+        "modifiers": {
+          "operations": [],
+          "choices": []
+        }
+      },
+      "ab_armourpiercing": {
+        "name": "",
+        "text": "",
+        "modifiers": {
+          "operations": [],
+          "choices": []
+        }
+      },
+      "ab_binoculars": {
+        "name": "",
+        "text": "",
+        "modifiers": {
+          "operations": [],
+          "choices": []
+        }
+      },
+      "ab_talisman": {
+        "name": "Talisman",
+        "text": "Once per game, when a Risky Success Roll is failed, model's Activation does not end.",
+        "modifiers": {
+          "operations": [],
+          "choices": []
+        }
+      },
+      "ab_dumdums": {
+        "name": "",
+        "text": "",
+        "modifiers": {
+          "operations": [],
+          "choices": []
+        }
+      },
+      "ab_shrine": {
+        "name": "",
+        "text": "",
+        "modifiers": {
+          "operations": [],
+          "choices": []
+        }
+      },
+      "ab_tearitdown": {
+        "name": "",
+        "text": "",
+        "modifiers": {
+          "operations": [],
+          "choices": []
+        }
+      },
+      "ab_contract": {
+        "name": "",
+        "text": "",
+        "modifiers": {
+          "operations": [],
+          "choices": []
+        }
+      },
+      "ab_incendiary": {
+        "name": "",
+        "text": "",
+        "modifiers": {
+          "operations": [],
+          "choices": []
+        }
+      },
+      "ab_inuredtopain": {
+        "name": "",
+        "text": "",
+        "modifiers": {
+          "operations": [],
+          "choices": []
+        }
+      },
+      "ab_treat": {
+        "name": "",
+        "text": "",
+        "modifiers": {
+          "operations": [],
+          "choices": []
+        }
+      },
+      "ab_mountaineer": {
+        "name": "",
+        "text": "",
+        "modifiers": {
+          "operations": [],
+          "choices": []
+        }
+      },
+      "ab_fanfare": {
+        "name": "Fanfare",
+        "text": "+1 DICE to Dash Actions for friendly models within 4\".",
+        "modifiers": {
+          "operations": [],
+          "choices": []
+        }
+      },
+      "ab_angelicfanfare": {
+        "name": "Angelic Fanfare",
+        "text": "+1 DICE to Dash Actions for friendly models within 8\".",
+        "modifiers": {
+          "operations": [],
+          "choices": []
+        }
+      },
+      "ab_shovel": {
+        "name": "Dug In",
+        "text": "Starts the game with COVER until model moves.",
+        "modifiers": {
+          "operations": [
+            {
+              "operation": "addMeleeWeapon",
+              "value": "eq_shovel"
+            }
+          ],
+          "choices": []
+        }
+      },
+      "ab_tracers": {
+        "name": "",
+        "text": "",
+        "modifiers": {
+          "operations": [],
+          "choices": []
+        }
+      },
+      "ab_feeble": {
+        "name": "",
+        "text": "",
+        "modifiers": {
+          "operations": [],
+          "choices": []
+        }
+      },
+      "ab_livingbattlefield": {
+        "name": "",
+        "text": "",
+        "modifiers": {
+          "operations": [],
+          "choices": []
+        }
+      },
+      "ab_mandibles": {
+        "name": "",
+        "text": "",
+        "modifiers": {
+          "operations": [],
+          "choices": []
+        }
+      },
+      "ab_poisoned": {
+        "name": "",
+        "text": "",
+        "modifiers": {
+          "operations": [],
+          "choices": []
+        }
+      },
+      "ab_leadtodeath": {
+        "name": "",
+        "text": "",
+        "modifiers": {
+          "operations": [],
+          "choices": []
+        }
+      },
+      "ab_weightofsins": {
+        "name": "",
+        "text": "",
+        "modifiers": {
+          "operations": [],
+          "choices": []
+        }
+      },
+      "ab_insectwings": {
+        "name": "",
+        "text": "",
+        "modifiers": {
+          "operations": [],
+          "choices": []
+        }
+      },
+      "ab_suckeddry": {
+        "name": "",
+        "text": "",
+        "modifiers": {
+          "operations": [],
+          "choices": []
+        }
+      },
+      "ab_privilegedaccess": {
+        "name": "",
+        "text": "",
+        "modifiers": {
+          "operations": [],
+          "choices": []
+        }
+      },
+      "ab_manyleggedform": {
+        "name": "",
+        "text": "",
+        "modifiers": {
+          "operations": [],
+          "choices": []
+        }
+      },
+      "ab_spiritofthebeast": {
+        "name": "Spirit of the Beast",
+        "text": "Once per Turn, +1 DICE to Melee Attack; or +1 INJURY DICE to Melee Attack; or +1 DICE to Dash Action.",
+        "modifiers": {
+          "operations": [],
+          "choices": []
+        }
+      },
+      "ab_continuouslitanyofprayers": {
+        "name": "",
+        "text": "",
+        "modifiers": {
+          "operations": [],
+          "choices": []
+        }
+      },
+      "ab_speakablessing": {
+        "name": "",
+        "text": "",
+        "modifiers": {
+          "operations": [],
+          "choices": []
+        }
+      },
+      "ab_gruesomeweight": {
+        "name": "Gruesome Weight",
+        "text": "Model is deployed Down. Place 1 extra Blood Marker next to them if they are attacked on the first Turn before they have activated.",
+        "modifiers": {
+          "operations": [],
+          "choices": []
+        }
+      },
+      "ab_drinkfromthecup": {
+        "name": "",
+        "text": "",
+        "modifiers": {
+          "operations": [],
+          "choices": []
+        }
+      },
+      "ab_inspiringgift": {
+        "name": "",
+        "text": "",
+        "modifiers": {
+          "operations": [],
+          "choices": []
+        }
+      },
+      "ab_deadlylight": {
+        "name": "",
+        "text": "",
+        "modifiers": {
+          "operations": [],
+          "choices": []
+        }
+      },
+      "ab_myrmidonwings": {
+        "name": "",
+        "text": "",
+        "modifiers": {
+          "operations": [],
+          "choices": []
+        }
+      },
+      "ab_steadfast": {
+        "name": "",
+        "text": "",
+        "modifiers": {
+          "operations": [],
+          "choices": []
+        }
+      },
+      "ab_twinblows": {
+        "name": "",
+        "text": "",
+        "modifiers": {
+          "operations": [],
+          "choices": []
+        }
+      },
+      "ab_fieldhospital": {
+        "name": "",
+        "text": "",
+        "modifiers": {
+          "operations": [],
+          "choices": []
+        }
+      },
+      "ab_rallytotheflag": {
+        "name": "",
+        "text": "",
+        "modifiers": {
+          "operations": [],
+          "choices": []
+        }
+      },
+      "ab_sandstorm": {
+        "name": "",
+        "text": "",
+        "modifiers": {
+          "operations": [],
+          "choices": []
+        }
+      },
+      "ab_spiritofvengance": {
+        "name": "",
+        "text": "",
+        "modifiers": {
+          "operations": [],
+          "choices": []
+        }
+      },
+      "ab_blowthyhorn": {
+        "name": "",
+        "text": "",
+        "modifiers": {
+          "operations": [],
+          "choices": []
+        }
+      },
+      "ab_famousdeed": {
+        "name": "",
+        "text": "",
+        "modifiers": {
+          "operations": [],
+          "choices": []
+        }
+      },
+      "ab_goeticpower": {
+        "name": "",
+        "text": "",
+        "modifiers": {
+          "operations": [],
+          "choices": []
+        }
+      },
+      "ab_devouringswarm": {
+        "name": "",
+        "text": "",
+        "modifiers": {
+          "operations": [],
+          "choices": []
+        }
+      },
+      "ab_markofthepit": {
+        "name": "Mark of the Pit",
+        "text": "After deployment, move 1 terrain piece 8\" by 8\" or smaller, 6\". Check book for terms & conditions.",
+        "modifiers": {
+          "operations": [],
+          "choices": []
+        }
+      },
+      "ab_enhancedbullets": {
+        "name": "",
+        "text": "",
+        "modifiers": {
+          "operations": [],
+          "choices": []
+        }
+      },
+      "ab_luckofthedevil": {
+        "name": "Luck of the Devil",
+        "text": "Before deployment, set aside 3D6 and set them to 6. During the game, you can replace a D6 you are about to roll (except for an Injury Roll) with one of the dice set aside.",
+        "modifiers": {
+          "operations": [],
+          "choices": []
+        }
+      },
+      "ab_restrained": {
+        "name": "Brought to Heel",
+        "text": "",
+        "modifiers": {
+          "operations": [
+            {
+              "operation": "modifyRanged",
+              "value": 1
+            },
+            {
+              "operation": "removeAbility",
+              "value": "ab_hateful"
+            }
+          ],
+          "choices": []
+        }
+      },
+      "ab_holymachine": {
+        "name": "",
+        "text": "",
+        "modifiers": {
+          "operations": [],
+          "choices": []
+        }
+      },
+      "ab_disposablerocket": {
+        "name": "Disposable Rocket",
+        "text": "After Injury Roll, move target D6\" directly away. It stops if stops if it hits another model, Impassable terrain, or terrain it cannot cross.",
+        "modifiers": {
+          "operations": [],
+          "choices": []
+        }
+      },
+      "ab_helpfulservitor": {
+        "name": "",
+        "text": "",
+        "modifiers": {
+          "operations": [],
+          "choices": []
+        }
+      },
+      "ab_swathedinsmoke": {
+        "name": "",
+        "text": "",
+        "modifiers": {
+          "operations": [],
+          "choices": []
+        }
+      },
+      "ab_enhancedaccuracy": {
+        "name": "",
+        "text": "",
+        "modifiers": {
+          "operations": [],
+          "choices": []
+        }
+      },
+      "ab_brazenbullgrandcannon": {
+        "name": "",
+        "text": "",
+        "modifiers": {
+          "operations": [],
+          "choices": []
+        }
+      },
+      "ab_mobilegrandcannon": {
+        "name": "",
+        "text": "",
+        "modifiers": {
+          "operations": [],
+          "choices": []
+        }
+      },
+      "ab_unstoppableobject": {
+        "name": "",
+        "text": "",
+        "modifiers": {
+          "operations": [],
+          "choices": []
+        }
+      },
+      "ab_retribution": {
+        "name": "",
+        "text": "",
+        "modifiers": {
+          "operations": [],
+          "choices": []
+        }
+      },
+      "ab_draggedforwards": {
+        "name": "",
+        "text": "",
+        "modifiers": {
+          "operations": [],
+          "choices": []
+        }
+      },
+      "ab_deadlyembrace": {
+        "name": "",
+        "text": "",
+        "modifiers": {
+          "operations": [],
+          "choices": []
+        }
+      },
+      "ab_thedogsofwar": {
+        "name": "",
+        "text": "",
+        "modifiers": {
+          "operations": [],
+          "choices": []
+        }
+      },
+      "ab_packloyalty": {
+        "name": "",
+        "text": "",
+        "modifiers": {
+          "operations": [],
+          "choices": []
+        }
+      },
+      "ab_teethandclaws": {
+        "name": "Teeth and Claws",
+        "text": "Can make a Melee Attack.",
+        "modifiers": {
+          "operations": [],
+          "choices": []
+        }
+      },
+      "ab_ironfists": {
+        "name": "",
+        "text": "",
+        "modifiers": {
+          "operations": [],
+          "choices": []
+        }
+      },
+      "ab_ballisticboxarmour": {
+        "name": "",
+        "text": "",
+        "modifiers": {
+          "operations": [],
+          "choices": []
+        }
+      },
+      "ab_bulky": {
+        "name": "",
+        "text": "",
+        "modifiers": {
+          "operations": [],
+          "choices": []
+        }
+      },
+      "ab_bulkytank": {
+        "name": "",
+        "text": "",
+        "modifiers": {
+          "operations": [],
+          "choices": []
+        }
+      },
+      "ab_deathfromonhigh": {
+        "name": "",
+        "text": "",
+        "modifiers": {
+          "operations": [],
+          "choices": []
+        }
+      },
+      "ab_celticbulk": {
+        "name": "",
+        "text": "",
+        "modifiers": {
+          "operations": [],
+          "choices": []
+        }
+      },
+      "ab_trenchmole": {
+        "name": "",
+        "text": "",
+        "modifiers": {
+          "operations": [],
+          "choices": []
+        }
+      },
+      "ab_inspiringrelic": {
+        "name": "",
+        "text": "",
+        "modifiers": {
+          "operations": [],
+          "choices": []
+        }
+      },
+      "ab_heavyexplosive": {
+        "name": "",
+        "text": "",
+        "modifiers": {
+          "operations": [],
+          "choices": []
+        }
+      },
+      "ab_bagpipes": {
+        "name": "",
+        "text": "",
+        "modifiers": {
+          "operations": [],
+          "choices": []
+        }
+      },
+      "ab_tanksplitter": {
+        "name": "",
+        "text": "",
+        "modifiers": {
+          "operations": [],
+          "choices": []
+        }
+      },
+      "ab_holysmoke": {
+        "name": "",
+        "text": "",
+        "modifiers": {
+          "operations": [],
+          "choices": []
+        }
+      },
+      "ab_bypassshield": {
+        "name": "",
+        "text": "",
+        "modifiers": {
+          "operations": [],
+          "choices": []
+        }
+      },
+      "ab_healingwaters": {
+        "name": "",
+        "text": "",
+        "modifiers": {
+          "operations": [],
+          "choices": []
+        }
+      },
+      "ab_tokenofhonour": {
+        "name": "",
+        "text": "",
+        "modifiers": {
+          "operations": [],
+          "choices": []
+        }
+      },
+      "ab_virtuousrewards": {
+        "name": "",
+        "text": "",
+        "modifiers": {
+          "operations": [],
+          "choices": []
+        }
+      },
+      "ab_overcharge": {
+        "name": "",
+        "text": "",
+        "modifiers": {
+          "operations": [],
+          "choices": []
+        }
+      },
+      "ab_martyrdom": {
+        "name": "",
+        "text": "",
+        "modifiers": {
+          "operations": [],
+          "choices": []
+        }
+      },
+      "ab_mightyblows": {
+        "name": "",
+        "text": "",
+        "modifiers": {
+          "operations": [],
+          "choices": []
+        }
+      },
+      "ab_fullauto": {
+        "name": "",
+        "text": "",
+        "modifiers": {
+          "operations": [],
+          "choices": []
+        }
+      },
+      "ab_cloudofgas": {
+        "name": "",
+        "text": "",
+        "modifiers": {
+          "operations": [],
+          "choices": []
+        }
+      },
+      "ab_impossibletostop": {
+        "name": "",
+        "text": "",
+        "modifiers": {
+          "operations": [],
+          "choices": []
+        }
+      },
+      "ab_manifoldblessings": {
+        "name": "",
+        "text": "",
+        "modifiers": {
+          "operations": [],
+          "choices": []
+        }
+      },
+      "ab_advanceddesign": {
+        "name": "",
+        "text": "",
+        "modifiers": {
+          "operations": [],
+          "choices": []
+        }
+      },
+      "ab_grindtodust": {
+        "name": "",
+        "text": "",
+        "modifiers": {
+          "operations": [],
+          "choices": []
+        }
+      },
+      "ab_divineaccuracy": {
+        "name": "",
+        "text": "",
+        "modifiers": {
+          "operations": [],
+          "choices": []
+        }
+      },
+      "ab_hightrajectory": {
+        "name": "",
+        "text": "",
+        "modifiers": {
+          "operations": [],
+          "choices": []
+        }
+      },
+      "ab_cowerbeforethelord": {
+        "name": "",
+        "text": "",
+        "modifiers": {
+          "operations": [],
+          "choices": []
+        }
+      },
+      "ab_anointed": {
+        "name": "",
+        "text": "",
+        "modifiers": {
+          "operations": [],
+          "choices": []
+        }
+      },
+      "ab_onlytherighteous": {
+        "name": "",
+        "text": "",
+        "modifiers": {
+          "operations": [],
+          "choices": []
+        }
+      },
+      "ab_castigatortough": {
+        "name": "",
+        "text": "",
+        "modifiers": {
+          "operations": [],
+          "choices": []
+        }
+      },
+      "ab_causeconfusion": {
+        "name": "",
+        "text": "",
+        "modifiers": {
+          "operations": [],
+          "choices": []
+        }
+      },
+      "ab_guidingpath": {
+        "name": "",
+        "text": "",
+        "modifiers": {
+          "operations": [],
+          "choices": []
+        }
+      },
+      "ab_protectionfromharm": {
+        "name": "",
+        "text": "",
+        "modifiers": {
+          "operations": [],
+          "choices": []
+        }
+      },
+      "ab_slashingattack": {
+        "name": "",
+        "text": "",
+        "modifiers": {
+          "operations": [],
+          "choices": []
+        }
+      },
+      "ab_blendin": {
+        "name": "",
+        "text": "",
+        "modifiers": {
+          "operations": [],
+          "choices": []
+        }
+      },
+      "ab_greekfire": {
+        "name": "",
+        "text": "",
+        "modifiers": {
+          "operations": [],
+          "choices": []
+        }
+      },
+      "ab_echoingblast": {
+        "name": "",
+        "text": "",
+        "modifiers": {
+          "operations": [],
+          "choices": []
+        }
+      },
+      "ab_gustsofwind": {
+        "name": "",
+        "text": "",
+        "modifiers": {
+          "operations": [],
+          "choices": []
+        }
+      },
+      "ab_temporalslipstream": {
+        "name": "",
+        "text": "",
+        "modifiers": {
+          "operations": [],
+          "choices": []
+        }
+      },
+      "ab_attacktwice": {
+        "name": "",
+        "text": "",
+        "modifiers": {
+          "operations": [],
+          "choices": []
+        }
+      },
+      "ab_enhancedstrength": {
+        "name": "",
+        "text": "",
+        "modifiers": {
+          "operations": [],
+          "choices": []
+        }
+      },
+      "ab_pummellingblows": {
+        "name": "",
+        "text": "",
+        "modifiers": {
+          "operations": [],
+          "choices": []
+        }
+      },
+      "ab_chosenhomunculus": {
+        "name": "",
+        "text": "",
+        "modifiers": {
+          "operations": [],
+          "choices": []
+        }
+      },
+      "ab_fountainoflife": {
+        "name": "",
+        "text": "",
+        "modifiers": {
+          "operations": [],
+          "choices": []
+        }
+      },
+      "ab_fireshield": {
+        "name": "",
+        "text": "",
+        "modifiers": {
+          "operations": [],
+          "choices": []
+        }
+      },
+      "ab_prebattledeployment": {
+        "name": "",
+        "text": "",
+        "modifiers": {
+          "operations": [],
+          "choices": []
+        }
+      },
+      "ab_combatdeployment": {
+        "name": "",
+        "text": "",
+        "modifiers": {
+          "operations": [],
+          "choices": []
+        }
+      },
+      "ab_mobilecover": {
+        "name": "",
+        "text": "",
+        "modifiers": {
+          "operations": [],
+          "choices": []
+        }
+      },
+      "ab_hiddenexplosives": {
+        "name": "",
+        "text": "",
+        "modifiers": {
+          "operations": [],
+          "choices": []
+        }
+      },
+      "ab_detonatingtheexplosives": {
+        "name": "",
+        "text": "",
+        "modifiers": {
+          "operations": [],
+          "choices": []
+        }
+      },
+      "ab_othismos": {
+        "name": "",
+        "text": "",
+        "modifiers": {
+          "operations": [],
+          "choices": []
+        }
+      },
+      "ab_deployingthegunbattery": {
+        "name": "",
+        "text": "",
+        "modifiers": {
+          "operations": [],
+          "choices": []
+        }
+      },
+      "ab_firingagunbattery": {
+        "name": "",
+        "text": "",
+        "modifiers": {
+          "operations": [],
+          "choices": []
+        }
+      },
+      "ab_evilpower": {
+        "name": "",
+        "text": "",
+        "modifiers": {
+          "operations": [],
+          "choices": []
+        }
+      },
+      "ab_pairedweapon": {
+        "name": "",
+        "text": "",
+        "modifiers": {
+          "operations": [],
+          "choices": []
+        }
+      },
+      "ab_duck": {
+        "name": "",
+        "text": "",
+        "modifiers": {
+          "operations": [],
+          "choices": []
+        }
+      },
+      "ab_infernalstrike": {
+        "name": "",
+        "text": "",
+        "modifiers": {
+          "operations": [],
+          "choices": []
+        }
+      },
+      "ab_mightyexplosion": {
+        "name": "",
+        "text": "",
+        "modifiers": {
+          "operations": [],
+          "choices": []
+        }
+      },
+      "ab_walkingbomb": {
+        "name": "",
+        "text": "",
+        "modifiers": {
+          "operations": [],
+          "choices": []
+        }
+      },
+      "ab_triggersarcophagus": {
+        "name": "",
+        "text": "",
+        "modifiers": {
+          "operations": [],
+          "choices": []
+        }
+      },
+      "ab_detonationsarcophagus": {
+        "name": "",
+        "text": "",
+        "modifiers": {
+          "operations": [],
+          "choices": []
+        }
+      },
+      "ab_runeofmammon": {
+        "name": "",
+        "text": "",
+        "modifiers": {
+          "operations": [],
+          "choices": []
+        }
+      },
+      "ab_illusions": {
+        "name": "",
+        "text": "",
+        "modifiers": {
+          "operations": [],
+          "choices": []
+        }
+      },
+      "ab_placealtar": {
+        "name": "",
+        "text": "",
+        "modifiers": {
+          "operations": [],
+          "choices": []
+        }
+      },
+      "ab_chokinggas": {
+        "name": "",
+        "text": "",
+        "modifiers": {
+          "operations": [],
+          "choices": []
+        }
+      },
+      "ab_kneelbeforeme": {
+        "name": "",
+        "text": "",
+        "modifiers": {
+          "operations": [],
+          "choices": []
+        }
+      },
+      "ab_target_of_wrath": {
+        "name": "",
+        "text": "",
+        "modifiers": {
+          "operations": [],
+          "choices": []
+        }
+      },
+      "ab_powerofthecultoftheblackgrail": {
+        "name": "",
+        "text": "",
+        "modifiers": {
+          "operations": [],
+          "choices": []
+        }
+      },
+      "ab_enhancedvision": {
+        "name": "",
+        "text": "",
+        "modifiers": {
+          "operations": [],
+          "choices": []
+        }
+      },
+      "ab_graildevotees": {
+        "name": "",
+        "text": "",
+        "modifiers": {
+          "operations": [],
+          "choices": []
+        }
+      },
+      "ab_jealousobsession": {
+        "name": "",
+        "text": "",
+        "modifiers": {
+          "operations": [],
+          "choices": []
+        }
+      },
+      "ab_terrifyinghallucinations": {
+        "name": "",
+        "text": "",
+        "modifiers": {
+          "operations": [],
+          "choices": []
+        }
+      },
+      "ab_selfsacrifice": {
+        "name": "",
+        "text": "",
+        "modifiers": {
+          "operations": [],
+          "choices": []
+        }
+      },
+      "ab_locusofdespair": {
+        "name": "",
+        "text": "",
+        "modifiers": {
+          "operations": [],
+          "choices": []
+        }
+      },
+      "ab_sinisterwhispers": {
+        "name": "",
+        "text": "",
+        "modifiers": {
+          "operations": [],
+          "choices": []
+        }
+      },
+      "ab_batter": {
+        "name": "Batter",
+        "text": "",
+        "modifiers": {
+          "operations": [
+            {
+              "operation": "addMeleeWeapon",
+              "value": "eq_arquebus"
+            }
+          ],
+          "choices": []
+        }
+      },
+      "ab_searingflames": {
+        "name": "Searing Flames",
+        "text": "At end of Activation, place 1 Blood Marker next to each enemy within 1\" that does not have NEGATE FIRE.",
+        "modifiers": {
+          "operations": [],
+          "choices": []
+        }
+      },
+      "ab_ambushweapon": {
+        "name": "Ambush Weapon",
+        "text": "+2 INJURY MODIFIER against models that have not yet Activated.",
+        "modifiers": {
+          "operations": [],
+          "choices": []
+        }
+      },
+      "ab_abyssalblade": {
+        "name": "",
+        "text": "",
+        "modifiers": {
+          "operations": [],
+          "choices": []
+        }
+      },
+      "ab_unnaturalinversion": {
+        "name": "Unnatural Inversion",
+        "text": "+1 DICE if Cover or Long Range modifiers apply, instead of -1 DICE.",
+        "modifiers": {
+          "operations": [],
+          "choices": []
+        }
+      },
+      "ab_agonisinginjuries": {
+        "name": "Agonising Injuries",
+        "text": "Make Injury Rolls with 1D6, but double Blood Markers caused.",
+        "modifiers": {
+          "operations": [],
+          "choices": []
+        }
+      },
+      "ab_specialammunition": {
+        "name": "",
+        "text": "",
+        "modifiers": {
+          "operations": [],
+          "choices": []
+        }
+      },
+      "ab_swingingblow": {
+        "name": "",
+        "text": "",
+        "modifiers": {
+          "operations": [],
+          "choices": []
+        }
+      },
+      "ab_wrathofgod": {
+        "name": "",
+        "text": "",
+        "modifiers": {
+          "operations": [],
+          "choices": []
+        }
+      },
+      "ab_bloodofmartyrs": {
+        "name": "",
+        "text": "",
+        "modifiers": {
+          "operations": [],
+          "choices": []
+        }
+      },
+      "ab_channelledsorrow": {
+        "name": "",
+        "text": "",
+        "modifiers": {
+          "operations": [],
+          "choices": []
+        }
+      },
+      "ab_freshmeat": {
+        "name": "",
+        "text": "",
+        "modifiers": {
+          "operations": [],
+          "choices": []
+        }
+      },
+      "ab_hackandhew": {
+        "name": "",
+        "text": "",
+        "modifiers": {
+          "operations": [],
+          "choices": []
+        }
+      },
+      "ab_masticate": {
+        "name": "",
+        "text": "",
+        "modifiers": {
+          "operations": [],
+          "choices": []
+        }
+      },
+      "ab_mutation": {
+        "name": "",
+        "text": "",
+        "modifiers": {
+          "operations": [],
+          "choices": []
+        }
+      },
+      "ab_grasp": {
+        "name": "",
+        "text": "",
+        "modifiers": {
+          "operations": [],
+          "choices": []
+        }
+      },
+      "ab_gnashingblow": {
+        "name": "",
+        "text": "",
+        "modifiers": {
+          "operations": [],
+          "choices": []
+        }
+      },
+      "ab_rottensplinters": {
+        "name": "",
+        "text": "",
+        "modifiers": {
+          "operations": [],
+          "choices": []
+        }
+      },
+      "ab_limitedupgrades": {
+        "name": "",
+        "text": "",
+        "modifiers": {
+          "operations": [],
+          "choices": []
+        }
+      },
+      "ab_albabagpipes": {
+        "name": "",
+        "text": "",
+        "modifiers": {
+          "operations": [],
+          "choices": []
+        }
+      },
+      "up_skirmisher": {
+        "name": "",
+        "text": "",
+        "modifiers": {
+          "operations": [],
+          "choices": []
+        }
+      },
+      "up_infiltrator": {
+        "name": "",
+        "text": "",
+        "modifiers": {
+          "operations": [],
+          "choices": []
+        }
+      },
+      "up_meleemight": {
+        "name": "",
+        "text": "",
+        "modifiers": {
+          "operations": [],
+          "choices": []
+        }
+      },
+      "up_fierceandbrave": {
+        "name": "",
+        "text": "",
+        "modifiers": {
+          "operations": [],
+          "choices": []
+        }
+      },
+      "up_swissguard": {
+        "name": "",
+        "text": "",
+        "modifiers": {
+          "operations": [],
+          "choices": []
+        }
+      },
+      "up_hallucinogendisguise": {
+        "name": "",
+        "text": "",
+        "modifiers": {
+          "operations": [],
+          "choices": []
+        }
+      },
+      "up_thunderboltofalamut": {
+        "name": "",
+        "text": "",
+        "modifiers": {
+          "operations": [],
+          "choices": []
+        }
+      },
+      "up_mirageoftime": {
+        "name": "",
+        "text": "",
+        "modifiers": {
+          "operations": [],
+          "choices": []
+        }
+      },
+      "up_secretpaths": {
+        "name": "",
+        "text": "",
+        "modifiers": {
+          "operations": [],
+          "choices": []
+        }
+      },
+      "up_alchemicalformulae_wings": {
+        "name": "",
+        "text": "",
+        "modifiers": {
+          "operations": [],
+          "choices": []
+        }
+      },
+      "up_alchemicalformulae_elementalresistance": {
+        "name": "",
+        "text": "",
+        "modifiers": {
+          "operations": [],
+          "choices": []
+        }
+      },
+      "up_alchemicalformulae_massive_size": {
+        "name": "",
+        "text": "",
+        "modifiers": {
+          "operations": [],
+          "choices": []
+        }
+      },
+      "up_alchemicalformulae_enslavedmind": {
+        "name": "",
+        "text": "",
+        "modifiers": {
+          "operations": [],
+          "choices": []
+        }
+      },
+      "up_alchemicalformulae_humanhands": {
+        "name": "",
+        "text": "",
+        "modifiers": {
+          "operations": [],
+          "choices": []
+        }
+      },
+      "up_alchemicalformulae_inhumanstrength": {
+        "name": "",
+        "text": "",
+        "modifiers": {
+          "operations": [],
+          "choices": []
+        }
+      },
+      "up_alchemicalformulae_terrifyingappearance": {
+        "name": "",
+        "text": "",
+        "modifiers": {
+          "operations": [],
+          "choices": []
+        }
+      },
+      "up_alchemicalformulae_additionalarm": {
+        "name": "",
+        "text": "",
+        "modifiers": {
+          "operations": [],
+          "choices": []
+        }
+      },
+      "up_alchemicalformulae_twoheads": {
+        "name": "",
+        "text": "",
+        "modifiers": {
+          "operations": [],
+          "choices": []
+        }
+      },
+      "up_alchemicalformulae_hypnoticeyes": {
+        "name": "",
+        "text": "",
+        "modifiers": {
+          "operations": [],
+          "choices": []
+        }
+      },
+      "up_alchemicalformulae_hawkeyes": {
+        "name": "",
+        "text": "",
+        "modifiers": {
+          "operations": [],
+          "choices": []
+        }
+      },
+      "up_alchemicalformulae_startlingspeed": {
+        "name": "",
+        "text": "",
+        "modifiers": {
+          "operations": [],
+          "choices": []
+        }
+      },
+      "up_alchemicalformulae_sealofsolomon": {
+        "name": "",
+        "text": "",
+        "modifiers": {
+          "operations": [],
+          "choices": []
+        }
+      },
+      "up_alchemicalformulae_gargantuansize": {
+        "name": "",
+        "text": "",
+        "modifiers": {
+          "operations": [],
+          "choices": []
+        }
+      },
+      "up_alchemicalformulae_regenerativetissue": {
+        "name": "",
+        "text": "",
+        "modifiers": {
+          "operations": [],
+          "choices": []
+        }
+      },
+      "up_secrets_medicine": {
+        "name": "",
+        "text": "",
+        "modifiers": {
+          "operations": [],
+          "choices": []
+        }
+      },
+      "up_secrets_cartographyandgeography": {
+        "name": "",
+        "text": "",
+        "modifiers": {
+          "operations": [],
+          "choices": []
+        }
+      },
+      "up_secrets_secretsoftakwin": {
+        "name": "",
+        "text": "",
+        "modifiers": {
+          "operations": [],
+          "choices": []
+        }
+      },
+      "up_secrets_chemistryandalchemy": {
+        "name": "",
+        "text": "",
+        "modifiers": {
+          "operations": [],
+          "choices": []
+        }
+      },
+      "up_secrets_philosophypoetrytheology": {
+        "name": "",
+        "text": "",
+        "modifiers": {
+          "operations": [],
+          "choices": []
+        }
+      },
+      "up_trenchdog_fireteam": {
+        "name": "",
+        "text": "",
+        "modifiers": {
+          "operations": [],
+          "choices": []
+        }
+      },
+      "up_heretictrooper_hereticlegionnaire": {
+        "name": "",
+        "text": "",
+        "modifiers": {
+          "operations": [],
+          "choices": []
+        }
+      },
+      "up_heretictrooper_hereticlegionnaire_ranged": {
+        "name": "",
+        "text": "",
+        "modifiers": {
+          "operations": [],
+          "choices": []
+        }
+      },
+      "up_heretictrooper_hereticlegionnaire_Melee": {
+        "name": "",
+        "text": "",
+        "modifiers": {
+          "operations": [],
+          "choices": []
+        }
+      },
+      "up_trenchghost_sarcophagusmine": {
+        "name": "",
+        "text": "",
+        "modifiers": {
+          "operations": [],
+          "choices": []
+        }
+      },
+      "up_zealotstrength": {
+        "name": "",
+        "text": "",
+        "modifiers": {
+          "operations": [],
+          "choices": []
+        }
+      },
+      "up_resurrection": {
+        "name": "",
+        "text": "",
+        "modifiers": {
+          "operations": [],
+          "choices": []
+        }
+      },
+      "up_wrathofgod": {
+        "name": "",
+        "text": "",
+        "modifiers": {
+          "operations": [],
+          "choices": []
+        }
+      },
+      "up_machinearmour": {
+        "name": "",
+        "text": "",
+        "modifiers": {
+          "operations": [],
+          "choices": []
+        }
+      },
+      "up_highlandmachinearmour": {
+        "name": "",
+        "text": "",
+        "modifiers": {
+          "operations": [],
+          "choices": []
+        }
+      },
+      "up_fianna": {
+        "name": "",
+        "text": "",
+        "modifiers": {
+          "operations": [],
+          "choices": []
+        }
+      },
+      "up_berserker": {
+        "name": "",
+        "text": "",
+        "modifiers": {
+          "operations": [],
+          "choices": []
+        }
+      },
+      "up_rapidassault": {
+        "name": "",
+        "text": "",
+        "modifiers": {
+          "operations": [],
+          "choices": []
+        }
+      },
+      "up_chewa": {
+        "name": "",
+        "text": "",
+        "modifiers": {
+          "operations": [],
+          "choices": []
+        }
+      },
+      "up_vanguard": {
+        "name": "",
+        "text": "",
+        "modifiers": {
+          "operations": [],
+          "choices": []
+        }
+      },
+      "up_plagueknightcompanionofthefly_base": {
+        "name": "",
+        "text": "",
+        "modifiers": {
+          "operations": [],
+          "choices": []
+        }
+      },
+      "up_plagueknightcompanionofthefly_ranged": {
+        "name": "",
+        "text": "",
+        "modifiers": {
+          "operations": [],
+          "choices": []
+        }
+      },
+      "up_plagueknightcompanionofthefly_melee": {
+        "name": "",
+        "text": "",
+        "modifiers": {
+          "operations": [],
+          "choices": []
+        }
+      },
+      "up_plagueknightalmoner": {
+        "name": "",
+        "text": "",
+        "modifiers": {
+          "operations": [],
+          "choices": []
+        }
+      },
+      "up_plagueknightrottencross": {
+        "name": "",
+        "text": "",
+        "modifiers": {
+          "operations": [],
+          "choices": []
+        }
+      },
+      "up_plagueknightrankofbutcher": {
+        "name": "",
+        "text": "",
+        "modifiers": {
+          "operations": [],
+          "choices": []
+        }
+      },
+      "up_plagueknightrankbutcherking": {
+        "name": "",
+        "text": "",
+        "modifiers": {
+          "operations": [],
+          "choices": []
+        }
+      },
+      "up_plagueknightrankofthefeast": {
+        "name": "",
+        "text": "",
+        "modifiers": {
+          "operations": [],
+          "choices": []
+        }
+      },
+      "up_plagueknightrankofferocity": {
+        "name": "",
+        "text": "",
+        "modifiers": {
+          "operations": [],
+          "choices": []
+        }
+      },
+      "up_infectioushound": {
+        "name": "",
+        "text": "",
+        "modifiers": {
+          "operations": [],
+          "choices": []
+        }
+      },
+      "up_maddeningbuzz": {
+        "name": "",
+        "text": "",
+        "modifiers": {
+          "operations": [],
+          "choices": []
+        }
+      },
+      "up_goetic_burninginferno": {
+        "name": "Burning Inferno",
+        "text": "Goetic (1-3) | Make a Ranged Attack with Range of 36\", FIRE, SCATTER, and BLAST X, where X is Blood Markers paid. Injury roll against primary target also has IGNORE ARMOUR.",
+        "modifiers": {
+          "operations": [],
+          "choices": []
+        }
+      },
+      "up_goetic_slavemaster": {
+        "name": "Slavemaster",
+        "text": "Goetic (1) | Command Yoke Fiend within 18\" to Move, Shoot, Fight, or Die.",
+        "modifiers": {
+          "operations": [],
+          "choices": []
+        }
+      },
+      "up_goetic_wrath_chargeofhatred": {
+        "name": "Charge of Hatred",
+        "text": "Charge with Movement Characteristic of 12\" and no Charge Bonus. Must take a Risky Success to charge any model other than the closest enemy in line of sight.",
+        "modifiers": {
+          "operations": [],
+          "choices": []
+        }
+      },
+      "up_goetic_wrath_lessermarkofcain": {
+        "name": "Lesser Mark of Cain",
+        "text": "",
+        "modifiers": {
+          "operations": [
+            {
+              "operation": "addKeyword",
+              "value": "-1 INJURY DICE"
+            }
+          ],
+          "choices": []
+        }
+      },
+      "up_goetic_wrath_blindrage": {
+        "name": "Blind Rage",
+        "text": "+1 DICE to Dash Actions.",
+        "modifiers": {
+          "operations": [],
+          "choices": []
+        }
+      },
+      "up_goetic_envy_enviouseyes": {
+        "name": "",
+        "text": "",
+        "modifiers": {
+          "operations": [],
+          "choices": []
+        }
+      },
+      "up_goetic_envy_covetedposition": {
+        "name": "Coveted Position",
+        "text": "Goetic (2) | Swap position with a model within 12\" and line of sight.",
+        "modifiers": {
+          "operations": [],
+          "choices": []
+        }
+      },
+      "up_goetic_envy_whatisyoursismine": {
+        "name": "What is Yours is Mine",
+        "text": "Goetic (1) | Remove 1 Blood Marker or Blessing Marker from a model in line of sight, and place it next to this model.",
+        "modifiers": {
+          "operations": [],
+          "choices": []
+        }
+      },
+      "up_goetic_lust_forbiddenpleasures": {
+        "name": "Forbidden Pleasures",
+        "text": "Place 3 Blood Markers next to a model in your Warband that is not DEMONIC.",
+        "modifiers": {
+          "operations": [],
+          "choices": []
+        }
+      },
+      "up_goetic_lust_exquisitepain": {
+        "name": "Exquisite Pain",
+        "text": "Goetic (1-2) | Place the Blood Markers paid next to a model within line of sight.",
+        "modifiers": {
+          "operations": [],
+          "choices": []
+        }
+      },
+      "up_goetic_lust_callofflesh": {
+        "name": "Call of the Flesh",
+        "text": "Goetic (2) | Long one, check the book.",
+        "modifiers": {
+          "operations": [],
+          "choices": []
+        }
+      },
+      "up_goetic_pride_prouddefiance": {
+        "name": "Proud Defiance",
+        "text": "You do not have to take Morale Checks.",
+        "modifiers": {
+          "operations": [],
+          "choices": []
+        }
+      },
+      "up_goetic_pride_tooproudtofall": {
+        "name": "Too Proud to Fall",
+        "text": "Goetic (2) | Cast before this model is taken Down. Ignore the Down result and remain standing, but still suffer any other effects of the Injury Roll or Rule.",
+        "modifiers": {
+          "operations": [],
+          "choices": []
+        }
+      },
+      "up_goetic_pride_lightofsamael": {
+        "name": "Light of Samael",
+        "text": "Goetic (2) | Make an Injury Roll against an enemy model within 24\" and line of sight. If the model is on a 32mm base or smaller, move it D6\" directly away. It stops if stops if it hits another model, Impassable terrain, or terrain it cannot cross.",
+        "modifiers": {
+          "operations": [],
+          "choices": []
+        }
+      },
+      "up_goetic_sloth_morpheanmind": {
+        "name": "Morphean Mind",
+        "text": "Opponent cannot spend more than 1 Blood Marker to add -1 DICE to Success Rolls.",
+        "modifiers": {
+          "operations": [],
+          "choices": []
+        }
+      },
+      "up_goetic_sloth_charmofacedia": {
+        "name": "Charm of Acedia",
+        "text": "Goetic (1) | The next Success or Risky Success roll automatically succeeds.",
+        "modifiers": {
+          "operations": [],
+          "choices": []
+        }
+      },
+      "up_goetic_sloth_daemoniummeridianum": {
+        "name": "Daemonium Meridianum",
+        "text": "Enemy models treat terrain within 6\" as DIFFICULT TERRAIN.",
+        "modifiers": {
+          "operations": [],
+          "choices": []
+        }
+      },
+      "up_goetic_gluttony_bellyofthebeast": {
+        "name": "Belly of the Beast",
+        "text": "After a Melee Attack places at least 1 Blood Marker next to this model, place 1 Blood Marker next to the attacking model.",
+        "modifiers": {
+          "operations": [],
+          "choices": []
+        }
+      },
+      "up_goetic_gluttony_uncaringgluttony": {
+        "name": "Uncaring Gluttony",
+        "text": "Goetic (2) | Select and enemy model that has not activated, and a piece of equipment that is not CONSUMABLE. If it is DEPLOYABLE, it must be within 1\" of the model. The selected equipment is unusable for the rest of the game.",
+        "modifiers": {
+          "operations": [],
+          "choices": []
+        }
+      },
+      "up_goetic_gluttony_eateroftheflesh": {
+        "name": "Eater of the Flesh",
+        "text": "After making a Melee Attack, remove 1 Blood Marker for each Blood Marker that is placed next to the target, as long as it is not BLACK GRAIL or DEMONIC.",
+        "modifiers": {
+          "operations": [],
+          "choices": []
+        }
+      },
+      "up_goetic_greed_bodyofgold": {
+        "name": "Body of Gold",
+        "text": "",
+        "modifiers": {
+          "operations": [
+            {
+              "operation": "addKeyword",
+              "value": "GOLEM"
+            },
+            {
+              "operation": "removeKeyword",
+              "value": "TOUGH"
+            }
+          ],
+          "choices": []
+        }
+      },
+      "up_goetic_greed_blackheart": {
+        "name": "Black Heart",
+        "text": "Goetic (1) | Cast before a Success Roll or Risky Success Roll. Add +1 DICE to the roll.",
+        "modifiers": {
+          "operations": [],
+          "choices": []
+        }
+      },
+      "up_goetic_greed_universalgreed": {
+        "name": "Greedy Hearts",
+        "text": "After deployment, place 1 Blessing Marker next to this model for each enemy model that is worth 150 ducats or more.",
+        "modifiers": {
+          "operations": [],
+          "choices": []
+        }
+      },
+      "up_fruit": {
+        "name": "",
+        "text": "",
+        "modifiers": {
+          "operations": [],
+          "choices": []
+        }
+      },
+      "up_gunsblazing": {
+        "name": "",
+        "text": "",
+        "modifiers": {
+          "operations": [],
+          "choices": []
+        }
+      },
+      "up_putrescere_hunger": {
+        "name": "",
+        "text": "",
+        "modifiers": {
+          "operations": [],
+          "choices": []
+        }
+      },
+      "up_putrescere_miasmaofpestilence": {
+        "name": "",
+        "text": "",
+        "modifiers": {
+          "operations": [],
+          "choices": []
+        }
+      },
+      "up_putrescere_motherscall": {
+        "name": "",
+        "text": "",
+        "modifiers": {
+          "operations": [],
+          "choices": []
+        }
+      },
+      "up_putrescere_rapturousfeast": {
+        "name": "",
+        "text": "",
+        "modifiers": {
+          "operations": [],
+          "choices": []
+        }
+      },
+      "up_putrescere_vilechurning": {
+        "name": "",
+        "text": "",
+        "modifiers": {
+          "operations": [],
+          "choices": []
+        }
+      },
+      "up_putrescere_virulentclot": {
+        "name": "",
+        "text": "",
+        "modifiers": {
+          "operations": [],
+          "choices": []
+        }
+      },
+      "up_putrescere_vomitus": {
+        "name": "",
+        "text": "",
+        "modifiers": {
+          "operations": [],
+          "choices": []
+        }
+      },
+      "up_unendingstarvation": {
+        "name": "",
+        "text": "",
+        "modifiers": {
+          "operations": [],
+          "choices": []
+        }
+      },
+      "up_jannisaryveteran": {
+        "name": "",
+        "text": "",
+        "modifiers": {
+          "operations": [],
+          "choices": []
+        }
+      }
     },
     "injuries": {
       "in_dead": {
@@ -520,7 +3408,7 @@
       },
       "in_legwound": {
         "name": "Leg Wound",
-        "text": "-1 DICE to Risky Success for Dash Actions",
+        "text": "-1 DICE to Dash Actions.",
         "modifiers": {
           "operations": [
             {
@@ -603,7 +3491,7 @@
       "in_facialscar": {
         "comment": "//TODO: need to figure out how we're extracting the prominent scar faction",
         "name": "Prominent Scar",
-        "text": "+1 DICE to Melee Attacks against {{PROMINENT_SCAR_FACTION}}",
+        "text": "+1 DICE to Melee Attacks against {{PROMINENT_SCAR_FACTION}}.",
         "modifiers": {
           "operations": [],
           "choices": []
@@ -731,7 +3619,7 @@
       },
       "sk_strengthofsamson": {
         "name": "Strength of Samson",
-        "text": "+1 INJURY DICE to Melee Attacks",
+        "text": "+1 INJURY DICE to Melee Attacks.",
         "modifiers": {
           "operations": [
             {
@@ -753,7 +3641,7 @@
       },
       "sk_champion": {
         "name": "Champion",
-        "text": "Melee Weapons that do not have CLEAVE gain CLEAVE 2, and add -1 DICE to second Melee Attack made with weapon that gains CLEAVE",
+        "text": "Melee Weapons that do not have CLEAVE gain CLEAVE 2; -1 DICE to second Melee Attack made with weapon that gains CLEAVE.",
         "modifiers": {
           "operations": [],
           "choices": []
@@ -842,14 +3730,14 @@
       },
       "sk_athletic": {
         "name": "Athletic",
-        "text": "+1 DICE to Risky Success for Climb, Jump, or Diving Charge Actions; and -1 INJURY DICE to Injury if failed.",
+        "text": "+1 DICE to Climb, Jump, or Diving Charge Actions; and -1 INJURY DICE to Injury if failed.",
         "modifiers": {
           "operations": [],
           "choices": []
         }
       },
       "sk_sprinter": {
-        "name": "+1 DICE to Risky Success for Dash Actions.",
+        "name": "+1 DICE to Dash Actions.",
         "text": "",
         "modifiers": {
           "operations": [],
@@ -1080,7 +3968,7 @@
       "sk_skillandexpertise": {
         "comment": "//TODO: need to figure out how we're extracting the skills & expertise action",
         "name": "Skill & Expertise",
-        "text": "+1 DICE to {{SKILL_AND_EXPERTISE_ACTION}}",
+        "text": "+1 DICE to {{SKILL_AND_EXPERTISE_ACTION}}.",
         "modifiers": {
           "operations": [],
           "choices": []
@@ -1304,7 +4192,7 @@
       },
       "sk_lashofacheron": {
         "name": "Lash of Acheron",
-        "text": "Risky Success: make Injury Roll with IGNORE ARMOUR against enemy model within 6\" and within line of sight.",
+        "text": "Risky Success: Make Injury Roll with IGNORE ARMOUR against enemy model within 6\" and within line of sight.",
         "modifiers": {
           "operations": [],
           "choices": []
