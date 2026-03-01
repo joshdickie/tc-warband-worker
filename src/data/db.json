@@ -1,5 +1,5 @@
 {
-  "//TODO": "Grail; Heretics; Sultanate; New Antioch; Pilgrims", 
+  "TODO": "oops, need to include base size info on models, and an operation in our little mini DSL for increasing/decreasing base size!; Grail; Heretics; Sultanate; New Antioch; Pilgrims", 
   "modifiers": {
     "abilities": {
       "ab_countercharge": {
@@ -59,10 +59,15 @@
         }
       },
       "ab_artificialbody": {
-        "name": "",
+        "name": "Artificial Life",
         "text": "",
         "modifiers": {
-          "operations": [],
+          "operations": [
+            {
+              "operation": "addKeyword",
+              "value": "-1 INJURY DICE"
+            }
+          ],
           "choices": []
         }
       },
@@ -1088,8 +1093,8 @@
         }
       },
       "ab_holydna": {
-        "name": "",
-        "text": "",
+        "name": "Holy DNA",
+        "text": "At start of Activation, remove 1 Blood Marker or Infection Marker from this model. If you do, replace it with 1 Blessing Marker.",
         "modifiers": {
           "operations": [],
           "choices": []
@@ -1200,10 +1205,23 @@
         }
       },
       "ab_golgothatektites": {
-        "name": "",
+        "name": "Treated with Golgotha Tektites",
         "text": "",
         "modifiers": {
-          "operations": [],
+          "operations": [
+            {
+              "operation": "addKeyword",
+              "value": "NEGATE FIRE"
+            },
+            {
+              "operation": "addKeyword",
+              "value": "NEGATE GAS"
+            },
+            {
+              "operation": "addKeyword",
+              "value": "NEGATE SHRAPNEL"
+            }
+          ],
           "choices": []
         }
       },
@@ -2134,8 +2152,8 @@
         }
       },
       "ab_pummellingblows": {
-        "name": "",
-        "text": "",
+        "name": "Pummelling Blows",
+        "text": "Can make a Melee Attack if unarmed.",
         "modifiers": {
           "operations": [],
           "choices": []
@@ -2158,8 +2176,8 @@
         }
       },
       "ab_fireshield": {
-        "name": "",
-        "text": "",
+        "name": "Flame Repellent",
+        "text": "-1 INJURY DICE to attacks with FIRE, even if the attack has IGNORE ARMOUR.",
         "modifiers": {
           "operations": [],
           "choices": []
@@ -2570,6 +2588,48 @@
           "choices": []
         }
       },
+      "ab_mindenslaver": {
+        "name": "Mind Enslaver",
+        "text": "Can only form a FIRETEAM with Homunculus that has Enslaved Mind.",
+        "modifiers": {
+          "operations": [
+            {
+              "operation": "addKeyword",
+              "value": "FIRETEAM"
+            }
+          ],
+          "choices": []
+        }
+      },
+      "ab_saintlyrelic": {
+        "name": "Saintly Relic",
+        "text": "Can never have Cover.",
+        "modifiers": {
+          "operations": [],
+          "choices": []
+        }
+      },
+      "ab_hellskull": {
+        "name": "Hell Skull",
+        "text": "+2 DICE to Morale Checks while this model is not Down.",
+        "modifiers": {
+          "operations": [],
+          "choices": []
+        }
+      },
+      "ab_strengthofsamson": {
+        "name": "Strength of Samson",
+        "text": "+1 INJURY DICE to Melee Attacks.",
+        "modifiers": {
+          "operations": [
+            {
+              "operation": "addKeyword",
+              "value": "STRONG"
+            }
+          ],
+          "choices": []
+        }
+      },
       "up_skirmisher": {
         "name": "",
         "text": "",
@@ -2643,39 +2703,89 @@
         }
       },
       "up_alchemicalformulae_wings": {
-        "name": "",
+        "name": "Wings",
         "text": "",
         "modifiers": {
-          "operations": [],
+          "operations": [
+            {
+              "operation": "setMovement",
+              "value": "8\""
+            },
+            {
+              "operation": "addKeyword",
+              "value": "FLYING"
+            }
+          ],
           "choices": []
         }
       },
       "up_alchemicalformulae_elementalresistance": {
-        "name": "",
-        "text": "",
+        "name": "Elemental Resistance",
+        "text": "-1 INJURY DICE to attacks with FIRE or GAS that target this model.",
         "modifiers": {
-          "operations": [],
+          "operations": [
+            {
+              "operation": "addKeyword",
+              "value": "NEGATE FIRE"
+            },
+            {
+              "operation": "addKeyword",
+              "value": "NEGATE GAS"
+            }
+          ],
           "choices": []
         }
       },
       "up_alchemicalformulae_massive_size": {
-        "name": "",
+        "name": "Massive Size",
         "text": "",
         "modifiers": {
-          "operations": [],
+          "operations": [
+            {
+              "operation": "addKeyword",
+              "value": "TOUGH"
+            }
+          ],
           "choices": []
         }
       },
       "up_alchemicalformulae_enslavedmind": {
-        "name": "",
-        "text": "",
+        "name": "Enslaved Mind",
+        "text": "Can only form FIRETEAM with model that has Mind Enslaver.",
         "modifiers": {
-          "operations": [],
-          "choices": []
+          "operations": [
+            {
+              "operation": "addKeyword",
+              "value": "FIRETEAM"
+            }
+          ],
+          "choices": [
+            {
+              "id": "up_alchemicalformulae_enslavedmind:pickFireteam",
+              "when": "deployment",
+              "prompt": "Select model to join Fireteam with Homunculus",
+              "maxSelections": 1,
+              "target": {
+                "scope": "model",
+                "filters": []
+              },
+              "options": [
+                {
+                  "label": "Apply",
+                  "operations": [
+                    {
+                      "operation": "addAbility",
+                      "value": "ab_mindenslaver"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
         }
       },
       "up_alchemicalformulae_humanhands": {
-        "name": "",
+        "name": "Human Hands",
         "text": "",
         "modifiers": {
           "operations": [],
@@ -2683,31 +2793,49 @@
         }
       },
       "up_alchemicalformulae_inhumanstrength": {
-        "name": "",
+        "name": "Inhuman Strength",
         "text": "",
         "modifiers": {
-          "operations": [],
+          "operations": [
+            {
+              "operation": "addKeyword",
+              "value": "STRONG"
+            },
+            {
+              "operation": "setMelee",
+              "value": 1
+            },
+            {
+              "operation": "increaseBase",
+              "value": 32
+            }
+          ],
           "choices": []
         }
       },
       "up_alchemicalformulae_terrifyingappearance": {
-        "name": "",
+        "name": "Terrifying Appearance",
         "text": "",
         "modifiers": {
-          "operations": [],
+          "operations": [
+            {
+              "operation": "addKeyword",
+              "value": "FEAR"
+            }
+          ],
           "choices": []
         }
       },
       "up_alchemicalformulae_additionalarm": {
-        "name": "",
-        "text": "",
+        "name": "Additional Arm",
+        "text": "When this model uses the Pummelling Blows Ability, it gains CLEAVE 2.",
         "modifiers": {
           "operations": [],
           "choices": []
         }
       },
       "up_alchemicalformulae_twoheads": {
-        "name": "",
+        "name": "Two Heads",
         "text": "",
         "modifiers": {
           "operations": [],
@@ -2715,31 +2843,36 @@
         }
       },
       "up_alchemicalformulae_hypnoticeyes": {
-        "name": "",
-        "text": "",
+        "name": "Hypnotic Eyes",
+        "text": "-1 DICE to Melee Attacks that target this model, unless the attacking model is a Sniper Priest or BLACK GRAIL.",
         "modifiers": {
           "operations": [],
           "choices": []
         }
       },
       "up_alchemicalformulae_hawkeyes": {
-        "name": "",
+        "name": "Hawk Eyes",
         "text": "",
         "modifiers": {
-          "operations": [],
+          "operations": [
+            {
+              "operation": "setRanged",
+              "value": 1
+            }
+          ],
           "choices": []
         }
       },
       "up_alchemicalformulae_startlingspeed": {
-        "name": "",
-        "text": "",
+        "name": "Startling Speed",
+        "text": "+1 DICE to Dash Actions.",
         "modifiers": {
           "operations": [],
           "choices": []
         }
       },
       "up_alchemicalformulae_sealofsolomon": {
-        "name": "",
+        "name": "Seal of Solomon",
         "text": "",
         "modifiers": {
           "operations": [],
@@ -2747,18 +2880,28 @@
         }
       },
       "up_alchemicalformulae_gargantuansize": {
-        "name": "",
+        "name": "Gargantuan Size",
         "text": "",
         "modifiers": {
-          "operations": [],
+          "operations": [
+            {
+              "operation": "increaseBase",
+              "value": 60
+            }
+          ],
           "choices": []
         }
       },
       "up_alchemicalformulae_regenerativetissue": {
-        "name": "",
+        "name": "Regenerative Tissue",
         "text": "",
         "modifiers": {
-          "operations": [],
+          "operations": [
+            {
+              "operation": "addKeyword",
+              "value": "REGENERATE 1"
+            }
+          ],
           "choices": []
         }
       },
@@ -3382,7 +3525,7 @@
         }
       },
       "in_darkmemory": {
-        "comment": "//TODO: need to figure out how we're extracting the dark memory faction",
+        "comment": "TODO: need to figure out how we're extracting the dark memory faction",
         "name": "Dark Memory",
         "text": "-1 DICE to Melee Attacks against {{DARK_MEMORY_FACTION}}",
         "modifiers": {
@@ -3489,7 +3632,7 @@
         }
       },
       "in_facialscar": {
-        "comment": "//TODO: need to figure out how we're extracting the prominent scar faction",
+        "comment": "TODO: need to figure out how we're extracting the prominent scar faction",
         "name": "Prominent Scar",
         "text": "+1 DICE to Melee Attacks against {{PROMINENT_SCAR_FACTION}}.",
         "modifiers": {
@@ -3572,7 +3715,7 @@
         }
       },
       "sk_standfirm": {
-        "comment": "//TODO: maybe generate Stand Firm tokens like how we generate Tough tokens?",
+        "comment": "TODO: maybe generate Stand Firm tokens like how we generate Tough tokens?",
         "name": "Stand Firm",
         "text": "First Down is treated as a Minor Hit instead.",
         "modifiers": {
@@ -3631,7 +3774,7 @@
         }
       },
       "sk_hardasnails": {
-        "comment": "//TODO: maybe generate Hard as Nails tokens like how we generate Tough tokens?",
+        "comment": "TODO: maybe generate Hard as Nails tokens like how we generate Tough tokens?",
         "name": "Hard as Nails",
         "text": "First Down is treated as a No Effect instead.",
         "modifiers": {
@@ -3704,7 +3847,7 @@
         }
       },
       "sk_sixthsense": {
-        "comment": "//TODO: maybe generate Sixth Sense tokens like how we generate Tough tokens?",
+        "comment": "TODO: maybe generate Sixth Sense tokens like how we generate Tough tokens?",
         "name": "Sixth Sense",
         "text": "First Down is treated as a Minor Hit instead, if model has no Blood Markers.",
         "modifiers": {
@@ -3966,7 +4109,7 @@
         }
       },
       "sk_skillandexpertise": {
-        "comment": "//TODO: need to figure out how we're extracting the skills & expertise action",
+        "comment": "TODO: need to figure out how we're extracting the skills & expertise action",
         "name": "Skill & Expertise",
         "text": "+1 DICE to {{SKILL_AND_EXPERTISE_ACTION}}.",
         "modifiers": {
@@ -4343,10 +4486,16 @@
         }
       },
       "sk_fruitfromthetreeofgoodandevil": {
-        "name": "",
+        "comment": "TODO: include the selected skill too",
+        "name": "Eaten of the Fruit",
         "text": "",
         "modifiers": {
-          "operations": [],
+          "operations": [
+            {
+              "operation": "addKeyword",
+              "value": "DEMONIC"
+            }
+          ],
           "choices": []
         }
       },
@@ -4649,6 +4798,18 @@
           "keywords": [
             "THE COURT"
           ]
+        },
+        "md_takwincreation_golem": {
+          "name": "Golem",
+          "movement": 6,
+          "melee": 0,
+          "ranged": 0,
+          "armour": 0,
+          "keywords": [
+            "GOLEM",
+            "ARTIFICIAL",
+            "THE COURT"
+          ]
         }
       },
       "battlekit": {
@@ -4707,6 +4868,28 @@
                 {
                   "operation": "modifyArmour",
                   "value": -1
+                }
+              ],
+              "choices": []
+            }
+          },
+          "eq_fireshield": {
+            "name": "Fire Shield",
+            "keywords": [ "-1 INJURY MODIFIER" ],
+            "abilities": [],
+            "modifiers": {
+              "operations": [
+                {
+                  "operation": "modifyArmour",
+                  "value": -1
+                },
+                {
+                  "operation": "addKeyword",
+                  "value": "NEGATE FIRE"
+                },
+                {
+                  "operation": "addAbility",
+                  "value": "ab_fireshield"
                 }
               ],
               "choices": []
@@ -4991,6 +5174,70 @@
             "abilities": [],
             "modifiers": {
               "operations": [],
+              "choices": []
+            }
+          },
+          "eq_angelicinstrument": {
+            "name": "Angelic Instrument",
+            "keywords": [],
+            "abilities": [],
+            "modifiers": {
+              "operations": [
+                {
+                  "operation": "addAbility",
+                  "value": "ab_angelicfanfare"
+                }
+              ],
+              "choices": []
+            }
+          },
+          "eq_saintsreliquary": {
+            "name": "Saint's Reliquary",
+            "keywords": [],
+            "abilities": [],
+            "modifiers": {
+              "operations": [
+                {
+                  "operation": "addKeyword",
+                  "value": "TOUGH"
+                },
+                {
+                  "operation": "removeKeyword",
+                  "value": "INFILTRATOR"
+                },
+                {
+                  "operation": "addAbility",
+                  "value": "ab_saintlyrelic"
+                }
+              ],
+              "choices": []
+            }
+          },
+          "eq_hellskull": {
+            "name": "Screaming Skull",
+            "keywords": [],
+            "abilities": [],
+            "modifiers": {
+              "operations": [
+                {
+                  "operation": "addAbility",
+                  "value": "ab_hellskull"
+                }
+              ],
+              "choices": []
+            }
+          },
+          "eq_lockofsamsonshair": {
+            "name": "Lock of Samson's Hair",
+            "keywords": [],
+            "abilities": [],
+            "modifiers": {
+              "operations": [
+                {
+                  "operation": "addAbility",
+                  "value": "ab_strengthofsamson"
+                }
+              ],
               "choices": []
             }
           }

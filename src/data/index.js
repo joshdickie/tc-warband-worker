@@ -5,7 +5,7 @@ function getOrThrow(table, path) {
     throw new Error(`Can not pull data with empty path`);
   }
 
-  const parts = path.replace(/^./, "").split(".");
+  const parts = path.replace(/^\./, "").split(".");
 
   let current = table;
 
@@ -28,14 +28,23 @@ function getOrThrow(table, path) {
 export function createDb() {
   return {
     data,
-    // getAbility: (id) => getOrThrow(abilities, id, "ability"),
-    // getArmour: (id) => getOrThrow(armour, id, "armour"),
-    // getEquipment: (id) => getOrThrow(equipment, id, "equipment"),
-    // getFaction: (id) => getOrThrow(factions, id, "faction"),
-    // getInjury: (id) => getOrThrow(injuries, id, "injury"),
-    // getModel: (id) => getOrThrow(models, id, "model"),
-    // getSkill: (id) => getOrThrow(skills, id, "skill"),
-    // getWeaponMelee: (id) => getOrThrow(weaponsMelee, id, "weaponMelee"),
-    // getWeaponRanged: (id) => getOrThrow(weaponsRanged, id, "weaponRanged"),
+
+    getAbility: (id) => getOrThrow(data, `modifiers.abilities.${id}`),
+    getInjury: (id) => getOrThrow(data, `modifiers.injuries.${id}`),
+    getSkill: (id) => getOrThrow(data, `modifiers.skills.${id}`),
+
+    forFaction: (factionId) => {
+      const faction = getOrThrow(data, `factions.${factionId}`);
+      const battlekit = getOrThrow(faction, "battlekit")
+
+      return {
+        getFactionName: () => getOrThrow(faction, "name"),
+        getModel: (id) => getOrThrow(faction, `models.${id}`),
+        getArmour: (id) => getOrThrow(battlekit, `armour.${id}`),
+        getEquipment: (id) => getOrThrow(battlekit, `equipment.${id}`),
+        getMeleeWeapon: (id) => getOrThrow(battlekit, `weapons_melee.${id}`),
+        getRangedWeapon: (id) => getOrThrow(battlekit, `weapons_ranged.${id}`),
+      };
+    },
   };
 }
