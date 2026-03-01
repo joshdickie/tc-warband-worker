@@ -1423,7 +1423,7 @@
         "modifiers": {
           "operations": [
             {
-              "operation": "addMeleeWeapon",
+              "operation": "addWeapon",
               "value": "eq_shovel"
             }
           ],
@@ -2429,8 +2429,8 @@
         "modifiers": {
           "operations": [
             {
-              "operation": "addMeleeWeapon",
-              "value": "eq_arquebus"
+              "operation": "addWeapon",
+              "value": "eq_arquebusmelee"
             }
           ],
           "choices": []
@@ -4561,8 +4561,7 @@
           "eq_trenchshield": {}
         },
         "equipment": {},
-        "weapons_melee": {},
-        "weapons_ranged": {}
+        "weapons": {}
       }
     },
     "fc_newantioch": {
@@ -4575,8 +4574,7 @@
           "eq_trenchshield": {}
         },
         "equipment": {},
-        "weapons_melee": {},
-        "weapons_ranged": {}
+        "weapons": {}
       }
     },
     "fc_trenchpilgrim": {
@@ -4589,8 +4587,7 @@
           "eq_trenchshield": {}
         },
         "equipment": {},
-        "weapons_melee": {},
-        "weapons_ranged": {}
+        "weapons": {}
       }
     },
     "fc_hereticlegion": {
@@ -4603,8 +4600,7 @@
           "eq_trenchshield": {}
         },
         "equipment": {},
-        "weapons_melee": {},
-        "weapons_ranged": {}
+        "weapons": {}
       }
     },
     "fc_cultoftheblackgrail": {
@@ -4617,15 +4613,14 @@
           "eq_trenchshield": {}
         },
         "equipment": {},
-        "weapons_melee": {},
-        "weapons_ranged": {}
+        "weapons": {}
       }
     },
     "fc_courtofthesevenheadedserpent": {
       "name": "Court of the Seven-Headed Serpent",
       "models": {
         "md_praetor": {
-          "name": "Praetor",
+          "modelName": "Praetor",
           "movement": 8,
           "melee": 3,
           "ranged": 3,
@@ -4643,7 +4638,7 @@
           ]
         },
         "md_sorcerer": {
-          "name": "Sorcerer",
+          "modelName": "Sorcerer",
           "movement": 6,
           "melee": 1,
           "ranged": 1,
@@ -4658,7 +4653,7 @@
           ]
         },
         "md_hunterofthelefthandpath": {
-          "name": "Hunter of the Left-Hand Path",
+          "modelName": "Hunter of the Left-Hand Path",
           "movement": 6,
           "melee": 1,
           "ranged": 2,
@@ -4672,7 +4667,7 @@
           ]
         },
         "md_hellknight": {
-          "name": "Hell Knight",
+          "modelName": "Hell Knight",
           "movement": 6,
           "melee": 2,
           "ranged": 0,
@@ -4687,7 +4682,7 @@
           ]
         },
         "md_desecratedsaint": {
-          "name": "Desecrated Saint",
+          "modelName": "Desecrated Saint",
           "movement": 6,
           "melee": 3,
           "ranged": 0,
@@ -4704,7 +4699,7 @@
           ]
         },
         "md_yokefiend": {
-          "name": "Yoke Fiend",
+          "modelName": "Yoke Fiend",
           "movement": 6,
           "melee": 1,
           "ranged": 0,
@@ -4716,7 +4711,7 @@
           ]
         },
         "md_pitlocust": {
-          "name": "Pit Locust",
+          "modelName": "Pit Locust",
           "movement": 8,
           "melee": 2,
           "ranged": 0,
@@ -4731,7 +4726,7 @@
           ]
         },
         "md_wretched_court": {
-          "name": "Wretched",
+          "modelName": "Wretched",
           "movement": 6,
           "melee": -1,
           "ranged": -1,
@@ -4741,7 +4736,7 @@
           ]
         },
         "md_goeticwarlock": {
-          "name": "Goetic Warlock",
+          "modelName": "Goetic Warlock",
           "movement": 6,
           "melee": 1,
           "ranged": 2,
@@ -4753,7 +4748,7 @@
           ]
         },
         "md_scriptureguardian": {
-          "name": "Scripture Guardian",
+          "modelName": "Scripture Guardian",
           "movement": 6,
           "melee": 1,
           "ranged": 0,
@@ -4765,7 +4760,7 @@
           ]
         },
         "md_sineater": {
-          "name": "Sin Eater",
+          "modelName": "Sin Eater",
           "movement": 6,
           "melee": 2,
           "ranged": 0,
@@ -4780,7 +4775,7 @@
           ]
         },
         "md_trenchdog": {
-          "name": "Trench Dog",
+          "modelName": "Trench Dog",
           "movement": 8,
           "melee": 0,
           "ranged": 0,
@@ -4790,7 +4785,7 @@
           ]
         },
         "md_trenchdog_hellhound": {
-          "name": "Hellhound",
+          "modelName": "Hellhound",
           "movement": 8,
           "melee": 1,
           "ranged": 0,
@@ -4800,7 +4795,7 @@
           ]
         },
         "md_takwincreation_golem": {
-          "name": "Golem",
+          "modelName": "Golem",
           "movement": 6,
           "melee": 0,
           "ranged": 0,
@@ -5242,10 +5237,11 @@
             }
           }
         },
-        "weapons_melee": {
+        "weapons": {
           "eq_shovel": {
             "name": "",
             "range": "Melee",
+            "type": "melee",
             "keywords": [],
             "abilities": [],
             "modifiers": {
@@ -5253,9 +5249,10 @@
               "choices": []
             }
           },
-          "eq_arquebus": {
+          "eq_arquebusmelee": {
             "name": "",
             "range": "Melee",
+            "type": "melee",
             "keywords": [],
             "abilities": [],
             "modifiers": {
@@ -5266,6 +5263,7 @@
           "eq_doublehandedbluntweapon": {
             "name": "Great Hammer/Maul",
             "range": "Melee",
+            "type": "melee",
             "keywords": [
               "+1 INJURY MODIFIER",
               "HEAVY"
@@ -5279,6 +5277,7 @@
           "eq_greatswordaxe": {
             "name": "Greatsword/Greataxe",
             "range": "Melee",
+            "type": "melee",
             "keywords": [
               "+1 INJURY DICE",
               "CRITICAL",
@@ -5293,6 +5292,7 @@
           "eq_headtaker": {
             "name": "Head Taker",
             "range": "Melee",
+            "type": "melee",
             "keywords": [],
             "abilities": [ "ab_ambushweapon" ],
             "modifiers": {
@@ -5303,6 +5303,7 @@
           "eq_hellblade": {
             "name": "Hellblade",
             "range": "Melee",
+            "type": "melee",
             "keywords": [
               "+1 INJURY DICE",
               "FIRE"
@@ -5316,6 +5317,7 @@
           "eq_knifedagger": {
             "name": "Trench Knife",
             "range": "Melee",
+            "type": "melee",
             "keywords": [ "-1 DICE" ],
             "abilities": [],
             "modifiers": {
@@ -5326,6 +5328,7 @@
           "eq_malebranchesword": {
             "name": "Malebranche Sword",
             "range": "Melee",
+            "type": "melee",
             "keywords": [
               "DEADLY",
               "HEAVY"
@@ -5339,6 +5342,7 @@
           "eq_trenchpolearm": {
             "name": "Trench Polearm",
             "range": "Melee",
+            "type": "melee",
             "keywords": [
               "BLOCK"
             ],
@@ -5351,6 +5355,7 @@
           "eq_swordaxe": {
             "name": "Sword/Axe",
             "range": "Melee",
+            "type": "melee",
             "keywords": [ "CRITICAL" ],
             "abilities": [],
             "modifiers": {
@@ -5361,6 +5366,7 @@
           "eq_tortureinstrument": {
             "name": "Torture Instrument",
             "range": "Melee",
+            "type": "melee",
             "keywords": [],
             "abilities": [ "ab_agonisinginjuries" ],
             "modifiers": {
@@ -5371,6 +5377,7 @@
           "eq_trenchclub": {
             "name": "Trench Club",
             "range": "Melee",
+            "type": "melee",
             "keywords": [],
             "abilities": [],
             "modifiers": {
@@ -5381,6 +5388,7 @@
           "eq_sineatertenderizermaul": {
             "name": "Tenderizer Maul",
             "range": "Melee",
+            "type": "melee",
             "keywords": [
               "+1 INJURY MODIFIER",
               "HEAVY"
@@ -5390,12 +5398,11 @@
               "operations": [],
               "choices": []
             }
-          }
-        },
-        "weapons_ranged": {
+          },
           "eq_rocketpropelledgrenade": {
             "name": "Rocket-Propelled Grenade",
             "range": "36\"",
+            "type": "ranged",
             "keywords": [
               "+1 INJURY DICE",
               "IGNORE ARMOUR",
@@ -5411,6 +5418,7 @@
           "eq_arquebus": {
             "name": "Arquebus",
             "range": "18\"",
+            "type": "ranged",
             "keywords": [],
             "abilities": [],
             "modifiers": {
@@ -5426,6 +5434,7 @@
           "eq_blunderbuss": {
             "name": "Blunderbuss",
             "range": "10\"",
+            "type": "ranged",
             "keywords": [ "SHRAPNEL" ],
             "abilities": [],
             "modifiers": {
@@ -5436,6 +5445,7 @@
           "eq_flamethrower": {
             "name": "Flamethrower",
             "range": "8\"",
+            "type": "ranged",
             "keywords": [
               "-1 INJURY DICE",
               "FLAMETHROWER",
@@ -5451,6 +5461,7 @@
           "eq_heavyflamethrower": {
             "name": "Heavy Flamethrower",
             "range": "10\"",
+            "type": "ranged",
             "keywords": [
               "-1 INJURY DICE",
               "AUTOMATIC 2",
@@ -5468,6 +5479,7 @@
           "eq_ophidianrifle": {
             "name": "Ophidian Rifle",
             "range": "30\"",
+            "type": "ranged",
             "keywords": [ "HEAVY" ],
             "abilities": [ "ab_unnaturalinversion" ],
             "modifiers": {
@@ -5478,6 +5490,7 @@
           "eq_pistolrevolver": {
             "name": "Pistol/Revolver",
             "range": "12\"/Melee",
+            "type": "ranged",
             "keywords": [ "PISTOL" ],
             "abilities": [],
             "modifiers": {
@@ -5488,6 +5501,7 @@
           "eq_serpentassaultgun": {
             "name": "Serpent Assault Gun",
             "range": "36\"",
+            "type": "ranged",
             "keywords": [
               "ASSAULT",
               "AUTOMATIC 2",
@@ -5503,6 +5517,7 @@
           "eq_shotgun": {
             "name": "Shotgun",
             "range": "12\"",
+            "type": "ranged",
             "keywords": [
               "+1 DICE",
               "SHOTGUN"
@@ -5516,6 +5531,7 @@
           "eq_bowoflethe": {
             "name": "Bow of Lethe",
             "range": "24\"",
+            "type": "ranged",
             "keywords": [ "ASSAULT" ],
             "abilities": [ "ab_specialammunition" ],
             "modifiers": {
@@ -5526,6 +5542,7 @@
           "eq_gasgrenades": {
             "name": "Gas Grenades",
             "range": "8\"",
+            "type": "ranged",
             "keywords": [
               "-1 INJURY DICE",
               "IGNORE COVER",
@@ -5545,6 +5562,7 @@
           "eq_incendiarygrenades": {
             "name": "Incendiary Grenades",
             "range": "8\"",
+            "type": "ranged",
             "keywords": [
               "IGNORE COVER",
               "IGNORE LONG RANGE",
@@ -5571,8 +5589,7 @@
           "eq_trenchshield": {}
         },
         "equipment": {},
-        "weapons_melee": {},
-        "weapons_ranged": {}
+        "weapons": {}
       }
     },
     "fc_ironsultanate_fv_houseofwisdom": {
@@ -5585,8 +5602,7 @@
           "eq_trenchshield": {}
         },
         "equipment": {},
-        "weapons_melee": {},
-        "weapons_ranged": {}
+        "weapons": {}
       }
     },
     "fc_ironsultanate_fv_defendersoftheironwall": {
@@ -5599,8 +5615,7 @@
           "eq_trenchshield": {}
         },
         "equipment": {},
-        "weapons_melee": {},
-        "weapons_ranged": {}
+        "weapons": {}
       }
     },
     "fc_hereticlegion_fv_hereticnavalraidingparty": {
@@ -5613,8 +5628,7 @@
           "eq_trenchshield": {}
         },
         "equipment": {},
-        "weapons_melee": {},
-        "weapons_ranged": {}
+        "weapons": {}
       }
     },
     "fc_hereticlegion_fv_trenchghosts": {
@@ -5627,8 +5641,7 @@
           "eq_trenchshield": {}
         },
         "equipment": {},
-        "weapons_melee": {},
-        "weapons_ranged": {}
+        "weapons": {}
       }
     },
     "fc_hereticlegion_fv_knightsofavarice": {
@@ -5641,8 +5654,7 @@
           "eq_trenchshield": {}
         },
         "equipment": {},
-        "weapons_melee": {},
-        "weapons_ranged": {}
+        "weapons": {}
       }
     },
     "fc_trenchpilgrim_fv_processionofthesacredaffliction": {
@@ -5655,8 +5667,7 @@
           "eq_trenchshield": {}
         },
         "equipment": {},
-        "weapons_melee": {},
-        "weapons_ranged": {}
+        "weapons": {}
       }
     },
     "fc_trenchpilgrim_fv_cavalcadeofthetenthplague": {
@@ -5669,8 +5680,7 @@
           "eq_trenchshield": {}
         },
         "equipment": {},
-        "weapons_melee": {},
-        "weapons_ranged": {}
+        "weapons": {}
       }
     },
     "fc_trenchpilgrim_fv_warpilgimageofsaintmethodius": {
@@ -5683,8 +5693,7 @@
           "eq_trenchshield": {}
         },
         "equipment": {},
-        "weapons_melee": {},
-        "weapons_ranged": {}
+        "weapons": {}
       }
     },
     "fc_newantioch_fv_papalstatesinterventionforce": {
@@ -5697,8 +5706,7 @@
           "eq_trenchshield": {}
         },
         "equipment": {},
-        "weapons_melee": {},
-        "weapons_ranged": {}
+        "weapons": {}
       }
     },
     "fc_newantioch_fc_eirerangers": {
@@ -5711,8 +5719,7 @@
           "eq_trenchshield": {}
         },
         "equipment": {},
-        "weapons_melee": {},
-        "weapons_ranged": {}
+        "weapons": {}
       }
     },
     "fc_newantioch_fc_stortruppenofthefreestateofprussia": {
@@ -5725,8 +5732,7 @@
           "eq_trenchshield": {}
         },
         "equipment": {},
-        "weapons_melee": {},
-        "weapons_ranged": {}
+        "weapons": {}
       }
     },
     "fc_newantioch_fv_kingdomofalbaassaultdetatchment": {
@@ -5739,8 +5745,7 @@
           "eq_trenchshield": {}
         },
         "equipment": {},
-        "weapons_melee": {},
-        "weapons_ranged": {}
+        "weapons": {}
       }
     },
     "fc_newantioch_fv_expeditionaryforcedofabyssinia": {
@@ -5753,8 +5758,7 @@
           "eq_trenchshield": {}
         },
         "equipment": {},
-        "weapons_melee": {},
-        "weapons_ranged": {}
+        "weapons": {}
       }
     },
     "fc_cultoftheblackgrail_fv_dirgeofthegreathegemon": {
@@ -5767,8 +5771,7 @@
           "eq_trenchshield": {}
         },
         "equipment": {},
-        "weapons_melee": {},
-        "weapons_ranged": {}
+        "weapons": {}
       }
     },
     "fc_newantioch_fv_redbrigade": {
@@ -5781,8 +5784,7 @@
           "eq_trenchshield": {}
         },
         "equipment": {},
-        "weapons_melee": {},
-        "weapons_ranged": {}
+        "weapons": {}
       }
     },
     "fc_cultoftheblackgrail_fv_thegreathunger": {
@@ -5795,8 +5797,7 @@
           "eq_trenchshield": {}
         },
         "equipment": {},
-        "weapons_melee": {},
-        "weapons_ranged": {}
+        "weapons": {}
       }
     }
   }

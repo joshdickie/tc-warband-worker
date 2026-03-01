@@ -42,8 +42,7 @@ export function createDb() {
         getModel: (id) => getOrThrow(faction, `models.${id}`),
         getArmour: (id) => getOrThrow(battlekit, `armour.${id}`),
         getEquipment: (id) => getOrThrow(battlekit, `equipment.${id}`),
-        getMeleeWeapon: (id) => getOrThrow(battlekit, `weapons_melee.${id}`),
-        getRangedWeapon: (id) => getOrThrow(battlekit, `weapons_ranged.${id}`),
+        getWeapon: (id) => getOrThrow(battlekit, `weapons.${id}`),
       };
     },
   };

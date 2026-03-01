@@ -59,19 +59,121 @@
  * and then go through that array grabbing whatever bits and bobs we find and applying keywords.
  */
 
-import { createDb } from "./data";
+import { createDb } from "./data.js";
+import { modifiers } from "./modifiers.js";
 const db = createDb();
 
 export function parseWarband(data) {
   const warbandData = JSON.parse(data.warband_data);
   const warbandName = warbandData.name;
   const factionId = warbandData.faction.faction_property.object_id;
-  const models = warbandData.models.map(m => m.model);
+  const factionDb = db.forFaction(factionId);
+  const factionName = factionDb.getFactionName();
 
-  const devResp = {
+  const models = warbandData.models.map(model => {
+    const modelId = model.model;
+    let modelEntry = factionDb.getModel(modelId);
+    modelEntry = {
+      ...modelEntry,
+      name: model.name,
+      meleeWeapons: [],
+      rangedWeapons: [],
+      armour: [],
+      abilities: [],
+      skills: [],
+      injuries: []
+    };
+
+    // loop through subproperties, equipment, upgrades, skills, and injuries
+    // if they have modifiers, pass those through to the modifiers handler
+    // add to the appropriate array
+    
+    // format modelEntry object into formatted string, so we end up with:
+    /**
+     * {
+     *   title: String; // model name in TTS
+     *   body: String; // model tooltip in TTS
+     *   decisions: Array; // decisions to be made at runtime in TTS
+     * }
+     */
+
+    return modelEntry;
+  });
+
+  return {
     warbandName,
-    factionId,
+    factionName,
     model: models[0]
   }
-  return devResp;
 }
+
+
+/**
+ * Synod Model Object Shape:
+ * 
+ * {
+ *  name: String;
+ *  model: String; // model id
+ *  subproperties: [ // these are like faction rules as well as abilities
+ *    {
+ *      object_id: String; // ability id
+ *    }
+ *  ];
+ *  equipment: [
+ *    {
+ *      equipment: {
+ *        equipment_id: {
+ *          object_id: String // equipment id
+ *          tags: {
+ *            armour?: boolean
+ *            weapon?: boolean
+ *            shield?: boolean
+ *          }
+ *        }
+ *      }
+ *    }
+ *  ]
+ *  list_upgrades: [
+ *    {
+ *      upgrade: {
+ *        object_id: String;
+ *        selections: [
+ *          {
+ *            suboption: {
+ *              object_id: String;
+ *            }
+ *          }
+ *        ]
+ *      }
+ *    } 
+ *  ]
+ *  list_skills: [
+ *    {
+ *      upgrade: {
+ *        object_id: String;
+ *        selections: [
+ *          {
+ *            suboption: {
+ *              object_id: String;
+ *            }
+ *          }
+ *        ]
+ *      }
+ *    } 
+ *  ]
+ *  list_injury: [
+ *    {
+ *      upgrade: {
+ *        object_id: String;
+ *        selections: [
+ *          {
+ *            suboption: {
+ *              object_id: String;
+ *            }
+ *          }
+ *        ]
+ *      }
+ *    } 
+ *  ]
+ * }
+ */
